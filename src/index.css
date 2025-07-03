@@ -7,7 +7,7 @@
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
-  color: #4a5568;
+  color: #2d3748;
   background-color: #fefefe;
 }
 
@@ -38,36 +38,123 @@ img {
 }
 
 .section {
-  padding: 60px 0;
+  padding: 80px 0;
 }
 
 .btn {
-  padding: 12px 24px;
-  border-radius: 25px;
-  font-weight: 500;
-  transition: all 0.3s ease;
+  padding: 14px 28px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: all 0.4s ease;
   display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.6s;
+}
+
+.btn:hover::before {
+  left: 100%;
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #a8e6cf, #88d8c0);
-  color: #2d3748;
+  background: linear-gradient(135deg, #ff6b9d, #c44569, #6c5ce7, #00cec9, #55efc4);
+  color: white;
   border: 2px solid transparent;
+  box-shadow: 0 4px 15px rgba(255, 107, 157, 0.3);
 }
 
 .btn-primary:hover {
-  background: linear-gradient(135deg, #88d8c0, #7dd3fc);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(136, 216, 192, 0.3);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(255, 107, 157, 0.4);
 }
 
 .btn-secondary {
-  background: transparent;
-  color: #4a5568;
+  background: rgba(255, 255, 255, 0.9);
+  color: #2d3748;
   border: 2px solid #e2e8f0;
+  backdrop-filter: blur(10px);
 }
 
 .btn-secondary:hover {
-  background: #f7fafc;
-  border-color: #a8e6cf;
+  background: rgba(255, 255, 255, 1);
+  border-color: #ff6b9d;
+  color: #ff6b9d;
+}
+
+/* Gradient text utility */
+.gradient-text {
+  background: linear-gradient(135deg, #ff6b9d, #c44569, #6c5ce7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Animation utilities */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.animate-fadeInLeft {
+  animation: fadeInLeft 0.8s ease-out;
+}
+
+.animate-fadeInRight {
+  animation: fadeInRight 0.8s ease-out;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
 }
