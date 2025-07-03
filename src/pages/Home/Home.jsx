@@ -182,9 +182,10 @@ const Home = () => {
             <div className="master-image animate-fadeInLeft">
               <div className="image-frame">
                 <div className="master-photo">
-                  <div className="photo-placeholder">
-                    <h3>Photo of Master</h3>
-                    <p>Spiritual Guide & Healer</p>
+                  <div className="photo-placeholder" >
+                    <img src="/images/master1.jpg" width="134%" height="123%" alt="Grand Master" />
+
+                    
                   </div>
                 </div>
                 <div className="image-glow"></div>
@@ -292,14 +293,18 @@ const Home = () => {
             <h2>Gentle Healing Videos</h2>
             <p>Watch our guided sessions and healing techniques</p>
 
-            <div className="video-container">
+            <div className="video-container" >
               <div className="video-placeholder">
-                <div className="play-button">
-                  <svg width="60" height="60" viewBox="0 0 24 24" fill="none">
-                    <circle cx="12" cy="12" r="12" fill="#ff0000" />
-                    <polygon points="10,8 16,12 10,16" fill="white" />
-                  </svg>
-                </div>
+                  <iframe
+           src="https://www.youtube.com/embed/7oWnN8F56LE"
+           title="Pranic Healing Video"
+          height="432px" width="800px"
+           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+           allowFullScreen
+          ></iframe>
+                
+
+          
                 <p>Gentle healing videos</p>
               </div>
             </div>
