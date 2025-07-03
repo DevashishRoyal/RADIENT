@@ -170,7 +170,7 @@ const Home = () => {
                 />
               </svg>
             </div>
-            <span>(Scroll down)</span>
+            {/* <span>(Scroll down)</span> */}
           </div>
         </div>
       </section>
@@ -258,7 +258,7 @@ const Home = () => {
                 />
               </svg>
             </div>
-            <span>(Scroll down)</span>
+            {/* <span>(Scroll down)</span> */}
           </div>
         </div>
       </section>
