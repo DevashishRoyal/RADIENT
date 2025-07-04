@@ -481,29 +481,60 @@
 
 /* what is pranic section */
 
-.pranic-frame {
-  position: relative;
-  padding-top: 25%;
-  width: 600px;
-  height: 400px;
-  margin-bottom: 305px;
+/* Container for the entire content */
+.pranic-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
-.pranic-photo .pranic-image {
-  width: 600px;
-  height: 400px;
+/* Reverse layout for desktop */
+.revrse-layout {
+  flex-direction: row-reverse;
+}
+
+/* Details/text section */
+.pranic-details {
+  flex: 1;
+  min-width: 300px;
+  text-align: left;
+}
+
+/* Image section wrapper */
+.pranic-image {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+/* Image actual frame & image */
+.pranic-frame {
+  position: relative;
+  padding-top: 1%;
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.pranic-photo .pranic-img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
   object-fit: cover;
   border-radius: 16px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
+/* Glow effect */
 .pranic-glow {
   position: absolute;
   top: -20px;
   left: -20px;
   right: -20px;
   bottom: -20px;
-  /* background: linear-gradient(135deg, #e3f2fd, #f3e5f5, #e8f5e8); */
   border-radius: 30px;
   opacity: 0.2;
   filter: blur(15px);
@@ -511,42 +542,13 @@
   z-index: 1;
 }
 
-.pranic-content{
-    display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
-
-.revrse-layout{
-  flex-direction: row-reverse;
-}
-
-.pranic-details {
-  flex: 1;
-  min-width: 300px;
-}
-
-.pranic-image {
-  flex: 1;
-  min-width: 300px;
-  text-align: center;
-}
-
+/* Headings & text styling */
 .pranic-text {
   font-size: 1.8rem;
-  color: #033A06;
+  color: #033a06;
   margin-bottom: 8px;
   font-weight: 700;
 }
-
-/* .pranic-info h3 {
-  font-size: 1.8rem;
-  color: #0AFF7C;
-  margin-bottom: 8px;
-  font-weight: 700;
-} */
 
 .pranic-title {
   font-size: 1.2rem;
@@ -564,13 +566,53 @@
   font-size: 1.1rem;
   line-height: 1.7;
   margin-bottom: 15px;
+  text-align: justify; /* <-- Justify text here */
 }
 
+/* Buttons, if needed */
 .pranic-actions {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
 }
+
+/* Responsive: Mobile layout */
+@media (max-width: 1024px) {
+  .pranic-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .revrse-layout {
+    flex-direction: column;
+  }
+
+  .pranic-details,
+  .pranic-image {
+    width: 100%;
+    text-align: center;
+  }
+
+  .pranic-description p {
+    text-align: justify;
+  }
+
+  .pranic-actions {
+    justify-content: center;
+  }
+}
+@keyframes glowPulse {
+  from {
+    opacity: 0.15;
+  }
+  to {
+    opacity: 0.35;
+  }
+}
+
+
+
+
 .section-badge {
   display: inline-block;
   background: linear-gradient(135deg, #4a90e2, #7b68ee);

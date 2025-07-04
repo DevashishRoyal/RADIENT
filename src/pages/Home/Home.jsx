@@ -278,48 +278,49 @@ const slides = [
         </div>
       </section>
 
-
-      {/* what is Pranic section */}
+            {/* What is panic Healing */}
       <section className="master-section section">
-        <div className="container">
-          <div className="pranic-content revrse-layout">
-            <div className="pranic-image animate-fadeInLeft">
-              <div className="pranic-frame">
-                <div className="pranic-photo">
-                  <img src="images/pranic.jpg" alt="Spiritual Master" className="pranic-image" />
-                </div>
-                <div className="pranic-glow"></div>
-              </div>
-            </div>
+  <div className="container">
+    <div className="pranic-content revrse-layout">
+      <div className="pranic-image animate-fadeInLeft">
+        <div className="pranic-frame">
+          <div className="pranic-photo">
+            <img
+              src="images/pranic.jpg"
+              alt="Spiritual Master"
+              className="pranic-img"
+            />
+          </div>
+          <div className="pranic-glow"></div>
+        </div>
+      </div>
 
-            <div className="pranic-details animate-fadeInRight">
-              <div className="section-badge">
-                {/* <span>Meet Our Master</span> */}
-              </div>
-              <h2 className="pranic-text">What is Pranic Healing?</h2>
-              <div className="pranic-info">
-                {/* <h3>Master  Choa Kok Sui (GMCKS) </h3> */}
-                <p className="pranic-title">Spiritual Healer & Life Transformation Guide</p>
+      <div className="pranic-details animate-fadeInRight">
+        <h2 className="pranic-text">What is Pranic Healing?</h2>
 
-                <div className="pranic-description">
-                  <p>
-                    Pranic Healing is a modern, fresh, and scientific approach towards energy and healing.Pranic Healing is a powerful and effective no-touch-no-drug energy healing technique. It is a blend of ancient healing methods that were rediscovered, researched and tested for over 20 years with proven success by Grand Master Choa Kok Sui - the founder of Modern Pranic Healing and Arhatic Yoga. Pranic Healing as a science came into existence in 1987.
+        <div className="pranic-info">
+          <p className="pranic-title">
+            Spiritual Healer & Life Transformation Guide
+          </p>
 
-                  </p>
-
-                  {/* <p>
-                    Beyond healing, Grand Master Choa’s mission was to empower individuals to live more meaningful lives through inner purification, service, and spiritual growth. His legacy lives on through the World Pranic Healing Foundation and the Institute for Inner Studies.
-                  </p> */}
-                </div>
-                {/* <div className="pranic-actions">
-                  <button className="btn btn-primary">Book a Session</button>
-                  <button className="btn btn-secondary">Learn More</button>
-                </div> */}
-              </div>
-            </div>
+          <div className="pranic-description">
+            <p>
+              Pranic Healing is a modern, fresh, and scientific approach
+              towards energy and healing. Pranic Healing is a powerful and
+              effective no-touch-no-drug energy healing technique. It is a
+              blend of ancient healing methods that were rediscovered,
+              researched and tested for over 20 years with proven success by
+              Grand Master Choa Kok Sui – the founder of Modern Pranic Healing
+              and Arhatic Yoga. Pranic Healing as a science came into existence
+              in 1987.
+            </p>
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 
 
