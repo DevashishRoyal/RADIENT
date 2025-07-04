@@ -475,6 +475,102 @@
   padding: 20px 0;
 }
 
+
+
+
+
+/* what is pranic section */
+
+.pranic-frame {
+  position: relative;
+  padding-top: 25%;
+  width: 600px;
+  height: 400px;
+  margin-bottom: 305px;
+}
+
+.pranic-photo .pranic-image {
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.pranic-glow {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  /* background: linear-gradient(135deg, #e3f2fd, #f3e5f5, #e8f5e8); */
+  border-radius: 30px;
+  opacity: 0.2;
+  filter: blur(15px);
+  animation: glowPulse 3s ease-in-out infinite alternate;
+  z-index: 1;
+}
+
+.pranic-content{
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.revrse-layout{
+  flex-direction: row-reverse;
+}
+
+.pranic-details {
+  flex: 1;
+  min-width: 300px;
+}
+
+.pranic-image {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.pranic-text {
+  font-size: 1.8rem;
+  color: #033A06;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+/* .pranic-info h3 {
+  font-size: 1.8rem;
+  color: #0AFF7C;
+  margin-bottom: 8px;
+  font-weight: 700;
+} */
+
+.pranic-title {
+  font-size: 1.2rem;
+  color: #4858d1;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.pranic-description {
+  margin-bottom: 35px;
+}
+
+.pranic-description p {
+  color: #418424;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.pranic-actions {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
 .section-badge {
   display: inline-block;
   background: linear-gradient(135deg, #4a90e2, #7b68ee);
