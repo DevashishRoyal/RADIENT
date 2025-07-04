@@ -6,27 +6,41 @@ import "./Home.css"
 const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0)
 
-  const slides = [
+const slides = [
     {
       id: 1,
       title: "Welcome to Radiaant",
       subtitle: "Your Journey to Healing Begins Here",
       description: "Discover inner peace and transform your life through our holistic healing approach",
-      image: "images/sliders/slider2.jpg", width: "200", height: "200"
+      image: "images/sliders/slider-1.jpeg", width: "200", height: "200"
     },
     {
       id: 2,
-      title: "Heal • Transform • Grow",
-      subtitle: "Ancient Wisdom for Modern Healing",
+      title: "Fueling success through welllness",
+      subtitle: "A corporate initiative",
       description: "Experience the power of traditional healing methods combined with modern understanding",
-      image: "images/sliders/slider4.jpg", width: "200", height: "200"
+      image: "images/sliders/slider-2.jpeg", width: "200", height: "200"
     },
     {
       id: 3,
-      title: "Find Your Inner Light",
-      subtitle: "Guided by Compassion",
+      title: "Bringing Calm to the Community, One Street at a Time",
+      subtitle: "Happy street, A radiaant initiative",
       description: "Let our experienced masters guide you on your path to emotional and spiritual wellness",
-      image: "images/sliders/img_3.jpg", width: "200", height: "200"
+      image: "images/sliders/slider-3.jpeg", width: "200", height: "200"
+    },
+      {
+      id: 4,
+      title: "Heal, transform, grow",
+      subtitle: "📍Radiaant Pranic Healing Center, Hiranandani Estat",
+      description: "Experience the power of pranic energy to restore balance, vitality, and inner peace.*",
+      image: "images/sliders/slider-4.jpeg", width: "200", height: "200"
+    },
+      {
+      id: 5,
+      title: "Breathe. Balance. Heal",
+      subtitle: "Healing Doesn’t Always Need Words – Just Energy and Intention.",
+      description: "A holistic approach to wellness that begins with conscious breathing, centers on energy balance, and leads to deep healing.",
+      image: "images/sliders/slider-5.jpeg", width: "200", height: "200"
     },
   ]
 
@@ -263,6 +277,10 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+
+
+      
 
       {/* Features Section */}
       <section className="features section">

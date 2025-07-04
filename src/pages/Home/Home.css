@@ -57,7 +57,7 @@
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #a2e44a, #3f855c);
+  background: linear-gradient(135deg, #062206, #a3bfaf);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -65,10 +65,10 @@
 
 .slide-subtitle {
   font-size: 1.8rem;
-  color: rgb(53, 27, 95);
+  color: rgb(242, 240, 247);
   margin-bottom: 20px;
   font-weight: 600;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 2px 4px rgba(249, 249, 91, 0.3);
 }
 
 .slide-description {
@@ -411,6 +411,7 @@
   align-items: center;
   position: relative;
   z-index: 1;
+      background: #dbe9f0;
 }
 
 .master-image {

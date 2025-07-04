@@ -272,3 +272,30 @@
     display: none;
   }
 }
+
+
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.ph-img {
+  height: 50px; /* Adjust based on your navbar height */
+  width: auto;
+  object-fit: contain;
+  border-radius: 8px; /* Optional: rounded corners */
+  transition: transform 0.3s ease;
+}
+
+.ph-img:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}

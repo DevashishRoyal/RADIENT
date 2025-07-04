@@ -27,7 +27,7 @@ const Header = () => {
       <div className="container">
         <div className="header-content">
           <Link to="/" className="logo">
-            <img src="images/Radiant_logo.png" alt="Radiant Logo" className="logo-img" />
+            <img src="images/radiant_logo.jpg" alt="Radiant Logo" className="logo-img" />
           </Link>
 
           <nav className={`nav ${isMenuOpen ? "nav-open" : ""}`}>
@@ -47,11 +47,12 @@ const Header = () => {
           </nav>
 
           <div className="header-actions">
-            <button className="btn btn-primary">Chat with us</button>
+                      <Link to="/" className="logo">
+            <img src="images/PH_logo.jpg" alt="PH Logo" className="ph-img" />
+          </Link>
+           
             <button
-              className={`menu-toggle ${isMenuOpen ? "open" : ""}`}
-              onClick={toggleMenu}
-              aria-label="Toggle menu"
+             
             >
               <span />
               <span />
