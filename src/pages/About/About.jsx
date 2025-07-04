@@ -39,6 +39,30 @@ const About = () => {
       date: "2021 - Ongoing",
       impact: "100+ Companies",
     },
+    {
+      id: 4,
+      title: "Healing Hearts Initiative",
+      description: "A community outreach program providing free panic healing sessions to underserved communities.",
+      image: "Project Image",
+      date: "2023 - Ongoing",
+      impact: "500+ Lives Touched",
+    },
+    {
+      id: 5,
+      title: "Mindfulness in Schools",
+      description: "Educational program introducing meditation and anxiety management techniques to students.",
+      image: "Project Image",
+      date: "2022 - 2023",
+      impact: "50 Schools Reached",
+    },
+    {
+      id: 6,
+      title: "Corporate Wellness Program",
+      description: "Workplace stress management and healing workshops for corporate employees.",
+      image: "Project Image",
+      date: "2021 - Ongoing",
+      impact: "100+ Companies",
+    },
   ]
 
   const events = [
@@ -81,63 +105,107 @@ const About = () => {
     <div className="about-page">
       {/* About Hero Section */}
       <section className="about-hero">
-        <div className="container">
-          <div className="about-hero-content">
-            <div className="hero-image">
-              <div className="image-placeholder">
-                <h3>Our Development</h3>
-                <p>Journey of healing and growth</p>
-              </div>
-            </div>
-            <div className="hero-text">
-              <h1>Our Development</h1>
-              <p>
-                At Radiant, we believe in the power of gentle healing and compassionate care. Our journey began with a
-                simple mission: to provide safe, effective support for those experiencing panic and anxiety.
-              </p>
-            </div>
-          </div>
+  <div className="container">
+    <div className="about-hero-content">
+      <div className="hero-image">
+        <div className="image-placeholder">
+          {/* <h3>Our Development</h3>
+          <p>Journey of healing and growth</p> */}
         </div>
-      </section>
+      </div>
+      <div className="hero-text">
+        <h1>Our Instructors</h1>
+        <p>
+         
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* About Content Section */}
-      <section className="about-content section">
-        <div className="container">
-          {contentSections.map((section, index) => (
-            <div key={index} className={`content-row ${index % 2 === 1 ? "reverse" : ""}`}>
-              <div className="content-text">
-                <h2>{section.title}</h2>
-                <p>{section.description}</p>
-              </div>
-              <div className="content-info">
-                <div className="info-box">
-                  <h3>Contact Information</h3>
-                  <div className="contact-details">
-                    <p>📧 hello@radiant-healing.com</p>
-                    <p>📞 (555) 123-4567</p>
-                    <p>📍 123 Healing Way, Peace City</p>
-                    <p>🕒 Mon-Fri: 9AM-6PM</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          ))}
+<div className="about-founders">
+  {/* Founder Section */}
+  <div className="founder-container">
+    <h1>Founder of Radiacant Pranic Healing</h1>
+    
+    <div className="founder-content">
+      <div className="founder-profile">
+        <img 
+          src="/images/sarika-biwalkar.jpg" 
+          alt="Sarika Biwalkar"
+          className="founder-image"
+        />
+        <h2 className="founder-name">Sarika Biwalkar</h2>
+      </div>
+      
+      <div className="founder-contact">
+        <h2>Contact Us</h2>
+        <div className="contact-info">
+          <p>📍 103, Oyster C16; Himandani Estate, Thane W</p>
+          <p>📞 +91 981982675</p>
+          <p>📧 Radiacant@gmail.com</p>
         </div>
-      </section>
+        
+        <div className="founder-bio">
+          <p>Text</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {/* Co-Founder Section */}
+  <div className="founder-container co-founder">
+    <h1>Co-founder of Radiacant Pranic Healing</h1>
+    
+    <div className="founder-content">
+      <div className="founder-profile">
+        <img 
+          src="/images/vishwanath-biwalkar.jpg" 
+          alt="Vishwanath Biwalkar"
+          className="founder-image"
+        />
+        <h2 className="founder-name">Vishwanath Biwalkar</h2>
+      </div>
+      
+      <div className="founder-contact">
+        <h2>Contact Us</h2>
+        <div className="contact-info">
+          <p>📍 103, Oyster C16; Himandani Estate, Thane W</p>
+          <p>📞 +91 98194870687</p>
+          <p>📧 Radiacant@gmail.com</p>
+        </div>
+        
+        <div className="founder-bio">
+          <p>Text</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
       {/* Projects & Events Section */}
       <section className="projects-events section">
         <div className="container">
+          {/* <img className="project-event-img" src="/image/sliders/img_jpg"></img> */}
           <div className="section-header">
-            <h2 className="gradient-text">Our Projects & Events</h2>
-            <p>Discover the impact we're making in communities and the transformative events we host</p>
+            <h2 className="gradient-text">Events Worked On</h2>
+            {/* <p></p> */}
           </div>
+                  </div>
+
+                </section>
+
 
           {/* Projects Section */}
+          
           <div className="projects-section">
             <div className="subsection-header">
-              <h3>Healing Projects</h3>
-              <p>Community initiatives spreading healing and hope</p>
+              {/* <h3>Healing Projects</h3>
+              <p>Community initiatives spreading healing and hope</p> */}
             </div>
 
             <div className="projects-grid">
@@ -151,18 +219,18 @@ const About = () => {
                     <div className="image-placeholder">
                       <h4>{project.image}</h4>
                       <div className="project-overlay">
-                        <div className="project-icon">🌟</div>
+                        <div className="project-icon"></div>
                       </div>
                     </div>
                   </div>
                   <div className="project-content">
-                    <div className="project-meta">
+                    {/* <div className="project-meta">
                       <span className="project-date">{project.date}</span>
                       <span className="project-impact">{project.impact}</span>
-                    </div>
+                    </div> */}
                     <h4>{project.title}</h4>
                     <p>{project.description}</p>
-                    <button className="btn btn-secondary">Learn More</button>
+                    {/* <button className="btn btn-secondary">Learn More</button> */}
                   </div>
                 </div>
               ))}
@@ -170,7 +238,7 @@ const About = () => {
           </div>
 
           {/* Events Section */}
-          <div className="events-section">
+          {/* <div className="events-section">
             <div className="subsection-header">
               <h3>Transformative Events</h3>
               <p>Join us for life-changing experiences and community connection</p>
@@ -203,12 +271,10 @@ const About = () => {
                 </div>
               ))}
             </div>
-          </div>
-        </div>
-      </section>
+          </div> */}
 
       {/* Team Section */}
-      <section className="team-section section">
+      {/* <section className="team-section section">
         <div className="container">
           <div className="section-header">
             <h2>Our Healing Team</h2>
@@ -227,7 +293,7 @@ const About = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   )
 }

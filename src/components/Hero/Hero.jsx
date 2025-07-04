@@ -17,6 +17,7 @@ const Hero = () => {
             </div>
           </div>
           <div className="hero-image">
+            <img src="sliders/slider2.jpg" alt="slider.image" />
             <div className="image-placeholder">
               <h3>Healing Journey</h3>
               <p>Discover peace within yourself</p>

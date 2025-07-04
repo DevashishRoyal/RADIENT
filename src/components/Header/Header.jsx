@@ -8,59 +8,54 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const location = useLocation()
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen)
-  }
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen)
 
-  const isActive = (path) => {
-    return location.pathname === path ? "active" : ""
-  }
+  const isActive = (path) => (location.pathname === path ? "active" : "")
+
+  const navLinks = [
+    { label: "Home", to: "/" },
+    { label: "About", to: "/about" },
+    { label: "Courses", to: "/Courses" },
+    { label: "Testimonies", href: "#testimonies" },
+    { label: "Ashram", href: "#ashram" },
+    { label: "Research", href: "#research" },
+    { label: "Contribution", href: "#contribution" },
+  ]
 
   return (
     <header className="header">
       <div className="container">
         <div className="header-content">
-          <div className="logo">
-            <Link to="/">
-              <h2>Radiant</h2>
-            </Link>
-          </div>
+          <Link to="/" className="logo">
+            <img src="images/Radiant_logo.png" alt="Radiant Logo" className="logo-img" />
+          </Link>
 
           <nav className={`nav ${isMenuOpen ? "nav-open" : ""}`}>
             <ul className="nav-list">
-              <li>
-                <Link to="/" className={isActive("/")}>
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link to="/about" className={isActive("/about")}>
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link to="/contact" className={isActive("/contact")}>
-                  Contact
-                </Link>
-              </li>
-              <li>
-                <a href="#services">Services</a>
-              </li>
-              <li>
-                <a href="#testimonials">Testimonials</a>
-              </li>
-              <li>
-                <a href="#faq">FAQ</a>
-              </li>
+              {navLinks.map((link, index) => (
+                <li key={index}>
+                  {link.to ? (
+                    <Link to={link.to} className={isActive(link.to)} onClick={() => setIsMenuOpen(false)}>
+                      {link.label}
+                    </Link>
+                  ) : (
+                    <a href={link.href}>{link.label}</a>
+                  )}
+                </li>
+              ))}
             </ul>
           </nav>
 
           <div className="header-actions">
             <button className="btn btn-primary">Chat with us</button>
-            <button className="menu-toggle" onClick={toggleMenu}>
-              <span></span>
-              <span></span>
-              <span></span>
+            <button
+              className={`menu-toggle ${isMenuOpen ? "open" : ""}`}
+              onClick={toggleMenu}
+              aria-label="Toggle menu"
+            >
+              <span />
+              <span />
+              <span />
             </button>
           </div>
         </div>

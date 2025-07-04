@@ -12,18 +12,21 @@ const Home = () => {
       title: "Welcome to Radiaant",
       subtitle: "Your Journey to Healing Begins Here",
       description: "Discover inner peace and transform your life through our holistic healing approach",
+      image: "images/sliders/slider2.jpg", width: "200", height: "200"
     },
     {
       id: 2,
       title: "Heal • Transform • Grow",
       subtitle: "Ancient Wisdom for Modern Healing",
       description: "Experience the power of traditional healing methods combined with modern understanding",
+      image: "images/sliders/slider4.jpg", width: "200", height: "200"
     },
     {
       id: 3,
       title: "Find Your Inner Light",
       subtitle: "Guided by Compassion",
       description: "Let our experienced masters guide you on your path to emotional and spiritual wellness",
+      image: "images/sliders/img_3.jpg", width: "200", height: "200"
     },
   ]
 
@@ -31,18 +34,21 @@ const Home = () => {
     {
       title: "Personalized Healing",
       description:
-        "Add a little bit of body text that explains your unique approach to panic healing and anxiety management.",
+        "At Radiaant, we believe that healing is not one-size-fits-all. Our personalized healing programs are tailored to meet your unique emotional, spiritual, and mental health needs.",
+      image: "images/images.jpg"
     },
     {
       title: "Expert Guidance",
       description:
-        "Add a little bit of body text that describes our qualified professionals and their experience in mental health.",
+        "Our team of experienced healers, therapists, and spiritual mentors brings decades of wisdom and training to support your journey.",
+      image: "images/wellness.jpg"
     },
     {
       title: "Proven Techniques",
       description:
-        "Add a little bit of body text that outlines the evidence-based methods we use for lasting recovery.",
-    },
+        "At Radiaant, we combine time-tested healing methods with modern, science-backed techniques to ensure deep and lasting results.",
+      image: "images/spiritual.jpg"
+    }
   ]
 
   const testimonials = [
@@ -81,33 +87,32 @@ const Home = () => {
     <div className="home">
       {/* Image Slider Section */}
       <section className="image-slider">
-        <div className="slider-container">
-          <div className="slides-wrapper" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
-            {slides.map((slide, index) => (
-              <div key={slide.id} className={`slide ${index === currentSlide ? "active" : ""}`}>
-                <div className="slide-content">
-                  <div className="slide-text">
-                    <h1 className="slide-title gradient-text">{slide.title}</h1>
-                    <h2 className="slide-subtitle">{slide.subtitle}</h2>
-                    <p className="slide-description">{slide.description}</p>
-                  </div>
-                  <div className="slide-background">
-                    <div className="lotus-animation">
-                      <div className="lotus-petal petal-1"></div>
-                      <div className="lotus-petal petal-2"></div>
-                      <div className="lotus-petal petal-3"></div>
-                      <div className="lotus-petal petal-4"></div>
-                      <div className="lotus-petal petal-5"></div>
-                      <div className="lotus-petal petal-6"></div>
-                      <div className="lotus-petal petal-7"></div>
-                      <div className="lotus-petal petal-8"></div>
-                      <div className="lotus-center"></div>
-                    </div>
-                  </div>
-                </div>
+  <div className="slider-container">
+    <div className="slides-wrapper" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
+      {slides.map((slide, index) => (
+        <div
+  key={slide.id}
+  className={`slide ${index === currentSlide ? "active" : ""}`}
+  style={{ backgroundImage: `url(/${slide.image})` }}
+>
+
+          <div className="slide-content">
+            <div className="slide-text">
+              <h1 className="slide-title gradient-text">{slide.title}</h1>
+              <h2 className="slide-subtitle">{slide.subtitle}</h2>
+              <p className="slide-description">{slide.description}</p>
+            </div>
+
+            {/* Only render image if provided */}
+            {/* {slide.image && (
+              <div className="slide-image">
+                <img  src={`/${slide.image}`} alt={slide.title} className="slide-img" />
               </div>
-            ))}
+            )} */}
           </div>
+        </div>
+      ))}
+    </div>
 
           <button className="slider-btn prev-btn" onClick={prevSlide}>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -170,7 +175,7 @@ const Home = () => {
                 />
               </svg>
             </div>
-            {/* <span>(Scroll down)</span> */}
+            <span>(Scroll down)</span>
           </div>
         </div>
       </section>
@@ -182,11 +187,7 @@ const Home = () => {
             <div className="master-image animate-fadeInLeft">
               <div className="image-frame">
                 <div className="master-photo">
-                  <div className="photo-placeholder" >
-                    <img src="/images/master1.jpg" width="134%" height="123%" alt="Grand Master" />
-
-                    
-                  </div>
+                  <img src="images/master.jpeg" alt="Spiritual Master" className="master-image" />
                 </div>
                 <div className="image-glow"></div>
               </div>
@@ -198,18 +199,17 @@ const Home = () => {
               </div>
               <h2 className="gradient-text">Guiding Light of Healing</h2>
               <div className="master-info">
-                <h3>Master [Name]</h3>
+                <h3>Master  Choa Kok Sui (GMCKS) </h3>
                 <p className="master-title">Spiritual Healer & Life Transformation Guide</p>
 
                 <div className="master-description">
                   <p>
-                    With over [X] years of dedicated practice in ancient healing arts, our master combines traditional
-                    wisdom with modern understanding to guide souls on their journey to inner peace and transformation.
+                    Grand Master Choa Kok Sui (GMCKS) was a visionary spiritual teacher, scientist, and humanitarian who founded Modern Pranic Healing and Arhatic Yoga. Through years of dedicated research and spiritual practice, he developed a structured, scientific, and highly effective no-touch energy healing system that is now practiced in over 120 countries.
+
                   </p>
 
                   <p>
-                    Specializing in panic healing, anxiety management, and spiritual awakening, our master has helped
-                    thousands of individuals discover their inner strength and find lasting peace.
+                    Beyond healing, Grand Master Choa’s mission was to empower individuals to live more meaningful lives through inner purification, service, and spiritual growth. His legacy lives on through the World Pranic Healing Foundation and the Institute for Inner Studies.
                   </p>
                 </div>
 
@@ -259,7 +259,7 @@ const Home = () => {
                 />
               </svg>
             </div>
-            {/* <span>(Scroll down)</span> */}
+            <span>(Scroll down)</span>
           </div>
         </div>
       </section>
@@ -276,7 +276,7 @@ const Home = () => {
             {features.map((feature, index) => (
               <div key={index} className="feature-card">
                 <div className="feature-icon">
-                  <div className="icon-placeholder"></div>
+                  <img src={`/${feature.image}`} alt={feature.title} className="icon-image" />
                 </div>
                 <h3>{feature.title}</h3>
                 <p>{feature.description}</p>
@@ -286,6 +286,7 @@ const Home = () => {
         </div>
       </section>
 
+      
       {/* Video Section */}
       <section className="video-section section">
         <div className="container">
@@ -298,13 +299,10 @@ const Home = () => {
                   <iframe
            src="https://www.youtube.com/embed/7oWnN8F56LE"
            title="Pranic Healing Video"
-          height="432px" width="800px"
+          // height="432px" width="800px"
            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
            allowFullScreen
           ></iframe>
-                
-
-          
                 <p>Gentle healing videos</p>
               </div>
             </div>
