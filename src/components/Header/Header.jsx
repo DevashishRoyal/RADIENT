@@ -51,13 +51,12 @@ const Header = () => {
             <img src="images/PH_logo.jpg" alt="PH Logo" className="ph-img" />
           </Link>
            
-            <button
-             
-            >
-              <span />
-              <span />
-              <span />
-            </button>
+            <button className="menu-toggle" onClick={toggleMenu}>
+  <span />
+  <span />
+  <span />
+</button>
+
           </div>
         </div>
       </div>

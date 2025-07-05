@@ -393,336 +393,110 @@
 
 /* what is pranic section */
 
-/* Container for the entire content */
-.pranic-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
-
-/* Reverse layout for desktop */
-.revrse-layout {
-  flex-direction: row-reverse;
-}
-
-/* Details/text section */
-.pranic-details {
-  flex: 1;
-  min-width: 300px;
-  text-align: left;
-}
-
-/* Image section wrapper */
-.pranic-image {
-  flex: 1;
-  min-width: 300px;
-  text-align: center;
-}
-
-/* Image actual frame & image */
-.pranic-frame {
-  position: relative;
-  padding-top: 1%;
-  width: 100%;
-  max-width: 560px;
-  height: auto;
-  margin: 0 auto;
-}
-
-.pranic-photo .pranic-img {
-  width: 100%;
-  max-width: 600px;
-  height: auto;
-  object-fit: cover;
-  border-radius: 16px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-}
-
-/* Glow effect */
-.pranic-glow {
-  position: absolute;
-  top: -20px;
-  left: -20px;
-  right: -20px;
-  bottom: -20px;
-  border-radius: 30px;
-  opacity: 0.2;
-  filter: blur(15px);
-  animation: glowPulse 3s ease-in-out infinite alternate;
-  z-index: 1;
-}
-
-/* Headings & text styling */
-.pranic-text {
-  font-size: 1.8rem;
-  color: #033a06;
-  margin-bottom: 8px;
-  font-weight: 700;
-}
-
-.pranic-title {
-  font-size: 1.2rem;
-  color: #4858d1;
-  margin-bottom: 25px;
-  font-weight: 600;
-}
-
-.pranic-description {
-  margin-bottom: 35px;
-}
-
-.pranic-description p {
-  color: #418424;
-  font-size: 1.1rem;
-  line-height: 1.7;
-  margin-bottom: 15px;
-  text-align: justify; /* <-- Justify text here */
-}
-
-/* Buttons, if needed */
-.pranic-actions {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-/* Responsive: Mobile layout */
-@media (max-width: 1024px) {
-  .pranic-content {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .revrse-layout {
-    flex-direction: column;
-  }
-
-  .pranic-details,
-  .pranic-image {
-    width: 100%;
-    text-align: center;
-  }
-
-  .pranic-description p {
-    text-align: justify;
-  }
-
-  .pranic-actions {
-    justify-content: center;
-  }
-}
-@keyframes glowPulse {
-  from {
-    opacity: 0.15;
-  }
-  to {
-    opacity: 0.35;
-  }
-}
 
 
-/* Master Section Styles */
+/* Master Section-new */
 .master-section {
-  background: linear-gradient(135deg, #fafafa 0%, #f5f5f5 100%);
-  position: relative;
   padding: 60px 20px;
+  background-color: #fff;
+  font-family: 'Segoe UI', sans-serif;
 }
 
-.master-section::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="%23ff6b9d" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="%236c5ce7" opacity="0.1"/><circle cx="50" cy="10" r="1" fill="%2355efc4" opacity="0.1"/><circle cx="10" cy="60" r="1" fill="%23feca57" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
-  pointer-events: none;
-  z-index: 0;
-}
-
-.master-content {
-  display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  gap: 80px;
+.master-container {
+  display: flex;
   align-items: center;
-  position: relative;
-  z-index: 1;
-  background: #dbe9f0;
-  padding: 40px;
-  border-radius: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  gap: 40px;
 }
 
 .master-image {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  flex: 1 1 300px;
+  max-width: 350px;
+  text-align: center;
 }
 
-.image-frame {
-  position: relative;
-  width: 350px;
-  height: 450px;
-  margin-bottom: 305px;
-}
-
-.master-photo {
+.master-image img {
   width: 100%;
-  height: 100%;
-  border-radius: 20px;
-  position: relative;
-  z-index: 2;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  border: 3px solid #e3f2fd;
-  overflow: hidden;
-}
-
-.master-photo .master-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 16px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-}
-
-.image-glow {
-  position: absolute;
-  inset: -20px;
-  background: linear-gradient(135deg, #e3f2fd, #f3e5f5, #e8f5e8);
-  border-radius: 30px;
-  opacity: 0.2;
-  filter: blur(15px);
-  animation: glowPulse 3s ease-in-out infinite alternate;
-  z-index: 1;
-}
-
-@keyframes glowPulse {
-  0% {
-    opacity: 0.2;
-    transform: scale(0.95);
-  }
-  100% {
-    opacity: 0.4;
-    transform: scale(1.05);
-  }
-}
-
-.master-details {
-  padding: 20px 0;
-}
-
-.section-badge {
-  display: inline-block;
-  background: linear-gradient(135deg, #4a90e2, #7b68ee);
-  color: white;
-  padding: 8px 20px;
-  border-radius: 20px;
-  font-size: 0.9rem;
-  font-weight: 600;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
-.master-details h2 {
-  font-size: 2.8rem;
-  font-weight: 800;
-  margin-bottom: 25px;
-  line-height: 1.2;
-  text-align: justify;
-}
-
-.master-info h3 {
-  font-size: 1.8rem;
-  color: #2d3748;
-  margin-bottom: 10px;
-  font-weight: 700;
-  text-align: justify;
-}
-
-.master-title {
-  font-size: 1.2rem;
-  color: #6c5ce7;
-  margin-bottom: 25px;
-  font-weight: 600;
-  text-align: justify;
-}
-
-.master-description {
-  margin-bottom: 35px;
-  text-align: justify;
-}
-
-.master-description p {
-  color: #4a5568;
-  font-size: 1.1rem;
-  line-height: 1.7;
-  margin-bottom: 15px;
-}
-
-.master-credentials {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  margin-bottom: 35px;
-}
-
-.credential-item {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  padding: 15px;
-  background: rgba(255, 255, 255, 0.7);
-  border-radius: 15px;
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  transition: all 0.3s ease;
-}
-
-.credential-item:hover {
-  transform: translateX(10px);
-  background: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 5px 15px rgba(74, 144, 226, 0.1);
-}
-
-.credential-icon {
-  font-size: 2rem;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, #4a90e2, #7b68ee);
+  max-width: 280px;
   border-radius: 50%;
-  color: white;
+  border: 8px solid #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
-.credential-text h4 {
-  color: #2d3748;
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin-bottom: 2px;
+.master-content {
+  flex: 1 1 500px;
+  max-width: 700px;
 }
+/* Flowe Design */
 
-.credential-text p {
-  color: #4a5568;
-  font-size: 0.9rem;
-  margin: 0;
-}
 
-.master-actions {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin-top: 20px;
-}
-
-.master-actions .btn {
-  padding: 12px 25px;
-  border-radius: 8px;
-  font-weight: 600;
+.subtitle {
   font-size: 1rem;
+  font-weight: bold;
+  color: #003366;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #2e8b57;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+.know-more {
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #999;
+  font-weight: bold;
   cursor: pointer;
   transition: 0.3s;
 }
+
+.know-more:hover {
+  background-color: #2e8b57;
+  color: #fff;
+}
+
+/* 🔁 Responsive Design */
+@media (max-width: 768px) {
+  .master-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 1.4rem;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+  }
+
+  .description {
+    font-size: 0.95rem;
+  }
+
+  .know-more {
+    margin: 0 auto;
+  }
+}
+
+
+
 
 .btn-primary {
   background: linear-gradient(135deg, #4a90e2, #7b68ee);
@@ -761,53 +535,131 @@
   opacity: 0.7;
 }
 
-/* Responsive Styles */
-@media (max-width: 1024px) {
-  .master-content {
-    grid-template-columns: 1fr;
-    text-align: center;
-    padding: 30px;
-  }
 
-  .master-image {
-    justify-content: center;
-    margin-bottom: 40px;
-  }
 
-  .master-details {
-    text-align: center;
-  }
 
-  .master-description,
-  .master-info h3,
-  .master-title {
-    text-align: justify;
-  }
 
-  .image-frame {
+/* Panic-Healing */
+/* === Pranic Healing Section === */
+.pranic-healing-section {
+  padding: 60px 20px;
+  background-color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.pranic-healing-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 3px;
+}
+
+.pranic-healing-text {
+  flex: 1 1 500px;
+}
+
+.pranic-healing-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #5b9a4c; /* Light green heading like in image */
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.pranic-healing-description {
+  color: #4a4a4a;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 24px;
+  max-width: 95%;
+}
+
+.pranic-healing-button {
+  padding: 10px 18px;
+  font-size: 0.95rem;
+  color: #333;
+  background-color: transparent;
+  border: 1px solid #333;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.pranic-healing-button:hover {
+  background-color: #5b9a4c;
+  color: #fff;
+  border-color: #5b9a4c;
+}
+
+/* === Image Side === */
+.pranic-healing-image-wrapper {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pranic-healing-image-frame {
+  position: relative;
+  width: 400px; /* Increased from 260px */
+  height: 320px; /* Increased from 260px */
+  border-radius: 50%;
+  background: url('/images/mandala.svg') no-repeat center center;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pranic-healing-image {
+  width: 400px; /* Increased from 180px */
+  height: 300px; /* Increased from 180px */
+  border-radius: 30%;
+  object-fit: cover;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+}
+
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .pranic-healing-section {
+    padding: 30px 20px; /* Reduce top & bottom padding from 60px to 30px */
+  }
+    .pranic-healing-text {
+    flex: none;
+    width: 100%;
+    padding-bottom: 0;
     margin-bottom: 0;
   }
+
+  .pranic-healing-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .pranic-healing-description {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .pranic-healing-title {
+    font-size: 1.3rem;
+  }
+
+  .pranic-healing-image-frame {
+    width: 260px;
+    height: 260px;
+  }
+
+  .pranic-healing-image {
+    width: 200px;
+    height: 200px;
+  }
 }
 
-@media (max-width: 768px) {
-  .master-details h2 {
-    font-size: 2.2rem;
-  }
-
-  .master-info h3 {
-    font-size: 1.5rem;
-  }
-
-  .credential-item {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .master-actions {
-    flex-direction: column;
-    align-items: center;
-  }
-}
 
 
 /* Features Section Styles */
@@ -1049,6 +901,7 @@
   }
 
   .master-content {
+    flex: 1 1 300px;
     grid-template-columns: 1fr;
     gap: 50px;
     text-align: center;
