@@ -195,7 +195,7 @@ const slides = [
       </section>
 
       {/* Master Section */}
-      <section className="master-section section">
+      {/* <section className="master-section section">
         <div className="container">
           <div className="master-content">
             <div className="master-image animate-fadeInLeft">
@@ -226,69 +226,69 @@ const slides = [
                     Beyond healing, Grand Master Choa’s mission was to empower individuals to live more meaningful lives through inner purification, service, and spiritual growth. His legacy lives on through the World Pranic Healing Foundation and the Institute for Inner Studies.
                   </p>
                 </div>
-
-                <div className="master-credentials">
-                  <div className="credential-item">
-                    <div className="credential-icon">🧘</div>
-                    <div className="credential-text">
-                      <h4>Meditation Master</h4>
-                      <p>25+ years of practice</p>
-                    </div>
-                  </div>
-
-                  <div className="credential-item">
-                    <div className="credential-icon">🌸</div>
-                    <div className="credential-text">
-                      <h4>Healing Arts</h4>
-                      <p>Traditional & Modern Techniques</p>
-                    </div>
-                  </div>
-
-                  <div className="credential-item">
-                    <div className="credential-icon">✨</div>
-                    <div className="credential-text">
-                      <h4>Life Transformation</h4>
-                      <p>1000+ Lives Transformed</p>
-                    </div>
-                  </div>
-                </div>
-
                 <div className="master-actions">
-                  <button className="btn btn-primary">Book a Session</button>
                   <button className="btn btn-secondary">Learn More</button>
                 </div>
               </div>
             </div>
           </div>
-
-          <div className="scroll-indicator">
-            <div className="scroll-arrow">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path
-                  d="M7 13L12 18L17 13"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </div>
-            <span>(Scroll down)</span>
-          </div>
         </div>
-      </section>
+      </section> */}
+
+      <section className="master-section">
+  <div className="master-container">
+    <div className="master-image">
+      <div class="flower-frame">
+  <img src="/images/master.jpeg" alt="Master" class="flower-img" />
+</div>
+    </div>
+
+    <div className="master-content">
+      <h4 className="subtitle">THE FOUNDER OF MODERN PRANIC HEALING & ARHATIC YOGA</h4>
+      <h2 className="title">GRAND MASTER CHOA KOK SUI</h2>
+      <p className="description">
+        Beloved spiritual Teacher to thousands across the globe, Grandmaster Choa Kok Sui developed and
+        founded two major schools: Pranic Healing and Arhatic Yoga. The two schools that are
+        inextricably connected, yet also have distinct personalities. In Pranic Healing, the individual
+        uses subtle energy and the knowledge of the energy body and the chakras to heal physical and
+        psychological ailments.
+      </p>
+      <button className="know-more">KNOW MORE</button>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+            <section className="pranic-healing-section">
+  <div className="pranic-healing-container">
+    <div className="pranic-healing-text">
+      <h2 className="pranic-healing-title">WHAT IS PRANIC HEALING?</h2>
+      <p className="pranic-healing-description">
+        Pranic Healing® is a no-touch method of healing yourself and others by using powerful and
+        simple energy techniques given by the school’s founder, Grand Master Choa Kok Sui (GMCKS).
+      </p>
+      <button className="pranic-healing-button">KNOW MORE</button>
+    </div>
+
+    <div className="pranic-healing-image-wrapper">
+      <div className="pranic-healing-image-frame">
+        <img src="images/pranic.jpg" alt="Pranic Healing Hand" className="pranic-healing-image" />
+      </div>
+    </div>
+  </div>
+</section>
 
             {/* What is panic Healing */}
-      <section className="master-section section">
-  <div className="container">
-    <div className="pranic-content revrse-layout">
-      <div className="pranic-image animate-fadeInLeft">
-        <div className="pranic-frame">
-          <div className="pranic-photo">
-            <img
-              src="images/pranic.jpg"
-              alt="Spiritual Master"
-              className="pranic-img"
+            {/* <section className="master-section section">
+            <div className="container">
+            <div className="pranic-content revrse-layout">
+                 <div className="pranic-image animate-fadeInLeft">
+                    <div className="pranic-frame">
+                       <div className="pranic-photo">
+                           <img src="images/pranic.jpg"alt="Spiritual Master"className="pranic-img"
             />
           </div>
           <div className="pranic-glow"></div>
@@ -319,7 +319,7 @@ const slides = [
       </div>
     </div>
   </div>
-</section>
+</section> */}
 
 
 
