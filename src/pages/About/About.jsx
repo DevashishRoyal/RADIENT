@@ -17,49 +17,48 @@ const About = () => {
   const projects = [
     {
       id: 1,
-      title: "Healing Hearts Initiative",
-      description: "A community outreach program providing free panic healing sessions to underserved communities.",
-      image: "/images/master.jpeg",
+      title: "Wellness at workplace orientation by team Radiaan",
+      description: "Orientation at Buero Veritas.",
+      image: "/images/events/event_1.jpg",
       date: "2023 - Ongoing",
       impact: "500+ Lives Touched",
     },
     {
       id: 2,
-      title: "Mindfulness in Schools",
-      description: "Educational program introducing meditation and anxiety management techniques to students.",
-      image: "Project Image",
+      title: "Growth Through Movementand Energy",
+      description: "Superbrain Yoga at Goenka School.",
+      image: "/images/events/event_2.jpg",
       date: "2022 - 2023",
       impact: "50 Schools Reached",
     },
     {
       id: 3,
-      title: "Corporate Wellness Program",
-      description: "Workplace stress management and healing workshops for corporate employees.",
-      image: "Project Image",
+      title: "Where Inner Peace Begins.",
+      description: "Healing camp at Radiaant Center.",
+      image: "/images/events/event_3.jpg",
       date: "2021 - Ongoing",
       impact: "100+ Companies",
     },
     {
       id: 4,
-      title: "Healing Hearts Initiative",
-      description: "A community outreach program providing free panic healing sessions to underserved communities.",
-      image: "Project Image",
+      title: "A Meditation for Every Heart",
+      description: "Twin Heart meditation every Saturday at 6 .",
+      image: "/images/events/event_4.jpg",
       date: "2023 - Ongoing",
       impact: "500+ Lives Touched",
     },
     {
       id: 5,
-      title: "Mindfulness in Schools",
-      description: "Educational program introducing meditation and anxiety management techniques to students.",
-      image: "Project Image",
+      title: "Bringing Wellness to Every Walk of Life.",
+      description: "Happy Street.",
+      image: "/images/events/event_5.jpg",
       date: "2022 - 2023",
       impact: "50 Schools Reached",
     },
     {
       id: 6,
-      title: "Corporate Wellness Program",
-      description: "Workplace stress management and healing workshops for corporate employees.",
-      image: "Project Image",
+      title: "Pranic Healing orientation for Goenka school staff",
+      image: "/images/events/event_6.jpg",
       date: "2021 - Ongoing",
       impact: "100+ Companies",
     },
@@ -133,7 +132,7 @@ const About = () => {
     <div className="founder-content">
       <div className="founder-profile">
         <img 
-          src="/images/sarika-biwalkar.jpg" 
+          src="/images/sarika_bilwalkar.jpg"
           alt="Sarika Biwalkar"
           className="founder-image"
         />
@@ -190,6 +189,7 @@ const About = () => {
       {/* Projects & Events Section */}
       <section className="projects-events section">
         <div className="container">
+          
           {/* <img className="project-event-img" src="/image/sliders/img_jpg"></img> */}
           <div className="section-header">
             <h2 className="gradient-text">Events Worked On</h2>
@@ -201,7 +201,8 @@ const About = () => {
 
 
           {/* Projects Section */}
- <div className="projects-section">
+          
+     <div className="projects-section">
   <div className="subsection-header">
   </div>
 
