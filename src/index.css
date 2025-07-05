@@ -93,12 +93,12 @@ img {
 }
 
 /* Gradient text utility */
-.gradient-text {
+/* .gradient-text {
   background: linear-gradient(135deg, #4a90e2, #7b68ee);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-}
+} */
 
 /* Animation utilities */
 @keyframes fadeInUp {

@@ -6,7 +6,8 @@
 .image-slider {
   height: 100vh;
   position: relative;
-  overflow: hidden;  background: linear-gradient(135deg, #718da8 0%, #6fa8b0 50%, #ca82d5 100%);
+  overflow: hidden;  
+  /* background: linear-gradient(135deg, #718da8 0%, #6fa8b0 50%, #ca82d5 100%); */
 }
 
 .slider-container {
@@ -57,7 +58,7 @@
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #062206, #a3bfaf);
+  background: linear-gradient(100deg, #4e6ccf, #35b129);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -73,7 +74,7 @@
 
 .slide-description {
   font-size: 1.2rem;
-  color: rgba(66, 9, 116, 0.792);
+  color: rgba(255, 255, 255, 0.792);
   line-height: 1.6;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
@@ -95,98 +96,6 @@
   animation: fadeInRight 1s ease-out;
 }
 
-.lotus-animation {
-  position: relative;
-  width: 300px;
-  height: 300px;
-  animation: float 4s ease-in-out infinite;
-}
-
-.lotus-petal {
-  position: absolute;
-  width: 80px;
-  height: 120px;
-  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-  opacity: 0.8;
-  animation: petalGlow 3s ease-in-out infinite alternate;
-}
-
-.petal-1 {
-  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%) rotate(0deg);
-  transform-origin: center bottom;
-}
-
-.petal-2 {
-  background: linear-gradient(135deg, #f3e5f5, #e1bee7);
-  top: 50px;
-  right: 50px;
-  transform: rotate(45deg);
-  transform-origin: center bottom;
-}
-
-.petal-3 {
-  background: linear-gradient(135deg, #e8f5e8, #c8e6c8);
-  top: 110px;
-  right: 20px;
-  transform: rotate(90deg);
-  transform-origin: center bottom;
-}
-
-.petal-4 {
-  background: linear-gradient(135deg, #fff3e0, #ffe0b2);
-  bottom: 50px;
-  right: 50px;
-  transform: rotate(135deg);
-  transform-origin: center bottom;
-}
-
-.petal-5 {
-  background: linear-gradient(135deg, #fce4ec, #f8bbd9);
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%) rotate(180deg);
-  transform-origin: center bottom;
-}
-
-.petal-6 {
-  background: linear-gradient(135deg, #e8eaf6, #c5cae9);
-  bottom: 50px;
-  left: 50px;
-  transform: rotate(225deg);
-  transform-origin: center bottom;
-}
-
-.petal-7 {
-  background: linear-gradient(135deg, #e0f2f1, #b2dfdb);
-  top: 110px;
-  left: 20px;
-  transform: rotate(270deg);
-  transform-origin: center bottom;
-}
-
-.petal-8 {
-  background: linear-gradient(135deg, #fff8e1, #ffecb3);
-  top: 50px;
-  left: 50px;
-  transform: rotate(315deg);
-  transform-origin: center bottom;
-}
-
-.lotus-center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 60px;
-  height: 60px;
-  background: radial-gradient(circle, #ffffff, #f1c40f);
-  border-radius: 50%;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
-  animation: centerPulse 2s ease-in-out infinite;
-}
 
 @keyframes petalGlow {
   0% {

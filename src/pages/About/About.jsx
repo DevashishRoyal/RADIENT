@@ -127,63 +127,107 @@ const About = () => {
 <div className="about-founders">
   {/* Founder Section */}
   <div className="founder-container">
-    <h1>Founder of Radiacant Pranic Healing</h1>
-    
-    <div className="founder-content">
-      <div className="founder-profile">
-        <img 
-          src="/images/sarika_bilwalkar.jpg"
-          alt="Sarika Biwalkar"
-          className="founder-image"
-        />
-        <h2 className="founder-name">Sarika Biwalkar</h2>
-      </div>
-      
-      <div className="founder-contact">
-        <h2>Contact Us</h2>
-        <div className="contact-info">
-          <p>📍 103, Oyster C16; Himandani Estate, Thane W</p>
-          <p>📞 +91 981982675</p>
-          <p>📧 Radiacant@gmail.com</p>
-        </div>
-        
-        <div className="founder-bio">
-          <p>Text</p>
-        </div>
+  <h1 className="founder-title">Founder of Radiaant Pranic healing</h1>
+
+  <div className="founder-content">
+    <div className="founder-profile">
+      <img 
+        src="/images/sarika_bilwalkar.jpg"
+        alt="Sarika Biwalkar"
+        className="founder-image"
+      />
+      <h2 className="founder-name">Sarika Biwalkar</h2>
+    </div>
+
+    <div className="founder-contact-box">
+      <h2 className="contact-title">Contact Us</h2>
+      <div className="contact-info">
+        <p>📍 103, Oyster CHS, Hiranandani Estate, Thane W</p>
+        <p>📞 +91 9819852675</p>
+        <p>📧 Radiaant9@gmail.com</p>
       </div>
     </div>
   </div>
 
-  {/* Co-Founder Section */}
-  <div className="founder-container co-founder">
-    <h1>Co-founder of Radiacant Pranic Healing</h1>
-    
-    <div className="founder-content">
-      <div className="founder-profile">
-        <img 
-          src="/images/vishwanath-biwalkar.jpg" 
-          alt="Vishwanath Biwalkar"
-          className="founder-image"
-        />
-        <h2 className="founder-name">Vishwanath Biwalkar</h2>
-      </div>
-      
-      <div className="founder-contact">
-        <h2>Contact Us</h2>
-        <div className="contact-info">
-          <p>📍 103, Oyster C16; Himandani Estate, Thane W</p>
-          <p>📞 +91 98194870687</p>
-          <p>📧 Radiacant@gmail.com</p>
-        </div>
-        
-        <div className="founder-bio">
-          <p>Text</p>
-        </div>
-      </div>
-    </div>
+  <div className="founder-bio">
+    <p>
+      With over 12 years of experience in the field of energy healing, Instructor Sarika Biwalkar is a dedicated and compassionate healer committed to transforming lives. She is a Certified Pranic Psychotherapist, Certified Pranic Healer, and Associate Certified Pranic Healer, trained in the powerful teachings of Grand Master Choa Kok Sui. *know more*
+    </p>
+
+    <h3>Education</h3>
+    <p>Post graduate: M.COM<br/>Specialization: Human Resource</p>
+
+    <h3>Education in Pranic Healing</h3>
+    <ul>
+      <li>Pranic Healing Instructor</li>
+      <li>Certified Pranic Psychotherapist</li>
+      <li>Certified Pranic Healer</li>
+      <li>Associate Certified Pranic Healer</li>
+      <li>NLP Practitioner</li>
+      <li>Akashic Record Reader and Trainer</li>
+    </ul>
+
+    <h3>Additional Achievements / Courses</h3>
+    <ul>
+      <li>Angel and Tarot Card Reader</li>
+      <li>Bach Flower Therapist</li>
+      <li>Numerologist</li>
+    </ul>
   </div>
 </div>
 
+
+  {/* Co-Founder Section */}
+  <div className="founder-container">
+  <h1 className="founder-title">Founder of Radiaant Pranic healing</h1>
+
+  <div className="founder-content">
+    <div className="founder-profile">
+      <img 
+        src="/images/sarika_bilwalkar.jpg"
+        alt="Sarika Biwalkar"
+        className="founder-image"
+      />
+      <h2 className="founder-name">Sarika Biwalkar</h2>
+    </div>
+
+    <div className="founder-contact-box">
+      <h2 className="contact-title">Contact Us</h2>
+      <div className="contact-info">
+        <p>📍 103, Oyster CHS, Hiranandani Estate, Thane W</p>
+        <p>📞 +91 9819852675</p>
+        <p>📧 Radiaant9@gmail.com</p>
+      </div>
+    </div>
+  </div>
+
+  <div className="founder-bio">
+    <p>
+      With over 12 years of experience in the field of energy healing, Instructor Sarika Biwalkar is a dedicated and compassionate healer committed to transforming lives. She is a Certified Pranic Psychotherapist, Certified Pranic Healer, and Associate Certified Pranic Healer, trained in the powerful teachings of Grand Master Choa Kok Sui. *know more*
+    </p>
+
+    <h3>Education</h3>
+    <p>Post graduate: M.COM<br/>Specialization: Human Resource</p>
+
+    <h3>Education in Pranic Healing</h3>
+    <ul>
+      <li>Pranic Healing Instructor</li>
+      <li>Certified Pranic Psychotherapist</li>
+      <li>Certified Pranic Healer</li>
+      <li>Associate Certified Pranic Healer</li>
+      <li>NLP Practitioner</li>
+      <li>Akashic Record Reader and Trainer</li>
+    </ul>
+
+    <h3>Additional Achievements / Courses</h3>
+    <ul>
+      <li>Angel and Tarot Card Reader</li>
+      <li>Bach Flower Therapist</li>
+      <li>Numerologist</li>
+    </ul>
+  </div>
+</div>
+</div>
 
 
       {/* Projects & Events Section */}
