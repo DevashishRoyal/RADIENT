@@ -238,8 +238,9 @@ const slides = [
       <section className="master-section">
   <div className="master-container">
     <div className="master-image">
-      <div class="flower-frame">
-  <img src="/images/master.jpeg" alt="Master" class="flower-img" />
+      <div className="photo-wrapper">
+  <div className="flower-bg"></div>
+  <img src="images/master.jpeg" alt="Master" className="master-img" />
 </div>
     </div>
 

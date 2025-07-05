@@ -431,6 +431,32 @@
   max-width: 700px;
 }
 /* Flowe Design */
+.photo-wrapper {
+  position: relative;
+  width: 320px;
+  height: 320px;
+}
+
+.flower-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(""); /* Your flower SVG or PNG */
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.master-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  position: relative;
+  z-index: 2;
+}
 
 
 .subtitle {
