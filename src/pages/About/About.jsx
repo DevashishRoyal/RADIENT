@@ -19,7 +19,7 @@ const About = () => {
       id: 1,
       title: "Healing Hearts Initiative",
       description: "A community outreach program providing free panic healing sessions to underserved communities.",
-      image: "Project Image",
+      image: "/images/master.jpeg",
       date: "2023 - Ongoing",
       impact: "500+ Lives Touched",
     },
@@ -201,41 +201,33 @@ const About = () => {
 
 
           {/* Projects Section */}
-          
-          <div className="projects-section">
-            <div className="subsection-header">
-              {/* <h3>Healing Projects</h3>
-              <p>Community initiatives spreading healing and hope</p> */}
-            </div>
+ <div className="projects-section">
+  <div className="subsection-header">
+  </div>
 
-            <div className="projects-grid">
-              {projects.map((project, index) => (
-                <div
-                  key={project.id}
-                  className={`project-card animate-fadeInUp`}
-                  style={{ animationDelay: `${index * 0.2}s` }}
-                >
-                  <div className="project-image">
-                    <div className="image-placeholder">
-                      <h4>{project.image}</h4>
-                      <div className="project-overlay">
-                        <div className="project-icon"></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="project-content">
-                    {/* <div className="project-meta">
-                      <span className="project-date">{project.date}</span>
-                      <span className="project-impact">{project.impact}</span>
-                    </div> */}
-                    <h4>{project.title}</h4>
-                    <p>{project.description}</p>
-                    {/* <button className="btn btn-secondary">Learn More</button> */}
-                  </div>
-                </div>
-              ))}
+  <div className="projects-grid">
+    {projects.map((project, index) => (
+      <div
+        key={project.id}
+        className={`project-card animate-fadeInUp`}
+        style={{ animationDelay: `${index * 0.2}s` }}
+      >
+        <div className="project-image">
+          <div className="image-placeholder">
+            <img src={project.image} alt={project.title} className="project-img" />
+            <div className="project-overlay">
+              <div className="project-icon"></div>
             </div>
           </div>
+        </div>
+        <div className="project-content">
+          <h4>{project.title}</h4>
+          <p>{project.description}</p>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
 
           {/* Events Section */}
           {/* <div className="events-section">
