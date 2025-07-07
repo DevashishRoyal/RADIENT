@@ -1,0 +1,182 @@
+.page-container {
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  position: relative;
+  z-index: 1;
+  padding: 0 1rem;
+  overflow-x: hidden;
+}
+
+/* ==== BACKGROUND GLOWING DECOR ==== */
+.page-container::before,
+.page-container::after {
+  content: "";
+  position: fixed;
+  width: 300px;
+  height: 300px;
+  z-index: -1;
+  border-radius: 50%;
+  pointer-events: none;
+}
+.page-container::before {
+  top: -10%;
+  right: -10%;
+  background: radial-gradient(circle, rgba(0,255,200,0.2), transparent 70%);
+  animation: float 8s ease-in-out infinite;
+}
+.page-container::after {
+  bottom: -10%;
+  left: -10%;
+  background: radial-gradient(circle, rgba(0,150,255,0.2), transparent 70%);
+  animation: floatReverse 10s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(0); }
+  50% { transform: translateY(-15px) rotate(10deg); }
+}
+@keyframes floatReverse {
+  0%, 100% { transform: translateY(0) rotate(0); }
+  50% { transform: translateY(15px) rotate(-10deg); }
+}
+
+/* ==== HERO ==== */
+.hero-section {
+  position: relative;
+  height: 60vh;
+}
+.hero-image-wrapper {
+  height: 100%;
+  position: relative;
+}
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.6));
+  z-index: 1;
+}
+.hero-title {
+  position: absolute;
+  z-index: 2;
+  bottom: 30px;
+  left: 30px;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+  background: rgba(0,0,0,0.3);
+  padding: 0.5rem 1.5rem;
+  border-radius: 8px;
+}
+
+/* ==== SECTION BOX ==== */
+.box {
+  background: #e6fdfc;
+  border-radius: 16px;
+  padding: 3rem 2rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+  animation: fadeInUp 0.8s ease forwards;
+  opacity: 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #00796b, #2e7d32);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 2rem;
+  text-shadow: 0 0 6px rgba(0, 255, 170, 0.15);
+}
+
+/* ==== CIRCLES ==== */
+.circle-carousel {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6rem;
+  margin-bottom: 2rem;
+}
+.circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #e0ffff, #b2ebf2);
+  box-shadow: 0 4px 20px rgba(0, 255, 195, 0.15);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+.circle:hover {
+  transform: scale(1.05);
+}
+.circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* ==== CONTENT === */
+.content {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.quote-box, .links-box {
+  flex: 1 1 300px;
+  background: #ffffffcc;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 255, 200, 0.07);
+  border: 1px solid rgba(0, 200, 150, 0.15);
+}
+.links-box ul {
+  list-style: none;
+  padding-left: 1rem;
+}
+.links-box li {
+  margin-bottom: 0.6rem;
+}
+.links-box a {
+  color: #1a1a8c;
+  text-decoration: none;
+  font-weight: 500;
+}
+.links-box a:hover {
+  color: #00796b;
+  text-shadow: 0 0 4px rgba(0, 255, 200, 0.2);
+}
+
+/* ==== RESPONSIVE ==== */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+    left: 16px;
+    bottom: 20px;
+    padding: 0.5rem 1rem;
+  }
+  .circle-carousel {
+    gap: 1rem;
+  }
+  .circle {
+    width: 100px;
+    height: 100px;
+  }
+  .content {
+    flex-direction: column;
+  }
+}

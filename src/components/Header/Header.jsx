@@ -16,7 +16,7 @@ const Header = () => {
     { label: "Home", to: "/" },
     { label: "About", to: "/about" },
     { label: "Courses", to: "/Courses" },
-    { label: "Testimonies", href: "#testimonies" },
+    { label: "Testimonies", href: "/testimonies" },
     { label: "Ashram", href: "#ashram" },
     { label: "Research", href: "#research" },
     { label: "Contribution", href: "#contribution" },
@@ -52,10 +52,10 @@ const Header = () => {
           </Link>
            
             <button className="menu-toggle" onClick={toggleMenu}>
-  <span />
-  <span />
-  <span />
-</button>
+              <span />
+              <span />
+              <span />
+            </button>
 
           </div>
         </div>

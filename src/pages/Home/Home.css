@@ -303,12 +303,11 @@
 /* what is pranic section */
 
 
-
-/* Master Section-new */
 .master-section {
   padding: 60px 20px;
-  background-color: #fff;
+  background-color: #f7faff;
   font-family: 'Segoe UI', sans-serif;
+  position: relative;
 }
 
 .master-container {
@@ -327,19 +326,6 @@
   text-align: center;
 }
 
-.master-image img {
-  width: 100%;
-  max-width: 280px;
-  border-radius: 50%;
-  border: 8px solid #fff;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-}
-
-.master-content {
-  flex: 1 1 500px;
-  max-width: 700px;
-}
-/* Flowe Design */
 .photo-wrapper {
   position: relative;
   width: 320px;
@@ -352,10 +338,11 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(""); /* Your flower SVG or PNG */
+  background-image: url('/images/mandala.svg'); /* Replace with your mandala */
   background-size: cover;
   background-position: center;
   z-index: 1;
+  opacity: 0.2;
 }
 
 .master-img {
@@ -365,109 +352,90 @@
   object-fit: cover;
   position: relative;
   z-index: 2;
+  box-shadow: 0 0 20px rgba(0, 128, 128, 0.3);
 }
 
+.master-content {
+  flex: 1 1 500px;
+  max-width: 700px;
+}
 
 .subtitle {
-  font-size: 1rem;
-  font-weight: bold;
-  color: #003366;
+  font-size: 1.2rem;
+  font-family: 'Patrick Hand', cursive;
+  color: #2d69e0;
   margin-bottom: 10px;
-  text-transform: uppercase;
 }
 
 .title {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: bold;
-  color: #2e8b57;
+  color: #66cc33;
   margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.quote-box {
+  border: 2px solid #9d4edd;
+  padding: 20px;
+  margin: 20px 0;
+  font-size: 1.1rem;
+  font-style: italic;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(157, 78, 221, 0.1);
+  position: relative;
+}
+
+.lotus {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  font-size: 1.5rem;
+  color: #9d4edd;
 }
 
 .description {
   font-size: 1rem;
   line-height: 1.6;
-  color: #444;
-  margin-bottom: 30px;
+  color: #333;
   text-align: justify;
+  margin-bottom: 30px;
 }
 
 .know-more {
-  padding: 10px 20px;
-  background-color: #fff;
-  color: #333;
-  border: 1px solid #999;
+  padding: 12px 24px;
+  background-color: #66cc33;
+  color: #fff;
   font-weight: bold;
-  cursor: pointer;
-  transition: 0.3s;
+  border: none;
+  border-radius: 6px;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 12px rgba(102, 204, 51, 0.4);
 }
 
 .know-more:hover {
-  background-color: #2e8b57;
-  color: #fff;
+  background-color: #57b42c;
 }
 
-/* 🔁 Responsive Design */
+/* Responsive */
 @media (max-width: 768px) {
   .master-container {
     flex-direction: column;
     text-align: center;
   }
 
+  .photo-wrapper {
+    width: 260px;
+    height: 260px;
+  }
+
   .title {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
 
   .subtitle {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
-
-  .description {
-    font-size: 0.95rem;
-  }
-
-  .know-more {
-    margin: 0 auto;
-  }
-}
-
-
-
-
-.btn-primary {
-  background: linear-gradient(135deg, #4a90e2, #7b68ee);
-  color: white;
-  border: none;
-}
-
-.btn-primary:hover {
-  background: linear-gradient(135deg, #3b7dd8, #6a5be0);
-}
-
-.btn-secondary {
-  background: #ffffff;
-  border: 2px solid #7b68ee;
-  color: #7b68ee;
-}
-
-.btn-secondary:hover {
-  background: #f1efff;
-}
-
-.scroll-indicator {
-  position: absolute;
-  bottom: 30px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #4a5568;
-  z-index: 2;
-}
-
-.scroll-indicator span {
-  font-size: 0.9rem;
-  opacity: 0.7;
 }
 
 
@@ -475,123 +443,129 @@
 
 
 /* Panic-Healing */
-/* === Pranic Healing Section === */
-.pranic-healing-section {
+.pranic-section {
   padding: 60px 20px;
-  background-color: #ffffff;
+  background: #fff;
   font-family: 'Segoe UI', sans-serif;
 }
 
-.pranic-healing-container {
-  max-width: 1200px;
-  margin: 0 auto;
+.pranic-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 3px;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
 }
 
-.pranic-healing-text {
+.pranic-content {
   flex: 1 1 500px;
+  max-width: 700px;
 }
 
-.pranic-healing-title {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #5b9a4c; /* Light green heading like in image */
-  margin-bottom: 16px;
+.pranic-image {
+  flex: 1 1 300px;
+  max-width: 350px;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #007b5f;
+  margin-bottom: 10px;
   text-transform: uppercase;
 }
 
-.pranic-healing-description {
-  color: #4a4a4a;
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #32cd32;
+  margin-bottom: 20px;
+}
+
+.description {
   font-size: 1rem;
   line-height: 1.6;
-  margin-bottom: 24px;
-  max-width: 95%;
+  color: #444;
+  text-align: justify;
 }
 
-.pranic-healing-button {
-  padding: 10px 18px;
-  font-size: 0.95rem;
-  color: #333;
-  background-color: transparent;
-  border: 1px solid #333;
-  border-radius: 3px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.pranic-healing-button:hover {
-  background-color: #5b9a4c;
-  color: #fff;
-  border-color: #5b9a4c;
-}
-
-/* === Image Side === */
-.pranic-healing-image-wrapper {
-  flex: 1 1 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.pranic-healing-image-frame {
+/* Circle Image & Mandala */
+.circle-wrapper {
   position: relative;
-  width: 400px; /* Increased from 260px */
-  height: 320px; /* Increased from 260px */
+  width: 280px;
+  height: 280px;
+  margin: auto;
+}
+
+.mandala-bg {
+  background-image: url('/images/mandala-pink.png'); /* your mandala background */
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: 320px;
+  height: 320px;
+  z-index: 1;
+}
+
+.pranic-img {
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
-  background: url('/images/mandala.svg') no-repeat center center;
-  background-size: contain;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.pranic-healing-image {
-  width: 400px; /* Increased from 180px */
-  height: 300px; /* Increased from 180px */
-  border-radius: 30%;
   object-fit: cover;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
+/* Healing Points Section */
+.healing-points {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 50px;
+  padding: 0 20px;
+}
 
-/* === Responsive === */
+.point {
+  width: 280px;
+  text-align: center;
+}
+
+.point img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.point p {
+  font-size: 0.95rem;
+  color: #444;
+  margin-top: 15px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
-  .pranic-healing-section {
-    padding: 30px 20px; /* Reduce top & bottom padding from 60px to 30px */
-  }
-    .pranic-healing-text {
-    flex: none;
-    width: 100%;
-    padding-bottom: 0;
-    margin-bottom: 0;
-  }
-
-  .pranic-healing-container {
-    flex-direction: column-reverse;
+  .pranic-container {
+    flex-direction: column;
     text-align: center;
   }
 
-  .pranic-healing-description {
-    max-width: 100%;
-    text-align: center;
+  .title {
+    font-size: 1.5rem;
   }
 
-  .pranic-healing-title {
-    font-size: 1.3rem;
-  }
-
-  .pranic-healing-image-frame {
-    width: 260px;
-    height: 260px;
-  }
-
-  .pranic-healing-image {
-    width: 200px;
-    height: 200px;
+  .description {
+    font-size: 0.95rem;
   }
 }
 

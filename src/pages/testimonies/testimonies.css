@@ -1,0 +1,222 @@
+/* ====== Testimonials Section with Healing Theme ====== */
+.testimonials-section {
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  background: linear-gradient(135deg, #e3f9f3, #e8f5fa); /* soft green to blue */
+  position: relative;
+  overflow: hidden;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* === Animation Classes for Fade-In Effects === */
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 0.8s ease-out forwards;
+}
+
+.delay-1 {
+  animation-delay: 0.3s;
+}
+
+
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* === Advanced Shadows + Hover Glow === */
+.video-section {
+  background: linear-gradient(to bottom right, #ffffffee, #f4fff8);
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 40px rgba(0, 200, 150, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1;
+  backdrop-filter: blur(6px);
+  border: 1px solid #e0f2f1;
+}
+
+.video-section:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 12px 60px rgba(0, 200, 150, 0.2);
+}
+
+/* === Title Animation Shine Effect === */
+.main-heading {
+  background: linear-gradient(to right, #2e7d32, #00796b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+/* === Add wave separator === */
+.testimonials-section::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  background: url('/wave-light.svg') no-repeat center bottom;
+  background-size: cover;
+  pointer-events: none;
+  z-index: 0;
+}
+
+
+/* ====== Header Image and Title ====== */
+.testimonials-header {
+  position: relative;
+  text-align: center;
+  margin-bottom: 2rem;
+  z-index: 1;
+}
+
+.header-image {
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  animation: zoomIn 1s ease-in-out;
+}
+
+.testimonials-title {
+  position: absolute;
+  bottom: 16px;
+  left: 24px;
+  font-size: 2rem;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+/* ====== Section Heading ====== */
+.main-heading {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  color: #2e7d32;
+  position: relative;
+  z-index: 1;
+}
+
+/* ====== Content Wrapper to Center Grid ====== */
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* ====== Video Grid ====== */
+.videos-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* ====== Video Card Section ====== */
+.video-section {
+  background-color: #ffffffd9;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  animation: fadeSlideUp 0.6s ease forwards;
+  opacity: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1;
+}
+
+.video-section:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.15);
+}
+
+/* ====== Video Card Content ====== */
+.video-card {
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.video-title {
+  margin-top: 1rem;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #1b5e20;
+}
+
+/* ====== Embedded Video Container ====== */
+.video-embed-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  background-color: #c8e6c9;
+}
+
+.video-embed-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  opacity: 0;
+  animation: fadeIframe 1s forwards;
+}
+
+/* ====== Animations ====== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes zoomIn {
+  from { transform: scale(1.05); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fadeSlideUp {
+  from { transform: translateY(40px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeIframe {
+  to { opacity: 1; }
+}
+
+/* ====== Responsive Enhancements ====== */
+@media (max-width: 768px) {
+  .testimonials-title {
+    font-size: 1.5rem;
+    left: 16px;
+    bottom: 12px;
+  }
+
+  .main-heading {
+    font-size: 1.6rem;
+  }
+
+  .video-title {
+    font-size: 1rem;
+  }
+
+  .videos-wrapper {
+    gap: 1.5rem;
+  }
+}

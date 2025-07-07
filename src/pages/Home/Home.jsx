@@ -195,65 +195,36 @@ const slides = [
       </section>
 
       {/* Master Section */}
-      {/* <section className="master-section section">
-        <div className="container">
-          <div className="master-content">
-            <div className="master-image animate-fadeInLeft">
-              <div className="image-frame">
-                <div className="master-photo">
-                  <img src="images/master.jpeg" alt="Spiritual Master" className="master-image" />
-                </div>
-                <div className="image-glow"></div>
-              </div>
-            </div>
-
-            <div className="master-details animate-fadeInRight">
-              <div className="section-badge">
-                <span>Meet Our Master</span>
-              </div>
-              <h2 className="gradient-text">Guiding Light of Healing</h2>
-              <div className="master-info">
-                <h3>Master  Choa Kok Sui (GMCKS) </h3>
-                <p className="master-title">Spiritual Healer & Life Transformation Guide</p>
-
-                <div className="master-description">
-                  <p>
-                    Grand Master Choa Kok Sui (GMCKS) was a visionary spiritual teacher, scientist, and humanitarian who founded Modern Pranic Healing and Arhatic Yoga. Through years of dedicated research and spiritual practice, he developed a structured, scientific, and highly effective no-touch energy healing system that is now practiced in over 120 countries.
-
-                  </p>
-
-                  <p>
-                    Beyond healing, Grand Master Choa’s mission was to empower individuals to live more meaningful lives through inner purification, service, and spiritual growth. His legacy lives on through the World Pranic Healing Foundation and the Institute for Inner Studies.
-                  </p>
-                </div>
-                <div className="master-actions">
-                  <button className="btn btn-secondary">Learn More</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
-
-      <section className="master-section">
+<section className="master-section" data-aos="fade-up">
   <div className="master-container">
-    <div className="master-image">
+    <div className="master-image" data-aos="zoom-in">
       <div className="photo-wrapper">
-  <div className="flower-bg"></div>
-  <img src="images/master.jpeg" alt="Master" className="master-img" />
-</div>
+        <div className="flower-bg"></div>
+        <img src="/images/master1.png" alt="Grand Master" className="master-img" />
+      </div>
     </div>
 
     <div className="master-content">
-      <h4 className="subtitle">THE FOUNDER OF MODERN PRANIC HEALING & ARHATIC YOGA</h4>
-      <h2 className="title">GRAND MASTER CHOA KOK SUI</h2>
+      <h4 className="subtitle">The founder of modern Pranic Healing and Arhatic Yoga</h4>
+      <h2 className="title">Grand Master Choa Kok Sui</h2>
+      
+      <div className="quote-box" data-aos="fade-left">
+        <span className="lotus">🌸</span>
+        <em>
+          “Regulate your mind. Do not worry excessively about the future.
+          If you have done everything that has to be done,
+          the future will take care of itself.”
+        </em>
+      </div>
+
       <p className="description">
-        Beloved spiritual Teacher to thousands across the globe, Grandmaster Choa Kok Sui developed and
-        founded two major schools: Pranic Healing and Arhatic Yoga. The two schools that are
-        inextricably connected, yet also have distinct personalities. In Pranic Healing, the individual
-        uses subtle energy and the knowledge of the energy body and the chakras to heal physical and
-        psychological ailments.
+        Grand Master Choa Kok Sui (GMCKS) was a visionary spiritual teacher,
+        scientist, and humanitarian who founded Modern Pranic Healing and
+        Arhatic Yoga. Through years of dedicated research and spiritual
+        practice, he developed a structured, scientific, and highly effective
+        no-touch energy healing system that is now practiced in over 120 countries.
       </p>
+
       <button className="know-more">KNOW MORE</button>
     </div>
   </div>
@@ -263,24 +234,49 @@ const slides = [
 
 
 
-            <section className="pranic-healing-section">
-  <div className="pranic-healing-container">
-    <div className="pranic-healing-text">
-      <h2 className="pranic-healing-title">WHAT IS PRANIC HEALING?</h2>
-      <p className="pranic-healing-description">
-        Pranic Healing® is a no-touch method of healing yourself and others by using powerful and
-        simple energy techniques given by the school’s founder, Grand Master Choa Kok Sui (GMCKS).
+<section className="pranic-section">
+  <div className="pranic-container">
+    
+    {/* Left Text */}
+    <div className="pranic-content">
+      <h4 className="subtitle">SCIENTIFIC ENERGY HEALING</h4>
+      <h2 className="title">What is Pranic Healing</h2>
+      <p className="description">
+        Pranic Healing is a modern, fresh, and scientific approach towards energy and healing.
+        It is a powerful and effective no-touch-no-drug energy healing technique. It blends
+        ancient methods rediscovered, tested over 20 years with success by 
+        <strong> Grand Master Choa Kok Sui</strong> — founder of Modern Pranic Healing & Arhatic Yoga. 
+        Pranic Healing became a science in 1987.
       </p>
-      <button className="pranic-healing-button">KNOW MORE</button>
     </div>
 
-    <div className="pranic-healing-image-wrapper">
-      <div className="pranic-healing-image-frame">
-        <img src="images/pranic.jpg" alt="Pranic Healing Hand" className="pranic-healing-image" />
+    {/* Right Mandala Image */}
+    <div className="pranic-image">
+      <div className="circle-wrapper">
+        <div className="mandala-bg"></div>
+        <img src="/images/pranic_Healing.png" alt="Healing Hands" className="pranic-img" />
       </div>
     </div>
   </div>
+
+  {/* Quotes Below */}
+  <div className="healing-points">
+    <div className="point">
+      <img src="/images/pranic1.png" alt="Master with aura" />
+      <p>« Master Choa developed an easy-to-learn scientific system which improves well-being and quality of life.</p>
+    </div>
+    <div className="point">
+      <img src="/images/pranic2.png" alt="Energy hand" />
+      <p>« Pranic Healing follows the principle that the body is a self-repairing entity, healed through energy transference.</p>
+    </div>
+    <div className="point">
+      <img src="/images/pranic3.png" alt="Healing light" />
+      <p>« With Pranic Healing, we normalize the body's energy field by removing blockages and restoring energy levels.</p>
+    </div>
+  </div>
 </section>
+
+
 
             {/* What is panic Healing */}
             {/* <section className="master-section section">
