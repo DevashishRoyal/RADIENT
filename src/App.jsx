@@ -7,6 +7,7 @@ import Courses from "./pages/Courses/Courses.jsx"
 import Contact from "./pages/Contact/Contact.jsx"
 import "./App.css"
 import TestimonialsSection from "./pages/testimonies/testimonies.jsx"
+import AshramSection from "./pages/Ashram/Ashram.jsx"
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/courses" element={<Courses />} />
           <Route path="/testimonies" element={<TestimonialsSection />} />
+          <Route path="/ashram" element={<AshramSection />} />
 
         </Routes>
       </main>

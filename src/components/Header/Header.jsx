@@ -17,7 +17,7 @@ const Header = () => {
     { label: "About", to: "/about" },
     { label: "Courses", to: "/Courses" },
     { label: "Testimonies", href: "/testimonies" },
-    { label: "Ashram", href: "#ashram" },
+    { label: "Ashram", href: "/ashram" },
     { label: "Research", href: "#research" },
     { label: "Contribution", href: "#contribution" },
   ]
