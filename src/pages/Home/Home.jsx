@@ -116,13 +116,6 @@ const slides = [
               <h2 className="slide-subtitle">{slide.subtitle}</h2>
               <p className="slide-description">{slide.description}</p>
             </div>
-
-            {/* Only render image if provided */}
-            {/* {slide.image && (
-              <div className="slide-image">
-                <img  src={`/${slide.image}`} alt={slide.title} className="slide-img" />
-              </div>
-            )} */}
           </div>
         </div>
       ))}
@@ -373,8 +366,8 @@ const slides = [
       <section className="testimonials section">
         <div className="container">
           <div className="section-header">
-            <h2>Healing Stories</h2>
-            <p>Read about the transformative journeys of our clients</p>
+            <h2>Courses We Offer</h2>
+            {/* <p>Read about the transformative journeys of our clients</p> */}
           </div>
 
           <div className="testimonials-grid">
@@ -390,6 +383,26 @@ const slides = [
           </div>
         </div>
       </section>
+
+      {/* <section class="courses-offer">
+  <h2 class="section-title">Courses We Offer</h2>
+  <div class="course-grid">
+    <div class="course-item">
+      <img src="prosperity.jpg" alt="Prosperity Series" />
+      <p>prosperity series</p>
+    </div>
+    <div class="course-item">
+      <img src="healing.jpg" alt="Healing Series" />
+      <p>healing series</p>
+    </div>
+    <div class="course-item">
+      <img src="spirituality.jpg" alt="Spirituality Series" />
+      <p>spirituality series</p>
+    </div>
+  </div>
+</section> */}
+
+
     </div>
   )
 }
