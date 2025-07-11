@@ -237,7 +237,7 @@ const slides = [
       <p className="description">
         Pranic Healing is a modern, fresh, and scientific approach towards energy and healing.
         It is a powerful and effective no-touch-no-drug energy healing technique. It blends
-        ancient methods rediscovered, tested over 20 years with success by 
+        ancient methods that were rediscovered, tested over 20 years with success by 
         <strong> Grand Master Choa Kok Sui</strong> — founder of Modern Pranic Healing & Arhatic Yoga. 
         Pranic Healing became a science in 1987.
       </p>
@@ -255,16 +255,16 @@ const slides = [
   {/* Quotes Below */}
   <div className="healing-points">
     <div className="point">
-      <img src="/images/pranic1.png" alt="Master with aura" />
-      <p>« Master Choa developed an easy-to-learn scientific system which improves well-being and quality of life.</p>
+      <img src="/images/pranic1.jpg" alt="Master with aura" />
+      <p>«  Master Choa developed an easy-to-learn scientific system which has shown to have positive results on the overall quality of life and well-being of an individual..</p>
     </div>
     <div className="point">
-      <img src="/images/pranic2.png" alt="Energy hand" />
-      <p>« Pranic Healing follows the principle that the body is a self-repairing entity, healed through energy transference.</p>
+      <img src="/images/pranic2.jpg" alt="Energy hand" />
+      <p>« Pranic Healing is based on the fundamental principle that the body is a self-repairing entity that is capable of healing itself. . The principle behind pranic healing is transference of energy.</p>
     </div>
     <div className="point">
-      <img src="/images/pranic3.png" alt="Healing light" />
-      <p>« With Pranic Healing, we normalize the body's energy field by removing blockages and restoring energy levels.</p>
+      <img src="/images/pranic3.jpg" alt="Healing light" />
+      <p>« With Pranic Healing, we are  assisting the body’s energy system to normalize so that the body can heal itself. If there are blockages in the energy field, the healer removes these; if there is less energy we give some back.</p>
     </div>
   </div>
 </section>
@@ -317,7 +317,7 @@ const slides = [
       
 
       {/* Features Section */}
-      <section className="features section">
+      {/* <section className="features section">
         <div className="container">
           <div className="section-header">
             <h2>Our Healing Approach</h2>
@@ -336,14 +336,14 @@ const slides = [
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       
       {/* Video Section */}
       <section className="video-section section">
         <div className="container">
           <div className="video-content">
-            <h2>Gentle Healing Videos</h2>
+            <h2>Sarika ma’am  Videos</h2>
             <p>Watch our guided sessions and healing techniques</p>
 
             <div className="video-container" >
@@ -362,12 +362,37 @@ const slides = [
         </div>
       </section>
 
+
+      <section class="courses-section" id="courses">
+  <h2 class="courses-title">Courses We Offer</h2>
+  <div class="course-cards">
+    <a href="#prosperity" class="course-card">
+      <div class="course-circle">
+        <img src="/images/Course1.jpg" alt="Prosperity Series" />
+      </div>
+      <p>Prosperity Series</p>
+    </a>
+    <a href="#healing" class="course-card">
+      <div class="course-circle">
+        <img src="/images/Course2.jpg" alt="Healing Series" />
+      </div>
+      <p>Healing Series</p>
+    </a>
+    <a href="#spirituality" class="course-card">
+      <div class="course-circle">
+        <img src="/images/Course3.jpg" alt="Spirituality Series" />
+      </div>
+      <p>Spirituality Series</p>
+    </a>
+  </div>
+</section>
+
+
       {/* Testimonials Section */}
-      <section className="testimonials section">
+      {/* <section className="testimonials section">
         <div className="container">
           <div className="section-header">
             <h2>Courses We Offer</h2>
-            {/* <p>Read about the transformative journeys of our clients</p> */}
           </div>
 
           <div className="testimonials-grid">
@@ -382,7 +407,7 @@ const slides = [
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* <section class="courses-offer">
   <h2 class="section-title">Courses We Offer</h2>

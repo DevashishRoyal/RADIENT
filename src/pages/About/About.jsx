@@ -232,38 +232,34 @@ const About = () => {
 
       {/* Projects & Events Section */}
       <section className="projects-events section">
-        <div className="container">
-          
-          {/* <img className="project-event-img" src="/image/sliders/img_jpg"></img> */}
-          <div className="section-header">
-            <h2 className="gradient-text">Events Worked On</h2>
-            {/* <p></p> */}
-          </div>
-                  </div>
+  <div className="event-banner">
+    <img className="event-image" src="/images/event.jpg" alt="Event" />
 
-                </section>
+    <div className="event-text-overlay">
+      <h2 className="gradient-text">Events Worked On</h2>
+      {/* <p>Optional subtitle here</p> */}
+    </div>
+  </div>
+
+
 
 
           {/* Projects Section */}
           
-     <div className="projects-section">
-  <div className="subsection-header">
-  </div>
-
+    <div className="projects-section">
   <div className="projects-grid">
     {projects.map((project, index) => (
       <div
         key={project.id}
-        className={`project-card animate-fadeInUp`}
+        className="project-card"
         style={{ animationDelay: `${index * 0.2}s` }}
       >
-        <div className="project-image">
-          <div className="image-placeholder">
-            <img src={project.image} alt={project.title} className="project-img" />
-            <div className="project-overlay">
-              <div className="project-icon"></div>
-            </div>
-          </div>
+        <div className="project-image-wrapper">
+          <img
+            src={project.image}
+            alt={project.title}
+            className="project-img-fixed"
+          />
         </div>
         <div className="project-content">
           <h4>{project.title}</h4>
@@ -273,6 +269,8 @@ const About = () => {
     ))}
   </div>
 </div>
+</section>
+
 
           {/* Events Section */}
           {/* <div className="events-section">

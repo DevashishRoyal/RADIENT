@@ -7,6 +7,7 @@
   height: 100vh;
   position: relative;
   overflow: hidden;
+  margin-top: 13px;
 }
 
 .slider-container {
@@ -34,27 +35,25 @@
 
 /* ========== SLIDE CONTENT ========== */
 .slide-content {
-  display: grid;
+ display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 80px;
+  gap: 100px; /* increased gap */
   align-items: center;
-  max-width: 1200px;
+  max-width: 1400px; /* wider max width */
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 60px;
   height: 100%;
 }
 
 /* ========== TEXT CONTAINER WITH ANIMATION ========== */
 .slide-text {
   z-index: 2;
-  opacity: 0;
-  transform: translateX(-30px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
-  background: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(6px);
-  padding: 30px;
-  border-radius: 20px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.5); /* darker for more contrast */
+  backdrop-filter: blur(8px);
+  padding: 40px;
+  border-radius: 24px;
+  box-shadow: 0 6px 40px rgba(0, 0, 0, 0.3);
+  max-width: 600px;
 }
 
 /* Fade in text only for active slide */
@@ -92,9 +91,9 @@
 
 /* ========== TEXT STYLING ========== */
 .slide-title {
-  font-size: 4rem;
-  font-weight: 800;
-  margin-bottom: 20px;
+  font-size: 4.5rem;
+  font-weight: 900;
+  margin-bottom: 25px;
   line-height: 1.1;
 }
 
@@ -106,24 +105,24 @@
 }
 
 .slide-subtitle {
-  font-size: 1.8rem;
-  color: rgb(242, 240, 247);
+  font-size: 2rem;
+  color: #ffffff;
   margin-bottom: 20px;
   font-weight: 600;
-  text-shadow: 0 2px 4px rgba(249, 249, 91, 0.3);
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
 }
 
 .slide-description {
-  font-size: 1.2rem;
-  color: rgba(255, 255, 255, 0.92);
-  line-height: 1.6;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  font-size: 1.3rem;
+  color: rgba(255, 255, 255, 0.95);
+  line-height: 1.8;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
 }
 
 /* ========== IMAGE SECTION ========== */
 .slide-image img {
   width: 100%;
-  height: 300px;
+  height: 450px;
   object-fit: cover;
   border-radius: 16px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
@@ -424,59 +423,65 @@
 
 
 
-
-
-/* Panic-Healing */
+/* Pranic Healing Section */
+/* Pranic Healing Section */
+/* Pranic Healing Section */
 .pranic-section {
-  padding: 60px 20px;
-  background: #fff;
+  padding: 100px 20px;
+  background: linear-gradient(180deg, #e9fcf5 0%, #f1fefb 100%);
   font-family: 'Segoe UI', sans-serif;
+  color: #2c3e50;
 }
 
+/* Container */
 .pranic-container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 60px;
   max-width: 1200px;
   margin: auto;
 }
 
+/* Textual Content */
 .pranic-content {
   flex: 1 1 500px;
   max-width: 700px;
+  padding: 20px;
 }
 
+.subtitle {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #4ebfa7;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: #1d9e87;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 1.05rem;
+  color: #444;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+/* Image & Mandala */
 .pranic-image {
   flex: 1 1 300px;
   max-width: 350px;
   text-align: center;
 }
 
-.subtitle {
-  font-size: 1rem;
-  font-weight: bold;
-  color: #007b5f;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-}
-
-.title {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #32cd32;
-  margin-bottom: 20px;
-}
-
-.description {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #444;
-  text-align: justify;
-}
-
-/* Circle Image & Mandala */
 .circle-wrapper {
   position: relative;
   width: 280px;
@@ -485,15 +490,18 @@
 }
 
 .mandala-bg {
-  background-image: url('/images/mandala-pink.png'); /* your mandala background */
-  background-size: cover;
+  background-image: url('/images/mandala-pink.png'); /* or use the updated version to match logo */
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
   position: absolute;
-  top: -20px;
-  left: -20px;
-  width: 320px;
-  height: 320px;
+  top: -25px;
+  left: -25px;
+  width: 330px;
+  height: 330px;
   z-index: 1;
+  opacity: 0.9;
+  filter: drop-shadow(0 0 15px rgba(255, 192, 203, 0.25));
 }
 
 .pranic-img {
@@ -503,41 +511,52 @@
   object-fit: cover;
   position: relative;
   z-index: 2;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  border: 5px solid #ffffff;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
 }
 
-/* Healing Points Section */
+/* Healing Points */
 .healing-points {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
-  margin-top: 50px;
+  margin-top: 70px;
   padding: 0 20px;
 }
 
 .point {
   width: 280px;
   text-align: center;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.point:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.12);
 }
 
 .point img {
   width: 100%;
   height: 200px;
   object-fit: cover;
-  border-radius: 10px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
 }
 
 .point p {
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: #444;
   margin-top: 15px;
-  line-height: 1.6;
+  line-height: 1.7;
   text-align: justify;
 }
 
-/* Responsive */
+/* Responsive Design */
 @media (max-width: 768px) {
   .pranic-container {
     flex-direction: column;
@@ -545,14 +564,25 @@
   }
 
   .title {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .description {
-    font-size: 0.95rem;
+    font-size: 1rem;
+  }
+
+  .circle-wrapper {
+    width: 220px;
+    height: 220px;
+  }
+
+  .mandala-bg {
+    width: 260px;
+    height: 260px;
+    top: -20px;
+    left: -20px;
   }
 }
-
 
 
 /* Features Section Styles */
@@ -836,6 +866,187 @@
 }
 
 /* Cources Offer */
+
+.courses-section {
+  padding: 80px 20px;
+  background: linear-gradient(180deg, #e9fcf5, #f0faff);
+  text-align: center;
+}
+
+.courses-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #009e88;
+  margin-bottom: 60px;
+  position: relative;
+  display: inline-block;
+}
+
+.courses-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #00c9a7;
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+.course-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+
+.course-card {
+  width: 180px;
+  text-decoration: none;
+  color: #333;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-8px);
+}
+
+.course-circle {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: auto;
+  box-shadow: 0 0 25px rgba(0, 222, 176, 0.25);
+  border: 4px solid #e6fffa;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(0, 222, 176, 0.1) 100%);
+}
+
+.course-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.course-card:hover .course-circle img {
+  transform: scale(1.05);
+}
+
+.course-card p {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-top: 15px;
+  text-transform: capitalize;
+  color: #007f6d;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .course-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .course-card {
+    width: 220px;
+  }
+
+  .course-circle {
+    width: 160px;
+    height: 160px;
+  }
+
+  .courses-title {
+    font-size: 2rem;
+  }
+}
+
+.courses-section {
+  padding: 80px 20px;
+  background: linear-gradient(to bottom, #e6fef4, #e9f9fb);
+  text-align: center;
+}
+
+.courses-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #009e88;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.courses-title::after {
+  content: '';
+  width: 60px;
+  height: 4px;
+  background-color: #00c9a7;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 3px;
+}
+
+.course-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 350px; /* Increased gap */
+}
+
+.course-card {
+  text-decoration: none;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.course-card:hover {
+  transform: scale(1.05);
+}
+
+.course-circle {
+  width: 220px; /* Increased size */
+  height: 220px; /* Increased size */
+  border-radius: 50%;
+  overflow: hidden;
+  margin: auto;
+  border: 4px solid #d9f8f0;
+  box-shadow: 0 0 40px rgba(0, 255, 204, 0.3);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1), rgba(0, 222, 176, 0.1));
+  transition: all 0.3s ease;
+}
+
+.course-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.course-card p {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  color: #007f6d;
+  font-weight: 600;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .course-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .course-circle {
+    width: 180px;
+    height: 180px;
+  }
+
+  .courses-title {
+    font-size: 2.2rem;
+  }
+}
+
   /* .courses-offer {
   text-align: center;
   padding: 60px 20px;
