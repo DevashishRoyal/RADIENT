@@ -1,0 +1,318 @@
+/* ResearchPage.css */
+.research-page {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Hero Section - Matching your site's style */
+.research-hero {
+  position: relative;
+  height: 60vh;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  width: 90%;
+  max-width: 800px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Main Content Container */
+.research-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Introduction Section */
+.research-intro {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.intro-image {
+  flex: 1;
+}
+
+.intro-image img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.intro-text {
+  flex: 1;
+}
+
+.intro-text h2 {
+  font-size: 2.2rem;
+  color: #2c7873;
+  margin-bottom: 20px;
+}
+
+.intro-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* Research Areas */
+.research-areas {
+  margin-bottom: 60px;
+}
+
+.research-areas h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #2c7873;
+  margin-bottom: 40px;
+}
+
+.area-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.area-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.area-card:hover {
+  transform: translateY(-10px);
+}
+
+.area-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.area-card h3 {
+  padding: 20px 20px 10px;
+  color: #004445;
+  font-size: 1.4rem;
+}
+
+.area-card p {
+  padding: 0 20px 20px;
+}
+
+/* Research Findings */
+.research-findings {
+  margin-bottom: 60px;
+}
+
+.research-findings h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #2c7873;
+  margin-bottom: 40px;
+}
+
+.finding-cards {
+  display: grid;
+  gap: 30px;
+}
+
+.finding-card {
+  display: flex;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.finding-image {
+  flex: 1;
+}
+
+.finding-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.finding-details {
+  flex: 2;
+  padding: 30px;
+}
+
+.finding-details h3 {
+  font-size: 1.5rem;
+  color: #004445;
+  margin-bottom: 10px;
+}
+
+.finding-details .meta {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* Research Methods */
+.research-methods {
+  margin-bottom: 60px;
+}
+
+.research-methods h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #2c7873;
+  margin-bottom: 40px;
+}
+
+.method-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.method-step {
+  text-align: center;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.method-step img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin: 20px 0;
+}
+
+.step-number {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: #2c7873;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  line-height: 40px;
+  font-size: 1.2rem;
+}
+
+.method-step h3 {
+  font-size: 1.3rem;
+  color: #004445;
+  margin: 15px 0;
+}
+
+/* Call to Action */
+.research-cta {
+  background: #2c7873;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.cta-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.research-cta h2 {
+  color: white;
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.research-cta p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  background: white;
+  color: #2c7873;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #004445;
+  color: white;
+  transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .research-intro {
+    flex-direction: column;
+  }
+  
+  .finding-card {
+    flex-direction: column;
+  }
+  
+  .finding-image {
+    height: 200px;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+  
+  .research-areas h2,
+  .research-findings h2,
+  .research-methods h2,
+  .research-cta h2 {
+    font-size: 1.8rem;
+  }
+}

@@ -1,126 +1,296 @@
-/* General Styling */
+/* Ashram.css */
+:root {
+  --teal-500: #1abc9c;
+  --teal-600: #16a085;
+  --teal-700: #12836f;
+  --teal-800: #0e6655;
+  --gold-300: #f9d56e;
+  --light-teal: #e8f8f5;
+  --white: #ffffff;
+  --off-white: #f9f9f9;
+  --dark-text: #2c3e50;
+  --light-text: #7f8c8d;
+}
+
+/* Base Styles */
 .ashram-section {
-  width: 100%;
-  background: linear-gradient(to bottom, #ffffff 0%, #e6fdf8 100%);
-  color: #1a1a1a;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+  color: var(--dark-text);
+  line-height: 1.8;
   overflow: hidden;
-  margin-top: 13px;
 }
 
-/* Video Header */
-.ashram-video-wrapper {
+/* Hero Section */
+.ashram-hero {
   position: relative;
-  width: 100%;
-  height: 70vh;
-  overflow: hidden;
+  height: 80vh;
+  min-height: 600px;
 }
 
-.ashram-video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: brightness(0.5);
-}
-
-.ashram-video-overlay {
+.hero-image-container {
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), transparent);
+  height: 100%;
 }
 
-.ashram-title {
-  font-size: 3rem;
-  font-weight: bold;
-  color: #ffffff;
-  text-shadow: 0 0 20px #00ffe0, 0 0 40px #00ffe0;
-  animation: fadeInUp 1s ease-out forwards;
-}
-
-/* Content Section */
-.ashram-content-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 4rem 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-  background: #ffffff;
-  border-radius: 1rem;
-  box-shadow: 0 0 20px rgba(0, 255, 213, 0.15);
-}
-
-@media (min-width: 768px) {
-  .ashram-content-container {
-    flex-direction: row;
-    align-items: center;
-  }
-}
-
-.ashram-text {
-  flex: 1;
-  animation: fadeInUp 1s ease-out both;
-}
-
-.ashram-text h3 {
-  font-size: 2.2rem;
-  color: #009f8e;
-  margin-bottom: 1rem;
-}
-
-.ashram-text p {
-  font-size: 1.1rem;
-  color: #333333;
-  line-height: 1.8;
-  margin-bottom: 1rem;
-}
-
-/* Circular Image */
-.ashram-image-wrapper {
-  flex-shrink: 0;
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  overflow: hidden;
-  border: 5px solid transparent;
-  background-image: linear-gradient(white, white), linear-gradient(135deg, #00ffe0, #0077ff);
-  background-origin: border-box;
-  background-clip: content-box, border-box;
-  box-shadow: 0 0 25px #33e1c4aa;
-  animation: zoomIn 1.2s ease-out forwards;
-}
-
-.ashram-image {
+.hero-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
+  filter: brightness(0.8);
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgb(22 160 133 / 10%), rgb(22 160 133 / 14%));
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  z-index: 2;
+}
+
+.hero-title {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 700;
+  color: var(--white);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  letter-spacing: 1px;
+}
+
+.title-line {
+  display: block;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.title-line:last-child {
+  animation-delay: 0.3s;
+}
+
+/* Main Content */
+.ashram-content {
+  background: var(--off-white);
+  padding: 6rem 0;
+}
+
+.content-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+@media (min-width: 992px) {
+  .content-container {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 6rem;
+  }
+}
+
+/* Text Content */
+.text-content {
+  flex: 1;
+}
+
+.lead-paragraph {
+  font-size: 1.4rem;
+  color: var(--teal-800);
+  font-weight: 500;
+  margin-bottom: 2rem;
+  position: relative;
+  padding-left: 2rem;
+  border-left: 4px solid var(--teal-500);
+}
+
+.text-block {
+  margin-bottom: 2rem;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.text-block:nth-child(1) { animation-delay: 0.3s; }
+.text-block:nth-child(2) { animation-delay: 0.5s; }
+.text-block:nth-child(3) { animation-delay: 0.7s; }
+
+.highlight-box {
+  background: var(--light-teal);
+  border-left: 4px solid var(--teal-600);
+  padding: 2rem;
+  margin: 3rem 0;
+  border-radius: 0 8px 8px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.highlight-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('/images/leaf-pattern.png') no-repeat;
+  background-size: contain;
+  opacity: 0.05;
+  z-index: 0;
+}
+
+.highlight-box p {
+  position: relative;
+  z-index: 1;
+  font-size: 1.1rem;
+  color: var(--teal-800);
+}
+
+.conclusion-text {
+  font-style: italic;
+  color: var(--teal-700);
+  position: relative;
+  padding-left: 2rem;
+}
+
+.conclusion-text::before {
+  content: '"';
+  position: absolute;
+  left: 0;
+  top: -1rem;
+  font-size: 5rem;
+  color: var(--teal-500);
+  opacity: 0.3;
+  line-height: 1;
+}
+
+/* Portrait Video Container */
+.video-portrait-container {
+  flex: 0 0 40%;
+  position: sticky;
+  top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-wrapper {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  position: relative;
+  padding-bottom: 0px;
+}
+
+.portrait-video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.play-icon svg {
+  width: 24px;
+  height: 24px;
+  color: var(--teal-700);
 }
 
 /* Animations */
 @keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
+  to {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-@keyframes zoomIn {
-  0% {
-    opacity: 0;
-    transform: scale(0.8);
+.fade-in {
+  opacity: 0;
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .ashram-hero {
+    height: 60vh;
+    min-height: 500px;
   }
-  100% {
-    opacity: 1;
-    transform: scale(1);
+  
+  .content-container {
+    padding: 0 1.5rem;
+    gap: 3rem;
+  }
+  
+  .video-portrait-container {
+    flex: 1;
+    position: static;
+    margin-top: 2rem;
+  }
+  
+  .video-wrapper {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .ashram-hero {
+    height: 50vh;
+    min-height: 400px;
+  }
+  
+  .hero-title {
+    font-size: 2.2rem;
+  }
+  
+  .ashram-content {
+    padding: 3rem 0;
+  }
+  
+  .lead-paragraph {
+    font-size: 1.2rem;
+    padding-left: 1.5rem;
+  }
+  
+  .play-icon {
+    width: 50px;
+    height: 50px;
   }
 }

@@ -1,18 +1,24 @@
-import "./About.css"
+import React, { useEffect } from 'react';
+import './About.css';
 
 const About = () => {
-  const contentSections = [
-    {
-      title: "Our Mission",
-      description:
-        "Add a little bit of body text that explains our commitment to healing and supporting those in need.",
-    },
-    {
-      title: "Our Approach",
-      description:
-        "Add a little bit of body text that describes our gentle, evidence-based methods for panic recovery.",
-    },
-  ]
+  useEffect(() => {
+    const animateOnScroll = () => {
+      const elements = document.querySelectorAll('.fade-in, .founder-container, .project-card');
+      elements.forEach(el => {
+        const elementPosition = el.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+        
+        if (elementPosition < windowHeight - 100) {
+          el.classList.add('animate');
+        }
+      });
+    };
+
+    window.addEventListener('scroll', animateOnScroll);
+    animateOnScroll();
+    return () => window.removeEventListener('scroll', animateOnScroll);
+  }, []);
 
   const projects = [
     {
@@ -100,237 +106,172 @@ const About = () => {
     { name: "Add a little bit of body text", role: "Support Coordinator" },
   ]
 
-  return (
+   return (
     <div className="about-page">
-      {/* About Hero Section */}
+      {/* Hero Section */}
       <section className="about-hero">
-  <div className="container">
-    <div className="about-hero-content">
-      <div className="hero-image">
-        <div className="image-placeholder">
-          {/* <h3>Our Development</h3>
-          <p>Journey of healing and growth</p> */}
+        <div className="hero-overlay"></div>
+        <div className="hero-content">
+          <h1 className="hero-title">
+            <span className="title-line">About</span>
+            <span className="title-line">Radiaant Healing</span>
+          </h1>
+          <p className="hero-subtitle">Transforming lives through energy healing</p>
         </div>
-      </div>
-      <div className="hero-text">
-        <h1>Our Instructors</h1>
-        <p>
-         
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
 
-
-      {/* About Content Section */}
-<div className="about-founders">
-  {/* Founder Section */}
-  <div className="founder-container">
-  <h1 className="founder-title">Founder of Radiaant Pranic healing</h1>
-
-  <div className="founder-content">
-    <div className="founder-profile">
-      <img 
-        src="/images/sarika_bilwalkar.jpg"
-        alt="Sarika Biwalkar"
-        className="founder-image"
-      />
-      <h2 className="founder-name">Sarika Biwalkar</h2>
-    </div>
-
-    <div className="founder-contact-box">
-      <h2 className="contact-title">Contact Us</h2>
-      <div className="contact-info">
-        <p>📍 103, Oyster CHS, Hiranandani Estate, Thane W</p>
-        <p>📞 +91 9819852675</p>
-        <p>📧 Radiaant9@gmail.com</p>
-      </div>
-    </div>
-  </div>
-
-  <div className="founder-bio">
-    <p>
-      With over 12 years of experience in the field of energy healing, Instructor Sarika Biwalkar is a dedicated and compassionate healer committed to transforming lives. She is a Certified Pranic Psychotherapist, Certified Pranic Healer, and Associate Certified Pranic Healer, trained in the powerful teachings of Grand Master Choa Kok Sui. *know more*
-    </p>
-
-    <h3>Education</h3>
-    <p>Post graduate: M.COM<br/>Specialization: Human Resource</p>
-
-    <h3>Education in Pranic Healing</h3>
-    <ul>
-      <li>Pranic Healing Instructor</li>
-      <li>Certified Pranic Psychotherapist</li>
-      <li>Certified Pranic Healer</li>
-      <li>Associate Certified Pranic Healer</li>
-      <li>NLP Practitioner</li>
-      <li>Akashic Record Reader and Trainer</li>
-    </ul>
-
-    <h3>Additional Achievements / Courses</h3>
-    <ul>
-      <li>Angel and Tarot Card Reader</li>
-      <li>Bach Flower Therapist</li>
-      <li>Numerologist</li>
-    </ul>
-  </div>
-</div>
-
-
-  {/* Co-Founder Section */}
-  <div className="founder-container">
-  <h1 className="founder-title">Founder of Radiaant Pranic healing</h1>
-
-  <div className="founder-content">
-    <div className="founder-profile">
-      <img 
-        src="/images/sarika_bilwalkar.jpg"
-        alt="Sarika Biwalkar"
-        className="founder-image"
-      />
-      <h2 className="founder-name">Sarika Biwalkar</h2>
-    </div>
-
-    <div className="founder-contact-box">
-      <h2 className="contact-title">Contact Us</h2>
-      <div className="contact-info">
-        <p>📍 103, Oyster CHS, Hiranandani Estate, Thane W</p>
-        <p>📞 +91 9819852675</p>
-        <p>📧 Radiaant9@gmail.com</p>
-      </div>
-    </div>
-  </div>
-
-  <div className="founder-bio">
-    <p>
-      With over 12 years of experience in the field of energy healing, Instructor Sarika Biwalkar is a dedicated and compassionate healer committed to transforming lives. She is a Certified Pranic Psychotherapist, Certified Pranic Healer, and Associate Certified Pranic Healer, trained in the powerful teachings of Grand Master Choa Kok Sui. *know more*
-    </p>
-
-    <h3>Education</h3>
-    <p>Post graduate: M.COM<br/>Specialization: Human Resource</p>
-
-    <h3>Education in Pranic Healing</h3>
-    <ul>
-      <li>Pranic Healing Instructor</li>
-      <li>Certified Pranic Psychotherapist</li>
-      <li>Certified Pranic Healer</li>
-      <li>Associate Certified Pranic Healer</li>
-      <li>NLP Practitioner</li>
-      <li>Akashic Record Reader and Trainer</li>
-    </ul>
-
-    <h3>Additional Achievements / Courses</h3>
-    <ul>
-      <li>Angel and Tarot Card Reader</li>
-      <li>Bach Flower Therapist</li>
-      <li>Numerologist</li>
-    </ul>
-  </div>
-</div>
-</div>
-
-
-      {/* Projects & Events Section */}
-      <section className="projects-events section">
-  <div className="event-banner">
-    <img className="event-image" src="/images/event.jpg" alt="Event" />
-
-    <div className="event-text-overlay">
-      <h2 className="gradient-text">Events Worked On</h2>
-      {/* <p>Optional subtitle here</p> */}
-    </div>
-  </div>
-
-
-
-
-          {/* Projects Section */}
+      {/* Founders Section */}
+      <section className="founders-section">
+        <div className="founder-container fade-in">
+          <h2 className="section-title">Founder of Radiaant Pranic Healing</h2>
           
-    <div className="projects-section">
-  <div className="projects-grid">
-    {projects.map((project, index) => (
-      <div
-        key={project.id}
-        className="project-card"
-        style={{ animationDelay: `${index * 0.2}s` }}
-      >
-        <div className="project-image-wrapper">
-          <img
-            src={project.image}
-            alt={project.title}
-            className="project-img-fixed"
-          />
-        </div>
-        <div className="project-content">
-          <h4>{project.title}</h4>
-          <p>{project.description}</p>
-        </div>
-      </div>
-    ))}
-  </div>
-</div>
-</section>
-
-
-          {/* Events Section */}
-          {/* <div className="events-section">
-            <div className="subsection-header">
-              <h3>Transformative Events</h3>
-              <p>Join us for life-changing experiences and community connection</p>
+          <div className="founder-content">
+            <div className="founder-profile">
+              <img 
+                src="/images/sarika_bilwalkar.jpg" 
+                alt="Sarika Biwalkar" 
+                className="founder-image"
+              />
+              <h3 className="founder-name">Sarika Biwalkar</h3>
             </div>
 
-            <div className="events-grid">
-              {events.map((event, index) => (
-                <div
-                  key={event.id}
-                  className={`event-card animate-fadeInUp`}
-                  style={{ animationDelay: `${index * 0.2}s` }}
-                >
-                  <div className="event-image">
-                    <div className="image-placeholder">
-                      <h4>{event.image}</h4>
-                      <div className="event-overlay">
-                        <div className="event-icon">🎭</div>
-                      </div>
-                    </div>
+            <div className="founder-details">
+              <div className="founder-bio">
+                <p>
+                  With over 12 years of experience in the field of energy healing, Instructor Sarika Biwalkar is a dedicated and compassionate healer committed to transforming lives. She is a Certified Pranic Psychotherapist, Certified Pranic Healer, and Associate Certified Pranic Healer, trained in the powerful teachings of Grand Master Choa Kok Sui.
+                </p>
+
+                <div className="details-grid">
+                  <div className="detail-group">
+                    <h4>Education</h4>
+                    <p>Post graduate: M.COM<br/>Specialization: Human Resource</p>
                   </div>
-                  <div className="event-content">
-                    <div className="event-meta">
-                      <span className="event-date">{event.date}</span>
-                      <span className="event-location">📍 {event.location}</span>
-                    </div>
-                    <h4>{event.title}</h4>
-                    <p>{event.description}</p>
-                    <button className="btn btn-primary">Register Now</button>
+
+                  <div className="detail-group">
+                    <h4>Pranic Healing Education</h4>
+                    <ul>
+                      <li>Pranic Healing Instructor</li>
+                      <li>Certified Pranic Psychotherapist</li>
+                      <li>Certified Pranic Healer</li>
+                      <li>Associate Certified Pranic Healer</li>
+                    </ul>
+                  </div>
+
+                  <div className="detail-group">
+                    <h4>Additional Achievements</h4>
+                    <ul>
+                      <li>NLP Practitioner</li>
+                      <li>Akashic Record Reader and Trainer</li>
+                      <li>Angel and Tarot Card Reader</li>
+                    </ul>
                   </div>
                 </div>
-              ))}
-            </div>
-          </div> */}
-
-      {/* Team Section */}
-      {/* <section className="team-section section">
-        <div className="container">
-          <div className="section-header">
-            <h2>Our Healing Team</h2>
-            <p>Meet the compassionate professionals dedicated to your wellness journey</p>
-          </div>
-
-          <div className="team-grid">
-            {teamMembers.map((member, index) => (
-              <div key={index} className="team-card">
-                <div className="team-avatar">
-                  <div className="avatar-placeholder"></div>
-                </div>
-                <h3>{member.name}</h3>
-                <p>{member.role}</p>
               </div>
-            ))}
+
+              <div className="contact-box">
+                <h4>Contact</h4>
+                <p>📍 103, Oyster CHS, Hiranandani Estate, Thane W</p>
+                <p>📞 +91 9819852675</p>
+                <p>📧 Radiaant9@gmail.com</p>
+              </div>
+            </div>
           </div>
         </div>
-      </section> */}
-    </div>
-  )
-}
+      </section>
 
-export default About
+
+      {/* Co-Founder Section */}
+      <section className="founders-section">
+        <div className="founder-container fade-in">
+          <h2 className="section-title">Founder of Radiaant Pranic Healing</h2>
+          
+          <div className="founder-content">
+            <div className="founder-profile">
+              <img 
+                src="/images/sarika_bilwalkar.jpg" 
+                alt="Sarika Biwalkar" 
+                className="founder-image"
+              />
+              <h3 className="founder-name">Sarika Biwalkar</h3>
+            </div>
+
+            <div className="founder-details">
+              <div className="founder-bio">
+                <p>
+                  With over 12 years of experience in the field of energy healing, Instructor Sarika Biwalkar is a dedicated and compassionate healer committed to transforming lives. She is a Certified Pranic Psychotherapist, Certified Pranic Healer, and Associate Certified Pranic Healer, trained in the powerful teachings of Grand Master Choa Kok Sui.
+                </p>
+
+                <div className="details-grid">
+                  <div className="detail-group">
+                    <h4>Education</h4>
+                    <p>Post graduate: M.COM<br/>Specialization: Human Resource</p>
+                  </div>
+
+                  <div className="detail-group">
+                    <h4>Pranic Healing Education</h4>
+                    <ul>
+                      <li>Pranic Healing Instructor</li>
+                      <li>Certified Pranic Psychotherapist</li>
+                      <li>Certified Pranic Healer</li>
+                      <li>Associate Certified Pranic Healer</li>
+                    </ul>
+                  </div>
+
+                  <div className="detail-group">
+                    <h4>Additional Achievements</h4>
+                    <ul>
+                      <li>NLP Practitioner</li>
+                      <li>Akashic Record Reader and Trainer</li>
+                      <li>Angel and Tarot Card Reader</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div className="contact-box">
+                <h4>Contact</h4>
+                <p>📍 103, Oyster CHS, Hiranandani Estate, Thane W</p>
+                <p>📞 +91 9819852675</p>
+                <p>📧 Radiaant9@gmail.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      {/* Projects Section */}
+      <section className="projects-section">
+        <div className="section-header fade-in">
+          <h2 className="section-title">Our Events & Projects</h2>
+          <p className="section-description">Transforming communities through healing initiatives</p>
+        </div>
+
+        <div className="projects-grid">
+          {projects.map((project, index) => (
+            <div 
+              key={project.id} 
+              className="project-card"
+              style={{ animationDelay: `${index * 0.1}s` }}
+            >
+              <div className="project-image">
+                <img src={project.image} alt={project.title} />
+                <div className="image-overlay"></div>
+              </div>
+              <div className="project-content">
+                <h3>{project.title}</h3>
+                <p>{project.description}</p>
+                <div className="project-meta">
+                  <span>{project.date}</span>
+                  <span>{project.impact}</span>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default About;
