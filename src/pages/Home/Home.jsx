@@ -271,72 +271,8 @@ const slides = [
 
 
 
-            {/* What is panic Healing */}
-            {/* <section className="master-section section">
-            <div className="container">
-            <div className="pranic-content revrse-layout">
-                 <div className="pranic-image animate-fadeInLeft">
-                    <div className="pranic-frame">
-                       <div className="pranic-photo">
-                           <img src="images/pranic.jpg"alt="Spiritual Master"className="pranic-img"
-            />
-          </div>
-          <div className="pranic-glow"></div>
-        </div>
-      </div>
-
-      <div className="pranic-details animate-fadeInRight">
-        <h2 className="pranic-text">What is Pranic Healing?</h2>
-
-        <div className="pranic-info">
-          <p className="pranic-title">
-            Spiritual Healer & Life Transformation Guide
-          </p>
-
-          <div className="pranic-description">
-            <p>
-              Pranic Healing is a modern, fresh, and scientific approach
-              towards energy and healing. Pranic Healing is a powerful and
-              effective no-touch-no-drug energy healing technique. It is a
-              blend of ancient healing methods that were rediscovered,
-              researched and tested for over 20 years with proven success by
-              Grand Master Choa Kok Sui – the founder of Modern Pranic Healing
-              and Arhatic Yoga. Pranic Healing as a science came into existence
-              in 1987.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> */}
 
 
-
-
-      
-
-      {/* Features Section */}
-      {/* <section className="features section">
-        <div className="container">
-          <div className="section-header">
-            <h2>Our Healing Approach</h2>
-            <p>Discover how we can help you find peace and overcome panic</p>
-          </div>
-
-          <div className="features-grid">
-            {features.map((feature, index) => (
-              <div key={index} className="feature-card">
-                <div className="feature-icon">
-                  <img src={`/${feature.image}`} alt={feature.title} className="icon-image" />
-                </div>
-                <h3>{feature.title}</h3>
-                <p>{feature.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section> */}
 
       
       {/* Video Section */}

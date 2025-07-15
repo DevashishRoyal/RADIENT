@@ -16,10 +16,10 @@ const Header = () => {
     { label: "Home", to: "/" },
     { label: "About", to: "/about" },
     { label: "Courses", to: "/Courses" },
-    { label: "Testimonies", href: "/testimonies" },
-    { label: "Ashram", href: "/ashram" },
-    { label: "Research", href: "/research" },
-    { label: "Contribution", href: "#contribution" },
+    { label: "Testimonies", to: "/testimonies" },
+    { label: "Ashram", to: "/ashram" },
+    { label: "Research", to: "/research" },
+    { label: "Contribution", to: "/contribution" },
   ]
 
   return (
