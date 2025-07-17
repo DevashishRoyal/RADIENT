@@ -11,36 +11,36 @@ const slides = [
       id: 1,
       title: "Welcome to Radiaant",
       subtitle: "Your Journey to Healing Begins Here",
-      description: "Discover inner peace and transform your life through our holistic healing approach",
-      image: "images/sliders/slider-1.jpeg", width: "200", height: "200"
+      // description: "Discover inner peace and transform your life through our holistic healing approach",
+      image: "images/sliders/slider-111.jpeg", width: "200", height: "200"
     },
     {
       id: 2,
       title: "Fueling success through welllness",
       subtitle: "A corporate initiative",
-      description: "Experience the power of traditional healing methods combined with modern understanding",
+      // description: "Experience the power of traditional healing methods combined with modern understanding",
       image: "images/sliders/slider-2.jpeg", width: "200", height: "200"
     },
     {
       id: 3,
-      title: "Bringing Calm to the Community, One Street at a Time",
-      subtitle: "Happy street, A radiaant initiative",
-      description: "Let our experienced masters guide you on your path to emotional and spiritual wellness",
-      image: "images/sliders/slider-3.jpeg", width: "200", height: "200"
+      title: "Bhutan Pranic Retreat",
+      subtitle: "Beyond the Physical – Healing Through Energy",
+      // description: "Let our experienced masters guide you on your path to emotional and spiritual wellness",
+      image: "images/sliders/slider51.jpg", width: "200", height: "200"
     },
       {
       id: 4,
       title: "Heal, transform, grow",
       subtitle: "📍Radiaant Pranic Healing Center, Hiranandani Estat",
-      description: "Experience the power of pranic energy to restore balance, vitality, and inner peace.*",
+      // description: "Experience the power of pranic energy to restore balance, vitality, and inner peace.*",
       image: "images/sliders/slider-4.jpeg", width: "200", height: "200"
     },
       {
       id: 5,
-      title: "Breathe. Balance. Heal",
-      subtitle: "Healing Doesn’t Always Need Words – Just Energy and Intention.",
-      description: "A holistic approach to wellness that begins with conscious breathing, centers on energy balance, and leads to deep healing.",
-      image: "images/sliders/slider-5.jpeg", width: "200", height: "200"
+      // title: "Breathe. Balance. Heal",
+      // subtitle: "Healing Doesn’t Always Need Words – Just Energy and Intention.",
+      // description: "A holistic approach to wellness that begins with conscious breathing, centers on energy balance, and leads to deep healing.",
+      image: "images/sliders/slider61.jpg", width: "200", height: "200"
     },
   ]
 
@@ -155,22 +155,24 @@ const slides = [
             ))}
           </div>
 
-          <div className="chat-widget">
-            <button className="chat-btn">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path
-                  d="M21 15C21 15.5304 20.7893 16.0391 20.4142 16.4142C20.0391 16.7893 19.5304 17 19 17H7L3 21V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V15Z"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-              Chat with us
-            </button>
-          </div>
+         <div className="chat-widget">
+  <a
+    href="https://wa.me/919999999999" // Replace with your actual WhatsApp number
+    target="_blank"
+    rel="noopener noreferrer"
+    className="chat-btn"
+  >
+    <img
+      src="https://cdn-icons-png.flaticon.com/512/733/733585.png" // WhatsApp icon (or use your own local icon)
+      alt="WhatsApp"
+      className="chat-icon"
+    />
+    <span className="chat-text">Chat with us</span>
+  </a>
+</div>
 
-          <div className="scroll-indicator">
+
+          {/* <div className="scroll-indicator">
             <div className="scroll-arrow">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <path
@@ -183,42 +185,48 @@ const slides = [
               </svg>
             </div>
             <span>(Scroll down)</span>
-          </div>
+          </div> */}
         </div>
       </section>
 
-      {/* Master Section */}
-<section className="master-section" data-aos="fade-up">
+
+{/* Master section */}
+<section className="master-section">
   <div className="master-container">
-    <div className="master-image" data-aos="zoom-in">
-      <div className="photo-wrapper">
-        <div className="flower-bg"></div>
-        <img src="/images/master1.png" alt="Grand Master" className="master-img" />
+    <div className="master-image">
+      <div className="image-wrapper">
+        <img 
+          src="/images/master1.png" 
+          alt="Grand Master Choa Kok Sui" 
+          className="master-img" 
+        />
       </div>
     </div>
 
     <div className="master-content">
-      <h4 className="subtitle">The founder of modern Pranic Healing and Arhatic Yoga</h4>
+      <h4 className="subtitle">The founder of modern Pranic Healing<br />and Arhatic yoga</h4>
       <h2 className="title">Grand Master Choa Kok Sui</h2>
       
-      <div className="quote-box" data-aos="fade-left">
-        <span className="lotus">🌸</span>
+      <div className="quote-box">
         <em>
-          “Regulate your mind. Do not worry excessively about the future.
-          If you have done everything that has to be done,
-          the future will take care of itself.”
+          "Regulate your mind. Do not worry<br />
+          excessively about the future. If you<br />
+          have done everything that has to be<br />
+          done, the future will take care of itself."
         </em>
       </div>
 
       <p className="description">
-        Grand Master Choa Kok Sui (GMCKS) was a visionary spiritual teacher,
-        scientist, and humanitarian who founded Modern Pranic Healing and
-        Arhatic Yoga. Through years of dedicated research and spiritual
-        practice, he developed a structured, scientific, and highly effective
-        no-touch energy healing system that is now practiced in over 120 countries.
+        Grand Master Choa Kok Sui (GMCKS) was a visionary spiritual teacher,<br />
+        scientist, and humanitarian who founded Modern Pranic Healing and<br />
+        Arhatic Yoga. Through years of dedicated research and spiritual<br />
+        practice, he developed a structured, scientific, and highly effective no-<br />
+        touch energy healing system that is now practiced in over 120 countries.<br /><br />
+        Beyond healing, Grand Master Choa's mission was to empower<br />
+        individuals to live more meaningful lives through inner purification,<br />
+        service, and spiritual growth. His legacy lives on through the World<br />
+        Pranic Healing Foundation and the Institute for Inner Studies.
       </p>
-
-      <button className="know-more">KNOW MORE</button>
     </div>
   </div>
 </section>
@@ -229,25 +237,18 @@ const slides = [
 
 <section className="pranic-section">
   <div className="pranic-container">
-    
     {/* Left Text */}
     <div className="pranic-content">
-      <h4 className="subtitle">SCIENTIFIC ENERGY HEALING</h4>
       <h2 className="title">What is Pranic Healing</h2>
       <p className="description">
-        Pranic Healing is a modern, fresh, and scientific approach towards energy and healing.
-        It is a powerful and effective no-touch-no-drug energy healing technique. It blends
-        ancient methods that were rediscovered, tested over 20 years with success by 
-        <strong> Grand Master Choa Kok Sui</strong> — founder of Modern Pranic Healing & Arhatic Yoga. 
-        Pranic Healing became a science in 1987.
+        Pranic Healing is a modern, fresh, and scientific approach towards energy and healing. Pranic Healing is a powerful and effective no-touch-no-drug energy healing technique. It is a blend of ancient healing methods that were rediscovered, researched and tested for over 20 years with proven success by <strong>Grand Master Choa Kok Sui</strong> – the founder of Modern Pranic Healing and Arhatic Yoga. Pranic Healing as a science came into existence in 1987.
       </p>
     </div>
 
     {/* Right Mandala Image */}
     <div className="pranic-image">
       <div className="circle-wrapper">
-        <div className="mandala-bg"></div>
-        <img src="/images/pranic_Healing.png" alt="Healing Hands" className="pranic-img" />
+        <img src="/images/pranic_Healing.png" alt="Pranic Healing" className="pranic-img" />
       </div>
     </div>
   </div>
@@ -256,15 +257,15 @@ const slides = [
   <div className="healing-points">
     <div className="point">
       <img src="/images/pranic1.jpg" alt="Master with aura" />
-      <p>«  Master Choa developed an easy-to-learn scientific system which has shown to have positive results on the overall quality of life and well-being of an individual..</p>
+      <p>Master Choa developed an easy-to-learn scientific system which has shown to have positive results on the overall quality of life and well-being of an individual..</p>
     </div>
     <div className="point">
       <img src="/images/pranic2.jpg" alt="Energy hand" />
-      <p>« Pranic Healing is based on the fundamental principle that the body is a self-repairing entity that is capable of healing itself. . The principle behind pranic healing is transference of energy.</p>
+      <p>Pranic Healing is based on the fundamental principle that the body is a self-repairing entity that is capable of healing itself. . The principle behind pranic healing is transference of energy.</p>
     </div>
     <div className="point">
       <img src="/images/pranic3.jpg" alt="Healing light" />
-      <p>« With Pranic Healing, we are  assisting the body’s energy system to normalize so that the body can heal itself. If there are blockages in the energy field, the healer removes these; if there is less energy we give some back.</p>
+      <p>With Pranic Healing, we are  assisting the body’s energy system to normalize so that the body can heal itself. If there are blockages in the energy field, the healer removes these; if there is less energy we give some back.</p>
     </div>
   </div>
 </section>
@@ -299,27 +300,43 @@ const slides = [
       </section>
 
 
-      <section class="courses-section" id="courses">
-  <h2 class="courses-title">Courses We Offer</h2>
-  <div class="course-cards">
-    <a href="#prosperity" class="course-card">
-      <div class="course-circle">
-        <img src="/images/Course1.jpg" alt="Prosperity Series" />
+      <section className="courses-section" id="courses">
+  <div className="container">
+    <h2 className="section-title">Courses We Offer</h2>
+    
+    <div className="courses-grid">
+      <a href="/courses" className="course-card">
+        <div className="course-image-wrapper">
+          <img src="/images/Course1.jpg" alt="Prosperity Series" className="course-image" />
+        </div>
+        <h3 className="course-name">Prosperity Series</h3>
+      </a>
+
+      <a href="/courses" className="course-card">
+        <div className="course-image-wrapper">
+          <img src="/images/Course2.jpg" alt="Healing Series" className="course-image" />
+        </div>
+        <h3 className="course-name">Healing Series</h3>
+      </a>
+
+      <a href="/courses" className="course-card">
+        <div className="course-image-wrapper">
+          <img src="/images/Course3.jpg" alt="Spirituality Series" className="course-image" />
+        </div>
+        <h3 className="course-name">Spirituality Series</h3>
+      </a>
+    </div>
+  </div>
+
+  {/* Disclaimer Section */}
+  <div className="disclaimer-section">
+    <div className="container">
+      <div className="disclaimer-content">
+        <p className="disclaimer-text">
+          * Results may vary from person to person based on individual practice and application of techniques.
+        </p>
       </div>
-      <p>Prosperity Series</p>
-    </a>
-    <a href="#healing" class="course-card">
-      <div class="course-circle">
-        <img src="/images/Course2.jpg" alt="Healing Series" />
-      </div>
-      <p>Healing Series</p>
-    </a>
-    <a href="#spirituality" class="course-card">
-      <div class="course-circle">
-        <img src="/images/Course3.jpg" alt="Spirituality Series" />
-      </div>
-      <p>Spirituality Series</p>
-    </a>
+    </div>
   </div>
 </section>
 

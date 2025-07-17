@@ -1,46 +1,38 @@
 import React from 'react';
 import './Contribution.css';
 
-const ContributionPage = () => {
+const Contribution = () => {
   return (
-    <div className="contribution-page">
-      {/* Hero Image Section with Overlay Text */}
-      <div className="hero-section">
+    <div className="cont-container">
+      {/* Hero Image Section */}
+      <div className="cont-hero">
         <img 
-          src="/images/contribution-hero.jpg" // Replace with your image path
+          src="/path-to-your-image.jpg"  // Replace with your actual image path
           alt="Contribution Hero"
-          className="hero-image"
+          className="cont-hero-image"
         />
-        <div className="hero-overlay">
-          <div className="hero-content">
-            <h1 className="hero-title animate-fadeIn">Contribution</h1>
-            <p className="hero-subtitle animate-fadeIn">Educational medical food for hungry</p>
-          </div>
+        <div className="cont-hero-overlay">
+          <h1 className="cont-title">Contribution</h1>
+          <p className="cont-subtitle">Educational medical food for hungry</p>
         </div>
       </div>
 
-      {/* Main Content */}
-      <div className="content-container">
-        {/* Quote Section */}
-        <div className="quote-section animate-slideUp">
-          <blockquote className="main-quote">
-            <strong>It is in giving that we receive.</strong>
-            <footer>- Grand Master Choa Kok Sui</footer>
+      {/* Content Section */}
+      <div className="cont-content-wrapper">
+        <div className="cont-quote-section">
+          <blockquote className="cont-quote">
+            "It is in giving that we receive." <span className="cont-quote-author">- Grand Master Choa Kok Sui</span>
           </blockquote>
         </div>
-
-        {/* Content Section */}
-        <div className="text-section">
-          <h2 className="section-title animate-slideUp">Give Light. Give Hope.</h2>
-          <div className="content-text animate-fadeIn">
+        
+        <div className="cont-content">
+          <h2 className="cont-heading">Give Light: Give Hope.</h2>
+          <div className="cont-text">
             <p>
-              There are many lives waiting to be touched—and your support can be the light that brings hope. 
-              Every contribution, no matter how small, creates a ripple of change.
+              There are many lives waiting to be touched—and your support can be the light that brings hope. Every contribution, no matter how small, creates a ripple of change.  
             </p>
             <p>
-              At the Pranic Healing Foundation of South Mumbai, we believe that healing extends beyond the 
-              energy body—it includes healing hunger, ignorance, and suffering. We're committed to giving 
-              back in every way we can, and we invite you to be a part of this journey.
+              At the Pranic Healing Foundation of South Mumbai, we believe that healing extends beyond the energy body—it includes healing hunger, ignorance, and suffering. We're committed to giving back in every way we can, and we invite you to be a part of this journey.
             </p>
           </div>
         </div>
@@ -49,4 +41,4 @@ const ContributionPage = () => {
   );
 };
 
-export default ContributionPage;
+export default Contribution;

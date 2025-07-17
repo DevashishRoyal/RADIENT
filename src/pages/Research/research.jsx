@@ -47,7 +47,7 @@ const ResearchPage = () => {
         <div className="articles-section">
           <h2 className="articles-title">Articles</h2>
           <ul className="articles-list">
-            <li className="article-item">
+           <li className="article-item">
               <div className="article-bullet"></div>
               <span>A path to understanding the energy and purpose of healing through "Pranic Guardianship" and how it affects our lives positively.</span>
             </li>
