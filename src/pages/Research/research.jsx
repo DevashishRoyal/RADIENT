@@ -43,32 +43,70 @@ const ResearchPage = () => {
           </p>
         </div>
 
-        {/* Articles Section */}
-        <div className="articles-section">
-          <h2 className="articles-title">Articles</h2>
-          <ul className="articles-list">
-           <li className="article-item">
-              <div className="article-bullet"></div>
-              <span>A path to understanding the energy and purpose of healing through "Pranic Guardianship" and how it affects our lives positively.</span>
-            </li>
-            <li className="article-item">
-              <div className="article-bullet"></div>
-              <span>Combining ancient stressors and conflicts with modern wisdom - exploring how Pranic Healing helps deal with daily challenges.</span>
-            </li>
-             <li className="article-item">
-              <div className="article-bullet"></div>
-              <span>Wondering how to best utilise your healing and witness an impactful result? Here are few tips that may help you!</span>
-            </li>
-             <li className="article-item">
-              <div className="article-bullet"></div>
-              <span>Spending time to dig into the evidence and Science that backs up the beliefs of Pranic Healing. Understanding the journey of energy through our body with a scientific lense</span>
-            </li>
-             <li className="article-item">
-              <div className="article-bullet"></div>
-              <span>How does salt bath positively impact us</span>
-            </li>
-          </ul>
-        </div>
+       <div className="articles-section">
+  <h2 className="articles-title">Articles</h2>
+  <div className="insta-grid">
+   <a
+  href="https://www.instagram.com/p/xyz123/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="article-image-wrapper"
+>
+  <img src="/images/Article1.png" alt="Instagram Post" className="article-image-large" />
+  <div className="image-hover-overlay">
+    <svg className="insta-icon" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+      <path
+        fill="currentColor"
+        d="M224,202.66A53.34,53.34,0,1,0,277.34,256,53.38,53.38,0,0,0,224,202.66ZM224,272a16,16,0,1,1,16-16A16,16,0,0,1,224,272Zm124.71-104a32,32,0,1,1-32-32A32,32,0,0,1,348.71,168ZM398.8,80a63.25,63.25,0,0,0-44.81-44.8C321.3,28.58,256.9,24,224,24s-97.3,4.57-130,11.21A63.27,63.27,0,0,0,49.2,80C42.57,112.7,38,177.1,38,210s4.57,97.3,11.21,130a63.27,63.27,0,0,0,44.8,44.8c32.7,6.64,97.1,11.21,130,11.21s97.3-4.57,130-11.21a63.25,63.25,0,0,0,44.8-44.8c6.64-32.7,11.21-97.1,11.21-130S405.44,112.7,398.8,80ZM224,338.13A82.13,82.13,0,1,1,306.13,256,82.21,82.21,0,0,1,224,338.13Z"
+      />
+    </svg>
+    <span>View on Instagram</span>
+  </div>
+</a>
+
+      <img src="/images/Article1.png" alt="Instagram 1" />
+      <div className="insta-overlay">
+        <span className="insta-text">View Post</span>
+      </div>
+    <a href="https://www.instagram.com/p/xyz456/" target="_blank" rel="noopener noreferrer" className="insta-post">
+      <img src="/images/article2.jpg" alt="Instagram 2" />
+      <div className="insta-overlay">
+        <span className="insta-text">View Post</span>
+      </div>
+    </a>
+
+
+    <div className="article-post">
+      <div className="tape-strip"></div>
+      <img src="/images/Article1.png" alt="Stress Healing" className="article-image-large" />
+      <p className="article-caption-center">
+        Consumed by the stressors and conflicts of modern life? Spend time with us understanding how Pranic Healing helps to deal with them.
+      </p>
+    </div>
+     <div className="article-post">
+      <div className="tape-strip"></div>
+      <img src="/images/Article1.png" alt="Stress Healing" className="article-image-large" />
+      <p className="article-caption-center">
+        Consumed by the stressors and conflicts of modern life? Spend time with us understanding how Pranic Healing helps to deal with them.
+      </p>
+    </div>
+     <div className="article-post">
+      <div className="tape-strip"></div>
+      <img src="/images/Article1.png" alt="Stress Healing" className="article-image-large" />
+      <p className="article-caption-center">
+        Consumed by the stressors and conflicts of modern life? Spend time with us understanding how Pranic Healing helps to deal with them.
+      </p>
+    </div>
+     <div className="article-post">
+      <div className="tape-strip"></div>
+      <img src="/images/Article1.png" alt="Stress Healing" className="article-image-large" />
+      <p className="article-caption-center">
+        Consumed by the stressors and conflicts of modern life? Spend time with us understanding how Pranic Healing helps to deal with them.
+      </p>
+    </div>
+  </div>
+</div>
+
       </div>
     </div>
   );

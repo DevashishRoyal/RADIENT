@@ -83,11 +83,13 @@
   color: #455a64;
 }
 
-/* Articles Section */
 .articles-section {
   border-top: 2px solid #c8e6c9;
   padding-top: 30px;
   animation: fadeIn 1.2s ease-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .articles-title {
@@ -97,33 +99,121 @@
   font-weight: 600;
 }
 
-.articles-list {
-  list-style-type: none;
-  padding: 0;
+/* === Instagram Grid Layout === */
+.articles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  width: 100%;
+  max-width: 1000px;
+  padding: 0 20px;
 }
 
-.article-item {
+.insta-post {
+  position: relative;
+  aspect-ratio: 1 / 1; /* Ensures square posts */
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+  display: block;
+}
+
+.insta-post img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.insta-post:hover img {
+  transform: scale(1.05);
+}
+
+.insta-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
   display: flex;
-  align-items: flex-start;
-  margin-bottom: 20px;
-  padding: 15px;
-  background-color: #e8f5e9;
-  border-radius: 4px;
-  transition: all 0.3s ease;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
-.article-item:hover {
-  background-color: #c8e6c9;
-  transform: translateX(5px);
+.insta-post:hover .insta-overlay {
+  opacity: 1;
 }
 
-.article-bullet {
-  min-width: 8px;
-  height: 8px;
-  background-color: #2e7d32;
-  border-radius: 50%;
-  margin: 8px 15px 0 5px;
+.insta-text {
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
+.insta-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  width: 100%;
+  max-width: 1100px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.article-image-wrapper {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.article-image-large {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+}
+
+.image-hover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: opacity 0.3s ease;
+  border-radius: 12px;
+  pointer-events: none;
+}
+
+.article-image-wrapper:hover .image-hover-overlay {
+  opacity: 1;
+}
+
+.insta-icon {
+  width: 28px;
+  height: 28px;
+  margin-bottom: 8px;
+  color: #fff;
+  fill: currentColor;
+}
+
 
 /* Animations */
 @keyframes fadeIn {
@@ -131,69 +221,40 @@
   to { opacity: 1; }
 }
 
-@keyframes slideIn {
-  from { 
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to { 
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 @keyframes fadeInUp {
-  from { 
+  from {
     opacity: 0;
     transform: translateY(20px);
   }
-  to { 
+  to {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-/* Responsive Design */
+/* === Responsive Design === */
 @media (max-width: 768px) {
-  .research-banner {
-    height: 250px;
-  }
-  
-  .banner-overlay {
-    padding-left: 5%;
-  }
-  
-  .research-title {
-    font-size: 2rem;
-  }
-  
-  .intro-text {
-    font-size: 1rem;
-  }
-  
   .articles-title {
     font-size: 1.5rem;
+  }
+
+  .articles-grid {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 12px;
+  }
+
+  .insta-text {
+    font-size: 13px;
   }
 }
 
 @media (max-width: 480px) {
-  .research-banner {
-    height: 200px;
+  .articles-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   }
-  
-  .tagline-text {
-    font-size: 16px;
-  }
-  
-  .research-content-container {
-    margin: 30px auto;
-  }
-  
-  .research-title {
-    font-size: 1.7rem;
-  }
-  
-  .article-item {
-    padding: 12px;
+
+  .insta-text {
+    font-size: 12px;
   }
 }
+
