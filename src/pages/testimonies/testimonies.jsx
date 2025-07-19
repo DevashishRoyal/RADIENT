@@ -1,112 +1,225 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import './testimonies.css';
 
-const TestimonialsSection = () => {
-  const testimonials = [
-    {
-      id: 1,
-      title: "Inspiring Healing Journey",
-      description: "How pranic healing transformed Sarah's chronic pain",
-      videoSrc: "./images/Video/video.mp4",
-      thumbnail: "./images/Video/video.mp4"
-    },
-    {
-      id: 2,
-      title: "Emotional Breakthrough",
-      description: "John's story of overcoming anxiety through energy healing",
-      videoSrc: "./images/Video/video.mp4",
-      thumbnail: "/images/testimonial2.jpg"
-    },
-    {
-      id: 3,
-      title: "Spiritual Awakening",
-      description: "Maya's path to deeper consciousness with pranic techniques",
-      videoSrc: "./images/Video/video.mp4",
-      thumbnail: "/images/testimonial3.jpg"
-    },
-    {
-      id: 4,
-      title: "Physical Recovery",
-      description: "Athlete regains mobility after injury with energy healing",
-      videoSrc: "./images/Video/video.mp4",
-      thumbnail: "/images/testimonial4.jpg"
-    },
-    {
-      id: 5,
-      title: "Family Healing",
-      description: "How one family incorporated pranic healing into daily life",
-      videoSrc: "./images/Video/video.mp4",
-      thumbnail: "/images/testimonial5.jpg"
-    },
-    {
-      id: 6,
-      title: "Professional Impact",
-      description: "Doctor integrates pranic healing into medical practice",
-      videoId: "VIDEO_ID_6",
-      thumbnail: "/images/testimonial6.jpg"
+const Testimonials = () => {
+  const videoRefs = useRef([]);
+  const [isPlaying, setIsPlaying] = useState([]);
+
+  const handlePlayVideo = (index) => {
+    const video = videoRefs.current[index];
+    if (video.paused) {
+      video.play();
+      video.controls = true;
+      setIsPlaying(prev => {
+        const newState = [...prev];
+        newState[index] = true;
+        return newState;
+      });
+    } else {
+      video.pause();
+      video.controls = false;
+      setIsPlaying(prev => {
+        const newState = [...prev];
+        newState[index] = false;
+        return newState;
+      });
     }
-  ];
+  };
 
   return (
-    <section className="testimonials-section">
-      {/* Hero Image Section */}
-      <div className="testimonials-hero">
+    <section className="test-section">
+      {/* Hero Section */}
+      <div className="test-hero">
         <img 
-          src="/images/testimonies.jpg" 
-          alt="Pranic Healing Testimonials" 
-          className="hero-image"
+          src="/images/testimonies.png" 
+          alt="Hero" 
+          className="test-hero-image" 
         />
-        <div className="hero-overlay"></div>
-        <div className="hero-content">
-          <h1 className="hero-title">Transformational Stories</h1>
-          <p className="hero-subtitle">Witness the healing journeys of our students and clients</p>
+        <div className="test-hero-overlay"></div>
+        <div className="test-hero-content">
+          <h1 className="test-hero-title">Testimonials</h1>
+          <p className="test-hero-subtitle">Hear what people say about their experiences</p>
         </div>
       </div>
 
-      {/* Testimonials Grid */}
-      <div className="testimonials-container">
-        <h2 className="section-title">Video Testimonials</h2>
-        <p className="section-description">
-          Real experiences from people who have transformed their lives through Pranic Healing
-        </p>
-
-        <div className="testimonials-grid">
-          {testimonials.map((testimonial) => (
-             <div className="testimonial-card" key={testimonial.id}>
-      <div className="video-wrapper">
-        {/* Desktop - Embedded Video from local device */}
-        <div className="desktop-video">
-          <video
-            controls
-            title={testimonial.title}
-            className="local-video"
-          >
-            <source src={testimonial.videoSrc} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+      {/* Testimonials Container */}
+      <div className="test-container">
+        <div className="test-header">
+          <h2 className="test-main-title">Our Community Stories</h2>
+          <p className="test-header-description">
+            Real experiences from people who have transformed their lives through our programs.
+          </p>
         </div>
 
-                
-                {/* Mobile - Thumbnail with Play Button */}
-                <div className="mobile-video">
-                  <img src={testimonial.thumbnail} alt={testimonial.title} />
-                  <div className="play-button">
-                    <svg viewBox="0 0 24 24">
-                      <path d="M8 5v14l11-7z" fill="currentColor"/>
+        <div className="test-grid">
+          {/* Testimonial Card 1 with Video */}
+          <div className="test-card">
+            <div className="test-video-container">
+              <video
+                ref={el => videoRefs.current[0] = el}
+                className="test-video"
+                poster="/images/radiant_logo.jpg"
+                onClick={() => handlePlayVideo(0)}
+                preload="metadata"
+              >
+                <source src="/videos/video5.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              {!isPlaying[0] && (
+                <div 
+                  className="test-play-overlay" 
+                  onClick={() => handlePlayVideo(0)}
+                >
+                  <div className="test-play-circle">
+                    <svg className="test-play-icon" viewBox="0 0 24 24">
+                      <path fill="currentColor" d="M8,5.14V19.14L19,12.14L8,5.14Z" />
                     </svg>
                   </div>
                 </div>
-              </div>
-              <div className="testimonial-info">
-                <h3>{testimonial.title}</h3>
-                <p>{testimonial.description}</p>
-              </div>
+              )}
             </div>
-          ))}
+            <div className="test-content">
+              <h3 className="test-card-title">John's Transformation</h3>
+              <p className="test-card-description">
+                After attending our retreat, John completely transformed his lifestyle and found inner peace.
+              </p>
+            </div>
+          </div>
+
+          {/* Testimonial Card 2 with Video */}
+            <div className="test-card">
+            <div className="test-video-container">
+              <video
+                ref={el => videoRefs.current[1] = el}
+                className="test-video"
+                poster="/images/radiant_logo.jpg"
+                onClick={() => handlePlayVideo(1)}
+                preload="metadata"
+              >
+                <source src="/videos/video4.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              {!isPlaying[1] && (
+                <div 
+                  className="test-play-overlay" 
+                  onClick={() => handlePlayVideo(1)}
+                >
+                  <div className="test-play-circle">
+                    <svg className="test-play-icon" viewBox="0 0 24 24">
+                      <path fill="currentColor" d="M8,5.14V19.14L19,12.14L8,5.14Z" />
+                    </svg>
+                  </div>
+                </div>
+              )}
+            </div>
+            <div className="test-content">
+              <h3 className="test-card-title">John's Transformation</h3>
+              <p className="test-card-description">
+                After attending our retreat, John completely transformed his lifestyle and found inner peace.
+              </p>
+            </div>
+          </div>
+          
+            <div className="test-card">
+            <div className="test-video-container">
+              <video
+                ref={el => videoRefs.current[2] = el}
+                className="test-video"
+                poster="/images/radiant_logo.jpg"
+                onClick={() => handlePlayVideo(2)}
+                preload="metadata"
+              >
+                <source src="/videos/video3.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              {!isPlaying[2] && (
+                <div 
+                  className="test-play-overlay" 
+                  onClick={() => handlePlayVideo(2)}
+                >
+                  <div className="test-play-circle">
+                    <svg className="test-play-icon" viewBox="0 0 24 24">
+                      <path fill="currentColor" d="M8,5.14V19.14L19,12.14L8,5.14Z" />
+                    </svg>
+                  </div>
+                </div>
+              )}
+            </div>
+            <div className="test-content">
+              <h3 className="test-card-title">John's Transformation</h3>
+              <p className="test-card-description">
+                After attending our retreat, John completely transformed his lifestyle and found inner peace.
+              </p>
+            </div>
+          </div>
+            <div className="test-card">
+            <div className="test-video-container">
+              <video
+                ref={el => videoRefs.current[3] = el}
+                className="test-video"
+                poster="/images/radiant_logo.jpg"
+                onClick={() => handlePlayVideo(3)}
+                preload="metadata"
+              >
+                <source src="/videos/video2.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              {!isPlaying[3] && (
+                <div 
+                  className="test-play-overlay" 
+                  onClick={() => handlePlayVideo(3)}
+                >
+                  <div className="test-play-circle">
+                    <svg className="test-play-icon" viewBox="0 0 24 24">
+                      <path fill="currentColor" d="M8,5.14V19.14L19,12.14L8,5.14Z" />
+                    </svg>
+                  </div>
+                </div>
+              )}
+            </div>
+            <div className="test-content">
+              <h3 className="test-card-title">John's Transformation</h3>
+              <p className="test-card-description">
+                After attending our retreat, John completely transformed his lifestyle and found inner peace.
+              </p>
+            </div>
+          </div>
+            <div className="test-card">
+            <div className="test-video-container">
+              <video
+                ref={el => videoRefs.current[4] = el}
+                className="test-video"
+                poster="/images/radiant_logo.jpg"
+                onClick={() => handlePlayVideo(4)}
+                preload="metadata"
+              >
+                <source src="/videos/video1.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              {!isPlaying[4] && (
+                <div 
+                  className="test-play-overlay" 
+                  onClick={() => handlePlayVideo(4)}
+                >
+                  <div className="test-play-circle">
+                    <svg className="test-play-icon" viewBox="0 0 24 24">
+                      <path fill="currentColor" d="M8,5.14V19.14L19,12.14L8,5.14Z" />
+                    </svg>
+                  </div>
+                </div>
+              )}
+            </div>
+            <div className="test-content">
+              <h3 className="test-card-title">John's Transformation</h3>
+              <p className="test-card-description">
+                After attending our retreat, John completely transformed his lifestyle and found inner peace.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
   );
 };
 
-export default TestimonialsSection;
+export default Testimonials;
