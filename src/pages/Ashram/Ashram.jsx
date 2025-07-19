@@ -36,7 +36,7 @@ const AshramPage = () => {
           <video 
             className="ashram-video" 
             controls 
-            poster="/path-to-video-poster.jpg"
+            poster="/images/radiant_logo.jpg"
           >
             <source src="/videos/Ashram.mp4" type="video/mp4" />
             Your browser does not support the video tag.

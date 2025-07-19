@@ -20,6 +20,8 @@ const Header = () => {
     { label: "Ashram", to: "/ashram" },
     { label: "Research", to: "/research" },
     { label: "Contribution", to: "/contribution" },
+    { label: "Contact", to: "/contact" },
+
   ]
 
   return (
@@ -27,7 +29,7 @@ const Header = () => {
       <div className="container">
         <div className="header-content">
           <Link to="/" className="logo">
-            <img src="images/radiant_logo.jpg" alt="Radiant Logo" className="logo-img" />
+            <img src="images/RDT.png" alt="Radiant Logo" className="logo-img" />
           </Link>
 
           <nav className={`nav ${isMenuOpen ? "nav-open" : ""}`}>
