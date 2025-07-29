@@ -9,39 +9,33 @@ const Home = () => {
 const slides = [
     {
       id: 1,
-      title: "Welcome to Radiaant",
-      subtitle: "Your Journey to Healing Begins Here",
+      // title: "Welcome to Radiaant",
+      // subtitle: "Your Journey to Healing Begins Here",
       // description: "Discover inner peace and transform your life through our holistic healing approach",
-      image: "images/sliders/slider-111.jpeg", width: "200", height: "200"
+      image: "images/s3.jpg", width: "200", height: "200"
     },
     {
       id: 2,
-      title: "Fueling success through welllness",
-      subtitle: "A corporate initiative",
+      // title: "Fueling success through welllness",
+      // subtitle: "A corporate initiative",
       // description: "Experience the power of traditional healing methods combined with modern understanding",
-      image: "images/sliders/slider-2.jpeg", width: "200", height: "200"
+      image: "images/s2.jpg", width: "200", height: "200"
     },
     {
       id: 3,
-      title: "Bhutan Pranic Retreat",
-      subtitle: "Beyond the Physical – Healing Through Energy",
+      // title: "Bhutan Pranic Retreat",
+      // subtitle: "Beyond the Physical – Healing Through Energy",
       // description: "Let our experienced masters guide you on your path to emotional and spiritual wellness",
-      image: "images/sliders/slider51.jpg", width: "200", height: "200"
+      image: "images/s1.jpg", width: "200", height: "200"
     },
       {
       id: 4,
-      title: "Heal, transform, grow",
-      subtitle: "📍Radiaant Pranic Healing Center, Hiranandani Estat",
+      // title: "Heal, transform, grow",
+      // subtitle: "📍Radiaant Pranic Healing Center, Hiranandani Estat",
       // description: "Experience the power of pranic energy to restore balance, vitality, and inner peace.*",
-      image: "images/sliders/slider-4.jpeg", width: "200", height: "200"
+      image: "images/s4.jpg", width: "200", height: "200"
     },
-      {
-      id: 5,
-      // title: "Breathe. Balance. Heal",
-      // subtitle: "Healing Doesn’t Always Need Words – Just Energy and Intention.",
-      // description: "A holistic approach to wellness that begins with conscious breathing, centers on energy balance, and leads to deep healing.",
-      image: "images/sliders/slider61.jpg", width: "200", height: "200"
-    },
+      
   ]
 
   const features = [
@@ -189,43 +183,46 @@ const slides = [
         </div>
       </section>
 
-
-{/* Master section */}
+{/* master section */}
 <section className="master-section">
   <div className="master-container">
+    
+    {/* ✅ Centered Title Across Section */}
+    <h1 className="main-title">
+      The founder of modern Pranic Healing<br />and Arhatic yoga
+    </h1>
+
     <div className="master-image">
       <div className="image-wrapper">
         <img 
-          src="/images/master1.png" 
+          src="/images/bg.png" 
+          alt="Mandala Background" 
+          className="bg-circle" 
+        />
+        <img 
+          src="/images/master2.jpg" 
           alt="Grand Master Choa Kok Sui" 
-          className="master-img" 
+          className="master-circle" 
         />
       </div>
     </div>
 
     <div className="master-content">
-      <h4 className="subtitle">The founder of modern Pranic Healing<br />and Arhatic yoga</h4>
-      <h2 className="title">Grand Master Choa Kok Sui</h2>
-      
+      <h2 className="master-name">Grand Master Choa Kok Sui</h2>
+
       <div className="quote-box">
+        <img src="/images/l1.png" alt="Quote Icon" className="quote-icon" />
         <em>
-          "Regulate your mind. Do not worry<br />
+          “Regulate your mind. Do not worry<br />
           excessively about the future. If you<br />
           have done everything that has to be<br />
-          done, the future will take care of itself."
+          done, the future will take care of itself.”
         </em>
       </div>
 
       <p className="description">
-        Grand Master Choa Kok Sui (GMCKS) was a visionary spiritual teacher,<br />
-        scientist, and humanitarian who founded Modern Pranic Healing and<br />
-        Arhatic Yoga. Through years of dedicated research and spiritual<br />
-        practice, he developed a structured, scientific, and highly effective no-<br />
-        touch energy healing system that is now practiced in over 120 countries.<br /><br />
-        Beyond healing, Grand Master Choa's mission was to empower<br />
-        individuals to live more meaningful lives through inner purification,<br />
-        service, and spiritual growth. His legacy lives on through the World<br />
-        Pranic Healing Foundation and the Institute for Inner Studies.
+        Grand Master Choa Kok Sui (GMCKS) was a visionary spiritual teacher, scientist, and humanitarian who founded Modern Pranic Healing and Arhatic Yoga. Through years of dedicated research and spiritual practice, he developed a structured, scientific, and highly effective no-touch energy healing system that is now practiced in over 120 countries. <br /><br />
+        Beyond healing, Grand Master Choa’s mission was to empower individuals to live more meaningful lives through inner purification, service, and spiritual growth. His legacy lives on through the World Pranic Healing Foundation and the Institute for Inner Studies.
       </p>
     </div>
   </div>
@@ -237,37 +234,54 @@ const slides = [
 
 <section className="pranic-section">
   <div className="pranic-container">
-    {/* Left Text */}
+    {/* Title & Description */}
     <div className="pranic-content">
       <h2 className="title">What is Pranic Healing</h2>
       <p className="description">
-        Pranic Healing is a modern, fresh, and scientific approach towards energy and healing. Pranic Healing is a powerful and effective no-touch-no-drug energy healing technique. It is a blend of ancient healing methods that were rediscovered, researched and tested for over 20 years with proven success by <strong>Grand Master Choa Kok Sui</strong> – the founder of Modern Pranic Healing and Arhatic Yoga. Pranic Healing as a science came into existence in 1987.
+        Pranic Healing is a modern, fresh, and scientific approach towards energy and healing.
+        <strong> Pranic Healing</strong> is a powerful and effective no-touch-no-drug energy healing technique.
+        It is a blend of ancient healing methods that were rediscovered, researched and tested for over 20 years with proven success by
+        <strong> Grand Master Choa Kok Sui</strong> – the founder of Modern Pranic Healing and Arhatic Yoga.
+        Pranic Healing as a science came into existence in 1987.
       </p>
     </div>
 
-    {/* Right Mandala Image */}
+    {/* Mandala + Hands */}
     <div className="pranic-image">
-      <div className="circle-wrapper">
-        <img src="/images/pranic_Healing.png" alt="Pranic Healing" className="pranic-img" />
+      <div className="mandala-circle">
+        <img src="/images/pranic_Healing.png" alt="Mandala" className="mandala" />
+        <img src="/images/pranic.png" alt="Healing Hands" className="hands" />
       </div>
     </div>
   </div>
 
-  {/* Quotes Below */}
+  {/* Scroll Icon */}
+  <div className="scroll-indicator">
+    <span className="arrow">&#x25BC;</span>
+    <span className="text">(Scroll down)</span>
+  </div>
+
+  {/* Healing Cards */}
   <div className="healing-points">
-    <div className="point">
-      <img src="/images/pranic1.jpg" alt="Master with aura" />
-      <p>Master Choa developed an easy-to-learn scientific system which has shown to have positive results on the overall quality of life and well-being of an individual..</p>
-    </div>
-    <div className="point">
-      <img src="/images/pranic2.jpg" alt="Energy hand" />
-      <p>Pranic Healing is based on the fundamental principle that the body is a self-repairing entity that is capable of healing itself. . The principle behind pranic healing is transference of energy.</p>
-    </div>
-    <div className="point">
-      <img src="/images/pranic3.jpg" alt="Healing light" />
-      <p>With Pranic Healing, we are  assisting the body’s energy system to normalize so that the body can heal itself. If there are blockages in the energy field, the healer removes these; if there is less energy we give some back.</p>
+  <div className="point">
+    <img src="/images/pranic1.jpg" alt="Master with aura" />
+    <div className="point-text">
+      <p>« Master Choa developed an easy-to-learn scientific system which has shown to have positive results on the overall quality of life and well-being of an individual.</p>
     </div>
   </div>
+  <div className="point">
+    <img src="/images/pranic2.jpg" alt="Energy hand" />
+    <div className="point-text">
+      <p>« Pranic Healing is based on the fundamental principle that the body is a self-repairing entity that is capable of healing itself. The principle behind pranic healing is transference of energy.</p>
+    </div>
+  </div>
+  <div className="point">
+    <img src="/images/pranic3.jpg" alt="Healing light" />
+    <div className="point-text">
+      <p>« With Pranic Healing, we are assisting the body’s energy system to normalize so that the body can heal itself. If there are blockages in the energy field, the healer removes these; if there is less energy we give some back.</p>
+    </div>
+  </div>
+</div>
 </section>
 
 
