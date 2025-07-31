@@ -37,17 +37,21 @@ const Testimonials = () => {
         />
         <div className="test-hero-overlay"></div>
         <div className="test-hero-content">
-          <h1 className="test-hero-title">Testimonials</h1>
-          <p className="test-hero-subtitle">Hear what people say about their experiences</p>
+          {/* <h1 className="test-hero-title">Testimonials</h1>
+          <p className="test-hero-subtitle">Hear what people say about their experiences</p> */}
         </div>
       </div>
 
       {/* Testimonials Container */}
       <div className="test-container">
         <div className="test-header">
-          <h2 className="test-main-title">Our Community Stories</h2>
+          <h2 className="test-main-title">Hear what people say about their experiences</h2>
           <p className="test-header-description">
-            Real experiences from people who have transformed their lives through our programs.
+           At Radiaant, we believe healing is more than just recovery — it's a journey toward inner peace, clarity, and purpose. Over the years, people from all walks of life have walked through our doors seeking change, and what they’ve found is transformation.
+
+Through Pranic Healing, many have experienced emotional balance, physical relief, mental stillness, and spiritual awakening. Their testimonials are more than words — they are living proof of the power of energy, intention, and guided healing.
+
+We invite you to read their stories, feel their journeys, and discover how Raadiant has become a trusted space for growth, healing, and light.
           </p>
         </div>
 

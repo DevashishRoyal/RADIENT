@@ -30,16 +30,25 @@ const Footer = () => {
                 <Link to="/contact">Contact</Link>
               </li>
               <li>
-                <a href="#services">Services</a>
+                <Link to="/testimonies">Testimonies</Link>
+              </li>
+              <li>
+                <Link to="/ashram">Ashram</Link>
+              </li>
+              <li>
+                <Link to="/research">Research</Link>
+              </li>
+              <li>
+                <a href="/contribution">Contrubution</a>
               </li>
             </ul>
           </div>
 
           <div className="footer-section">
             <h4>Contact Info</h4>
-            <p>📧 hello@radiant-healing.com</p>
-            <p>📞 (555) 123-4567</p>
-            <p>📍 123 Healing Way, Peace City</p>
+            <p>📧 Radiaantconsultant@gmail.com</p>
+            <p>📞+91 9819852675</p>
+            <p>📍 103, Oyster CHS, Hiranandani estate,Thane West</p>
           </div>
 
           <div className="footer-section">

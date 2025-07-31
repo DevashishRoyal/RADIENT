@@ -578,14 +578,14 @@ width: 100%;
 }
 
 .hands {
-  position: relative;
-    width: 90%;
-    height: 90%;
+    position: relative;
+    width: 73%;
+    height: 91%;
     border-radius: 50%;
     object-fit: cover;
     z-index: 1;
-    top: 48px;
-    left: 25px;
+    top: 71px;
+    left: 70px;
 }
 
 /* Scroll Indicator */

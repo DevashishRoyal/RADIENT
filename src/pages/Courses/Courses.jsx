@@ -61,8 +61,8 @@ const CoursesPage = () => {
             <p className="course-quote-text"><em>"Pranic Healing is a bridge to spirituality"</em></p>
             <p className="course-quote-author">– GMCKS</p>
             <div className="course-description">
-              <p>The Healing Series in Pranic Healing restores physical, emotional, and spiritual balance. Using ancient principles and modern tools, it empowers self-healing and transformation.</p>
-              <p>At Radiant Pranic Healing Center, we believe that healing is more than recovery—it's transformation from within.</p>
+              <p>The Healing Series in Pranic Healing restores physical, emotional, and spiritual balance. Using ancient principles and modern tools, it empowers self-healing and transformation. The Healing Series is a transformative initiative by Pranic Healing that offers individuals a guided path toward physical, emotional, and mental well-being. Whether one is dealing with stress, physical ailments, emotional imbalances, or simply seeking inner peace, the Healing Series provides powerful, step-by-step support.</p>
+              <p>At Radiant Pranic Healing Center, we believe that healing is more than recovery—it's transformation from within.</p>
             </div>
           </div>
           
@@ -107,8 +107,8 @@ const CoursesPage = () => {
             <p className="course-quote-text"><em>"Spirituality is a way of life. It is not just doing meditation."</em></p>
             <p className="course-quote-author">– GMCKS</p>
             <div className="course-description">
-              <p>In Pranic Healing, spirituality means conscious awakening. It aligns you with inner light and higher truths—beyond rituals and ego.</p>
-              <p>Discover the soul's divine purpose and live with compassion, service, and love.</p>
+              <p>In Pranic Healing, spirituality means conscious awakening. It aligns you with inner light and higher truths—beyond rituals and ego. The Spiritual Series in Pranic Healing is a sacred journey inward—designed for those seeking to strengthen their connection with the soul and higher energies. Through a sequence of guided meditations, teachings, and energy practices, participants learn to awaken their inner light, deepen spiritual awareness, and experience a greater sense of purpose and peace. Rooted in the timeless wisdom of Master Choa Kok Sui, this series is ideal for anyone yearning for clarity, inner stillness, and a more meaningful relationship with the Divine. The Spiritual Series doesn’t just uplift—it transforms.</p>
+              <p>Discover the soul's divine purpose and live with compassion, service, and love.</p>
             </div>
           </div>
           
@@ -154,8 +154,10 @@ const CoursesPage = () => {
             <p className="course-quote-text"><em>"Prosperity is a result of service and the intelligent application of energy."</em></p>
             <p className="course-quote-author">– GMCKS</p>
             <div className="course-description">
-              <p>Abundance flows when energy is clear, focused, and aligned. Pranic Prosperity teachings guide you to cleanse mental blocks and attract opportunities.</p>
-              <p>Shift inner energy, and manifest material and spiritual wealth with ease.</p>
+              <p>The Prosperity Series is a unique offering from Pranic Healing that focuses on clearing energetic blockages related to wealth, success, and abundance. Through powerful techniques and teachings by Master Choa Kok Sui, participants learn how to harness spiritual principles to attract prosperity, improve finances, and create a more fulfilling life. This series blends energy healing, inner work, and practical wisdom to help individuals align their thoughts and energy with abundance. It's more than financial growth—it's about cultivating a mindset and energy field that naturally draws success.</p>
+              <p>Abundance flows when energy is clear, focused, and aligned. Pranic Prosperity teachings guide you to cleanse mental blocks and attract opportunities.
+
+Shift inner energy, and manifest material and spiritual wealth with ease.</p>
             </div>
           </div>
           

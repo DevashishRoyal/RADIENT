@@ -294,7 +294,7 @@ const slides = [
       <section className="video-section section">
         <div className="container">
           <div className="video-content">
-            <h2>Sarika ma’am  Videos</h2>
+            <h2>Understanding Pranic Healing Sarika Biwalkar. </h2>
             <p>Watch our guided sessions and healing techniques</p>
 
             <div className="video-container" >
