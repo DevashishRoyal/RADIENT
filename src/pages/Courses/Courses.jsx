@@ -33,7 +33,7 @@ const CoursesPage = () => {
           />
           <div className="course-hero-overlay"></div>
           <div className="course-hero-content">
-            <h1 className="course-main-title">Pranic Healing Courses</h1>
+            <h1 className="course-main-title">COURSES</h1>
             <p className="course-hero-subtitle">Transform your life through energy healing</p>
           </div>
         </div>

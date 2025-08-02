@@ -167,7 +167,7 @@ const Testimonials = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.6 }}
         >
-          <h1 className="test-hero-title">Transformational Stories</h1>
+          <h1 className="test-hero-title">Testimonies</h1>
           <p className="test-hero-subtitle">Real experiences from our healing community</p>
         </motion.div>
       </motion.div>
@@ -183,10 +183,13 @@ const Testimonials = () => {
         >
           <h2 className="test-main-title">Hear what people say about their experiences</h2>
           <p className="test-header-description">
-            At Radiaant, we believe healing is more than just recovery — it's a journey toward inner peace, 
-            clarity, and purpose. Over the years, people from all walks of life have walked through our doors 
-            seeking change, and what they've found is transformation.
+           At Radiaant, we believe healing is more than just recovery — it's a journey toward inner peace, clarity, and purpose. Over the years, people from all walks of life have walked through our doors seeking change, and what they’ve found is transformation.
           </p>
+          <p className="test-header-description">Through Pranic Healing, many have experienced emotional balance, physical relief, mental stillness, and spiritual awakening. Their testimonials are more than words — they are living proof of the power of energy, intention, and guided healing.
+</p>
+<p className="test-header-description">
+We invite you to read their stories, feel their journeys, and discover how Raadiant has become a trusted space for growth, healing, and light.
+</p>
         </motion.div>
 
         <motion.div 
