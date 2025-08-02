@@ -1,51 +1,42 @@
-
 .header {
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(15px);
-  border-bottom: 1px solid rgba(255, 107, 157, 0.1);
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
-  padding: 1px 0;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
-  
+  padding: 4px 0;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
 .header-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-/* Logo container */
-.logo {
-  padding-left: 16px;
-}
-
-/* Make the link area flexible and centered */
 .logo-link {
   display: flex;
   align-items: center;
-  justify-content: center;
   text-decoration: none;
 }
 
-/* Logo image styling */
-.logo-img {
-  /* height: auto; */
-  height: 90px;
-  width: 160px;
+.logo-img,
+.ph-img {
+  height: 80px;
   object-fit: contain;
-  padding: 0px;
   transition: transform 0.3s ease;
 }
 
-/* Optional hover effect */
-.logo-img:hover {
+.logo-img:hover,
+.ph-img:hover {
   transform: scale(1.05);
 }
-
 
 .nav-list {
   display: flex;
@@ -56,7 +47,7 @@
 }
 
 .nav-list a {
-  color: #2d3748;
+  color: #1f2937;
   font-weight: 600;
   text-decoration: none;
   position: relative;
@@ -66,7 +57,7 @@
 
 .nav-list a:hover,
 .nav-list a.active {
-  color: #4a90e2;
+  color: #0ea5e9;
 }
 
 .nav-list a::after {
@@ -76,7 +67,7 @@
   bottom: 0;
   height: 2px;
   width: 0;
-  background: linear-gradient(135deg, #4a90e2, #7b68ee);
+  background: linear-gradient(135deg, #0ea5e9, #6366f1);
   transition: width 0.3s;
 }
 
@@ -104,143 +95,47 @@
 
 .menu-toggle span {
   height: 3px;
-  background: #4a90e2;
+  background: #0ea5e9;
   margin: 3px 0;
   border-radius: 2px;
   transition: all 0.3s;
 }
 
 @media (max-width: 768px) {
-  .nav {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background: rgba(255, 255, 255, 0.98);
-    backdrop-filter: blur(15px);
-    border-top: 1px solid rgba(255, 107, 157, 0.1);
-    transform: translateY(-20px);
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    transition: all 0.3s ease;
-  }
-
-  .nav-open {
-    transform: translateY(0);
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-  }
-
-  .nav-list {
-    flex-direction: column;
-    padding: 25px 0;
-    gap: 20px;
-    align-items: center;
-  }
-
-  .menu-toggle {
-    display: flex;
-  }
-
-  .header-actions .btn {
-    display: none;
-  }
-}
-
-
-
-.header-actions {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 20px;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-}
-
-.ph-img {
-  height: 50px; /* Adjust based on your navbar height */
-  width: auto;
-  object-fit: contain;
-  border-radius: 8px; /* Optional: rounded corners */
-  transition: transform 0.3s ease;
-}
-
-.ph-img:hover {
-  transform: scale(1.05); /* Slight zoom on hover */
-}
-@media (max-width: 768px) {
   .header {
-    padding: 8px 16px; /* Add side padding to the whole header */
+    padding: 8px 16px;
   }
 
   .header-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     position: relative;
   }
 
-  /* Left logo */
-  .logo-img {
-    height: 70px;
-    width: auto;
-    object-fit: contain;
-    margin-right: 12px; /* spacing from hamburger */
-  }
-
-  /* Right logo */
+  .logo-img,
   .ph-img {
-    height: 70px;
-    width: auto;
-    object-fit: contain;
-    margin-left: 12px; /* spacing from hamburger */
+    height: 60px;
+    margin: 0 10px;
   }
 
-  /* Hamburger in the center */
   .menu-toggle {
+    display: flex;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 30px;
-    height: 24px;
-    background: none;
-    border: none;
-    cursor: pointer;
     z-index: 10;
   }
 
-  .menu-toggle span {
-    height: 3px;
-    background: #4a90e2;
-    margin: 3px 0;
-    border-radius: 2px;
-    transition: all 0.3s;
-  }
-
-  /* Hide CTA buttons in mobile */
   .header-actions .btn {
     display: none;
   }
 
-  /* Dropdown nav menu */
   .nav {
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
-    background: rgba(255, 255, 255, 0.98);
+    background: rgba(255, 255, 255, 0.97);
     backdrop-filter: blur(15px);
-    border-top: 1px solid rgba(255, 107, 157, 0.1);
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
     transform: translateY(-20px);
     opacity: 0;
     visibility: hidden;
