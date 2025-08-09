@@ -8,7 +8,7 @@
 /* Banner Image */
 .research-banner {
   position: relative;
-  height: 300px;
+  height: 100vh;
   overflow: hidden;
 }
 
@@ -21,155 +21,230 @@
 
 .banner-overlay {
   position: absolute;
-  top: 0;
+  top: 268px;
   left: 0;
   right: 0;
   bottom: 0;
+
   display: flex;
-  align-items: center;
-  padding-left: 10%;
-  background: linear-gradient(90deg, rgba(0,100,0,0.6) 0%, transparent 100%);
+  align-items: right;
+  padding-left: 35%;
+  /* background: linear-gradient(90deg, rgba(0,100,0,0.6) 0%, transparent 100%); */
 }
 
 /* Header Text */
-.research-tagline {
+.research-tagline { 
   display: flex;
   align-items: center;
   animation: fadeIn 1.5s ease-out;
 }
 
 .research-divider {
-  color: #a5d6a7;
+  color: #0a0e0a;
   font-size: 28px;
   margin-right: 12px;
   font-weight: bold;
 }
 
 .tagline-text {
-  color: white;
-  font-size: 20px;
-  text-transform: lowercase;
+  color: rgb(255, 255, 255);
+  /* font-size: 20px; */
+  /* text-transform: lowercase; */
   letter-spacing: 2px;
-  font-weight: 300;
+  font-weight: 800;
+  color: rgb(10, 7, 7);
+  font-size: 5rem;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font-weight: 800;
+    font-style: italic;
+
 }
 
 /* Content Container */
 .research-content-container {
-  max-width: 900px;
-  margin: 50px auto;
-  padding: 0 20px;
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 30px;
 }
 
-/* Title */
+/* Header Section */
+.research-header {
+  text-align: center;
+  margin-bottom: 50px;
+  position: relative;
+}
+
 .research-title {
-  color: #2e7d32;
-  font-size: 2.3rem;
-  margin: 0 0 30px 0;
-  line-height: 1.3;
+  color: #1b5e20;
+  font-size: 2.5rem;
+  margin: 0 0 15px 0;
+  line-height: 1.2;
   font-weight: 600;
-  animation: slideIn 0.8s ease-out;
+  letter-spacing: -0.5px;
+}
+
+.title-decoration {
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #4caf50, #81c784);
+  margin: 0 auto;
+  border-radius: 2px;
 }
 
 /* Content Text */
 .research-content {
-  margin-bottom: 50px;
-  animation: fadeInUp 1s ease-out;
+  margin-bottom: 60px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .intro-text {
-  font-size: 1.1rem;
-  line-height: 1.9;
+  font-size: 1.15rem;
+  line-height: 1.8;
   margin-bottom: 25px;
   color: #455a64;
+  font-weight: 400;
 }
 
+/* Articles Section */
 .articles-section {
-  border-top: 2px solid #c8e6c9;
-  padding-top: 30px;
-  animation: fadeIn 1.2s ease-out;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin-top: 60px;
+  padding-top: 40px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .articles-title {
   color: #1b5e20;
-  font-size: 1.8rem;
-  margin-bottom: 25px;
+  font-size: 2rem;
+  margin-bottom: 10px;
   font-weight: 600;
 }
 
-/* === Instagram Grid Layout === */
+.section-subtitle {
+  color: #757575;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+/* Articles Grid */
 .articles-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 20px;
-  width: 100%;
-  max-width: 1100px;
-  padding: 0 20px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+  margin: 0 auto;
 }
 
-.insta-post {
-  position: relative;
-  aspect-ratio: 1 / 1;
-  overflow: hidden;
+.article-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  display: block;
-  transition: transform 0.3s ease;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
 }
 
-.insta-post img {
+.article-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-image-container {
+  position: relative;
   width: 100%;
-  height: 67%;
-  object-fit: cover;
-  display: block;
-  transition: transform 0.3s ease;
+  padding-top: 100%; /* 1:1 Aspect Ratio */
+  overflow: hidden;
 }
 
-.insta-post:hover img {
-  transform: scale(1.05);
-}
-
-.insta-overlay {
+.card-image {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.45);
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.article-card:hover .card-image {
+  transform: scale(1.05);
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(172 93 93 / 74%);
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   opacity: 0;
   transition: opacity 0.3s ease;
-  pointer-events: none;
-  color: #fff;
-  border-radius: 12px;
-  text-align: center;
 }
 
-.insta-post:hover .insta-overlay {
+.article-card:hover .card-overlay {
   opacity: 1;
 }
 
-.insta-text {
-  font-size: 14px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+.card-content {
+  text-align: center;
+  padding: 20px;
+  color: white;
 }
 
 .insta-icon {
   width: 28px;
   height: 28px;
-  margin-bottom: 8px;
-  fill: currentColor;
-  color: #fff;
+  margin-bottom: 15px;
+  fill: white;
 }
 
-/* === Animations === */
+.card-title {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.card-action {
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  opacity: 0.9;
+}
+
+/* View More Button */
+.view-more-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.view-more-btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #2e7d32;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: 2px solid #2e7d32;
+}
+
+.view-more-btn:hover {
+  background-color: transparent;
+  color: #2e7d32;
+}
+
+/* Animations */
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
@@ -186,35 +261,67 @@
   }
 }
 
-/* === Responsive Design === */
-@media (max-width: 768px) {
-  .articles-title {
-    font-size: 1.5rem;
+/* Responsive Design */
+@media (max-width: 992px) {
+  .research-content-container {
+    padding: 0 25px;
   }
-
+  
+  .research-title {
+    font-size: 2.2rem;
+  }
+  
   .articles-grid {
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 16px;
-  }
-
-  .insta-text {
-    font-size: 13px;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 25px;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
+  .research-content-container {
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  
+  .research-title {
+    font-size: 2rem;
+  }
+  
+  .articles-title {
+    font-size: 1.7rem;
+  }
+  
   .articles-grid {
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 14px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
   }
-
-  .insta-text {
-    font-size: 12px;
+  
+  .intro-text {
+    font-size: 1.05rem;
   }
+}
 
-  .insta-icon {
-    width: 24px;
-    height: 24px;
+@media (max-width: 576px) {
+  .research-title {
+    font-size: 1.7rem;
+  }
+  
+  .articles-title {
+    font-size: 1.5rem;
+  }
+  
+  .section-subtitle {
+    font-size: 1rem;
+  }
+  
+  .articles-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .card-title {
+    font-size: 1.1rem;
   }
 }
 

@@ -4,10 +4,10 @@
 
 /* ========== IMAGE SLIDER ========== */
 .image-slider {
-  height:100vh;
+  height:110vh;
   position: relative;
   overflow: hidden;
-  margin-top: 14px;
+  margin-top: 35px;
 }
 
 .slider-container {
@@ -222,7 +222,10 @@
 /* Master Section */
 .master-section {
   padding: 60px 20px;
-  background-color: #f5f5f5;
+  background: radial-gradient(circle at center, #e0fff7 0%, #ccf2ff 40%, #f7f9fc 100%);
+ /* background: radial-gradient(circle at center, #e0fff7 0%, #ccf2ff 40%, #f7f9fc 100%);
+  background-blend-mode: soft-light; */
+/* background: linear-gradient(to right, #a28b40, #8ad9fc); */
   font-family: 'Times New Roman', serif;
   overflow: hidden;
   animation: fadeIn 1.2s ease-out;
@@ -329,13 +332,16 @@ width: 100%;
 
 /* PARAGRAPH */
 .description {
-  font-size: 1rem;
-  color: #111;
+  font-family: 'Lato', sans-serif;       /* or import Xolux if available */
+  font-size: 1.1rem;
+  color: #00525f;                        /* Deep blue-green tone like image */
   line-height: 1.8;
-  text-align: justify;
-  font-weight: bold;
+  text-align: left;
+  font-weight: 400;                      /* Normal weight, not bold */
+  letter-spacing: 0.2px;
   animation: fadeInUp 1.4s ease-out;
 }
+
 
 /* ANIMATIONS */
 @keyframes fadeIn {
@@ -546,9 +552,14 @@ width: 100%;
 }
 
 .description {
+  font-family: 'Lato', sans-serif;       /* or import Xolux if available */
   font-size: 1.1rem;
+  color: #00525f;                        /* Deep blue-green tone like image */
   line-height: 1.8;
-  color: #333;
+  text-align: left;
+  font-weight: 400;                      /* Normal weight, not bold */
+  letter-spacing: 0.2px;
+  animation: fadeInUp 1.4s ease-out;
 }
 
 .description strong {
@@ -612,7 +623,7 @@ width: 100%;
   flex-wrap: wrap;
   justify-content: center;
   gap: 100px;
-  margin-top: 40px;
+  margin-top: 160px;
 }
 
 .point {
@@ -983,7 +994,7 @@ width: 100%;
   justify-content: center;
   align-items: flex-start;
   flex-wrap: nowrap; /* Keep all three in a row on large screens */
-  gap: 60px;
+  gap: 120px;
   margin-bottom: 60px;
 }
 
@@ -999,14 +1010,74 @@ width: 100%;
 }
 
 /* Image Styling */
+.courses-section {
+  padding: 80px 0;
+  background: linear-gradient(145deg, #e8f5e9, #ffffff);
+  position: relative;
+  z-index: 1;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 600;
+  color: #1b5e20;
+  margin-bottom: 60px;
+  position: relative;
+  z-index: 2;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.courses-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 80px;
+  position: relative;
+  z-index: 2;
+}
+
+.course-card {
+  position: relative;
+  max-width: 360px;
+  text-align: center;
+  text-decoration: none;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  z-index: 2;
+}
+
+.course-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 20px 40px rgba(46, 125, 50, 0.2);
+}
+
+.course-glow {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 340px;
+  height: 340px;
+  background: radial-gradient(circle, rgba(200,255,200,0.4), transparent 70%);
+  border-radius: 50%;
+  filter: blur(40px);
+  z-index: 1;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
 .course-image-wrapper {
-  width: 360px;
-  height: 360px;
+  width: 328px;
+  height: 312px;
   border-radius: 50%;
   overflow: hidden;
   margin: 0 auto 20px;
   border: 6px solid #e8f5e9;
   box-shadow: 0 10px 30px rgba(46, 125, 50, 0.2);
+  transition: box-shadow 0.3s ease;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 2;
 }
 
 .course-image {
@@ -1020,14 +1091,28 @@ width: 100%;
   transform: scale(1.05);
 }
 
-/* Text under Image */
 .course-name {
   font-size: 1.4rem;
   color: #2e7d32;
-  font-weight: 500;
+  font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
   margin-top: 10px;
+  transition: color 0.3s ease;
+}
+
+.course-card:hover .course-name {
+  color: #1b5e20;
+  text-shadow: 0 0 5px rgba(46, 125, 50, 0.4);
+}
+
+/* Responsive Tweak */
+@media (max-width: 992px) {
+  .courses-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+  }
 }
 
 /* Disclaimer Section */

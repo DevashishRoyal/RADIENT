@@ -256,10 +256,10 @@ const slides = [
   </div>
 
   {/* Scroll Icon */}
-  <div className="scroll-indicator">
+  {/* <div className="scroll-indicator">
     <span className="arrow">&#x25BC;</span>
     <span className="text">(Scroll down)</span>
-  </div>
+  </div> */}
 
   {/* Healing Cards */}
   <div className="healing-points">
@@ -294,7 +294,7 @@ const slides = [
       <section className="video-section section">
         <div className="container">
           <div className="video-content">
-            <h2>Understanding Pranic Healing Sarika Biwalkar. </h2>
+            <h2>Understanding Pranic Healing WITH Sarika Biwalkar </h2>
             <p>Watch our guided sessions and healing techniques</p>
 
             <div className="video-container" >
@@ -314,12 +314,13 @@ const slides = [
       </section>
 
 
-      <section className="courses-section" id="courses">
+     <section className="courses-section" id="courses">
   <div className="container">
     <h2 className="section-title">Courses We Offer</h2>
     
     <div className="courses-grid">
       <a href="/courses" className="course-card">
+        <div className="course-glow"></div>
         <div className="course-image-wrapper">
           <img src="/images/Course1.jpg" alt="Prosperity Series" className="course-image" />
         </div>
@@ -327,6 +328,7 @@ const slides = [
       </a>
 
       <a href="/courses" className="course-card">
+        <div className="course-glow"></div>
         <div className="course-image-wrapper">
           <img src="/images/Course2.jpg" alt="Healing Series" className="course-image" />
         </div>
@@ -334,6 +336,7 @@ const slides = [
       </a>
 
       <a href="/courses" className="course-card">
+        <div className="course-glow"></div>
         <div className="course-image-wrapper">
           <img src="/images/Course3.jpg" alt="Spirituality Series" className="course-image" />
         </div>
@@ -341,6 +344,7 @@ const slides = [
       </a>
     </div>
   </div>
+
 
   {/* Disclaimer Section */}
   <div className="disclaimer-section">

@@ -3,11 +3,12 @@ import './Contribution.css';
 
 const Contribution = () => {
   return (
+    
     <div className="cont-container">
       {/* Hero Image Section */}
       <div className="cont-hero">
         <img 
-          src="/path-to-your-image.jpg"  // Replace with your actual image path
+          src="images/Contribution.png"  // Replace with your actual image path
           alt="Contribution Hero"
           className="cont-hero-image"
         />
@@ -17,27 +18,32 @@ const Contribution = () => {
         </div>
       </div>
 
-      {/* Content Section */}
-      <div className="cont-content-wrapper">
-        <div className="cont-quote-section">
-          <blockquote className="cont-quote">
-            "It is in giving that we receive." <span className="cont-quote-author">- Grand Master Choa Kok Sui</span>
-          </blockquote>
-        </div>
-        
-        <div className="cont-content">
-          <h2 className="cont-heading">Give Light: Give Hope.</h2>
-          <div className="cont-text">
-            <p>
-              There are many lives waiting to be touched—and your support can be the light that brings hope. Every contribution, no matter how small, creates a ripple of change.  
-            </p>
-            <p>
-              At the Pranic Healing Foundation of South Mumbai, we believe that healing extends beyond the energy body—it includes healing hunger, ignorance, and suffering. We're committed to giving back in every way we can, and we invite you to be a part of this journey.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
+      <div class="cont-content-wrapper">
+  
+  {/* <!-- Quote --> */}
+  <div class="cont-quote-section">
+    <blockquote class="cont-quote">
+      “It is in giving that we receive.”
+      <span class="cont-quote-author">- Grand Master Choa Kok Sui</span>
+    </blockquote>
+  </div>
+  
+  {/* <!-- Heading --> */}
+  <h2 class="cont-heading">Give Light. Give Hope.</h2>
+  
+  {/* <!-- Main Text --> */}
+  <div class="cont-text">
+    <p>There are many lives waiting to be touched—and your support can be the light that brings hope. Every contribution, no matter how small, creates a ripple of change.</p>
+    <p>At Radiant Pranic Healing, we believe that true service begins with compassion — and healing is a right, not a privilege. Through free healing sessions, wellness camps, food distribution drives, and emotional support programs, we strive to reach those who need it most — regardless of their means.</p>
+    <p>Your donation empowers us to continue this work. It helps us offer healing to the sick, peace to the anxious, and hope to those who feel forgotten. Every rupee you give becomes a channel of love, care, and transformation.</p>
+    <p>Whether it’s a one-time contribution or a monthly pledge, your support fuels our mission — to heal, to serve, and to uplift.</p>
+  </div>
+  
+  {/* <!-- Closing Line --> */}
+  <p class="cont-closing">🙏 <em>Donate now. Be the hand that heals. Be the heart that gives.</em></p>
+</div>
+</div>
+
   );
 };
 

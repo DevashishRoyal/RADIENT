@@ -21,9 +21,9 @@
 /* Hero Section */
 .about-hero {
   position: relative;
-  height: 70vh;
+  height: 90vh;
   min-height: 500px;
-  background: url('/images/our1.png') center/cover no-repeat;
+  background: url('/images/our2.png') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -156,7 +156,7 @@ const Testimonials = () => {
         transition={{ duration: 0.8 }}
       >
         <img 
-          src="/images/testimonies.png" 
+          src="/images/testimonies3.png" 
           alt="Pranic Healing Testimonials" 
           className="test-hero-image" 
         />
@@ -171,26 +171,31 @@ const Testimonials = () => {
           <p className="test-hero-subtitle">Real experiences from our healing community</p>
         </motion.div>
       </motion.div>
-
-      {/* Testimonials Container */}
-      <motion.div 
-        className="test-container"
-        variants={containerVariants}
-      >
-        <motion.div 
-          className="test-header"
-          variants={itemVariants}
-        >
-          <h2 className="test-main-title">Hear what people say about their experiences</h2>
-          <p className="test-header-description">
-           At Radiaant, we believe healing is more than just recovery — it's a journey toward inner peace, clarity, and purpose. Over the years, people from all walks of life have walked through our doors seeking change, and what they’ve found is transformation.
-          </p>
-          <p className="test-header-description">Through Pranic Healing, many have experienced emotional balance, physical relief, mental stillness, and spiritual awakening. Their testimonials are more than words — they are living proof of the power of energy, intention, and guided healing.
-</p>
-<p className="test-header-description">
-We invite you to read their stories, feel their journeys, and discover how Raadiant has become a trusted space for growth, healing, and light.
-</p>
-        </motion.div>
+{/* Testimonials Container */}
+<motion.div 
+  className="test-container"
+  variants={containerVariants}
+>
+  <motion.div 
+    className="test-header"
+    variants={itemVariants}
+  >
+    <div className="test-header-content">
+      <h2 className="test-main-title">Hear what people say about their experiences</h2>
+      <div className="test-description-container">
+        <p className="test-header-description">
+          At Radiaant, we believe healing is more than just recovery — it's a journey toward inner peace, clarity, and purpose. Over the years, people from all walks of life have walked through our doors seeking change, and what they've found is transformation.
+        </p>
+        <p className="test-header-description">
+          Through Pranic Healing, many have experienced emotional balance, physical relief, mental stillness, and spiritual awakening. Their testimonials are more than words — they are living proof of the power of energy, intention, and guided healing.
+        </p>
+        <p className="test-header-description">
+          We invite you to read their stories, feel their journeys, and discover how Raadiant has become a trusted space for growth, healing, and light.
+        </p>
+      </div>
+    </div>
+  </motion.div>
+</motion.div>
 
         <motion.div 
           className="test-grid"
@@ -231,7 +236,7 @@ We invite you to read their stories, feel their journeys, and discover how Raadi
             </motion.div>
           ))}
         </motion.div>
-      </motion.div>
+      {/* </motion.div> */}
 
       {/* Video Modal */}
       <AnimatePresence>

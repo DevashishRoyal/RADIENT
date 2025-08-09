@@ -9,7 +9,7 @@
 /* Hero Section */
 .cont-hero {
   position: relative;
-  height: 60vh;
+  height: 108vh;
   min-height: 400px;
   overflow: hidden;
 }
@@ -50,57 +50,66 @@
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
-/* Content Wrapper */
+/* Wrapper with dotted background */
 .cont-content-wrapper {
   max-width: 800px;
   margin: 60px auto;
-  padding: 0 20px;
+  padding: 40px 20px;
+  background-color: #fff;
+  background-image: radial-gradient(#ccc 0.5px, transparent 0.5px);
+  background-size: 20px 20px;
+  border-radius: 8px;
 }
 
-/* Quote Section */
+/* Quote Styling */
 .cont-quote-section {
-  margin: 40px 0;
-  padding: 30px 0;
-  border-top: 1px solid #ecf0f1;
-  border-bottom: 1px solid #ecf0f1;
+  margin-bottom: 20px;
 }
 
 .cont-quote {
-  font-size: 1.8rem;
-  color: #16a085;
+  font-size: 3.3rem;
+  color: #004c99; /* Blue like screenshot */
   text-align: center;
   font-style: italic;
   margin: 0;
-  padding: 0 20px;
-  line-height: 1.5;
 }
 
 .cont-quote-author {
-  display: block;
-  font-size: 1.2rem;
-  color: #e84393;
-  margin-top: 15px;
+  display: inline;
+  font-size: 1.1rem;
   font-style: normal;
+  margin-left: 5px;
 }
 
-/* Content Section */
+/* Heading */
 .cont-heading {
-  font-size: 2rem;
-  color: #e84393;
+  font-size: 2.6rem;
+  color: #ff6f91; /* Pink heading */
   text-align: center;
-  font-weight: 400;
+  font-weight: bold;
   margin-bottom: 30px;
 }
 
+/* Paragraph text */
 .cont-text {
-  font-size: 1.1rem;
-  color: #34495e;
-  text-align: justify;
+  font-size: 1rem;
+  color: #222;
+  line-height: 1.8;
+  font-family: 'Lato', sans-serif;
 }
 
 .cont-text p {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
+
+/* Closing line */
+.cont-closing {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #444;
+  text-align: left;
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -145,5 +154,117 @@
   
   .cont-text {
     text-align: left;
+  }
+}
+
+
+
+
+.donate-section {
+  width: 100%;
+  padding: 50px 20px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.donate-container {
+  max-width: 800px;
+  width: 100%;
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+}
+
+.donate-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #3c3c3c;
+}
+
+.donate-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+  color: #555;
+}
+
+input,
+select {
+  padding: 10px 14px;
+  border-radius: 6px;
+  border: 1px solid #8bc34a;
+  outline: none;
+  font-size: 1rem;
+}
+
+input:focus,
+select:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 6px rgba(76, 175, 80, 0.4);
+}
+
+.toggle-buttons,
+.option-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.toggle-buttons button,
+.option-buttons button {
+  padding: 8px 14px;
+  border: 1px solid #8bc34a;
+  background: white;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.toggle-buttons button.active,
+.toggle-buttons button:hover,
+.option-buttons button:hover {
+  background: #4caf50;
+  color: white;
+}
+
+.submit-btn {
+  background: #00bfa5;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background: #009688;
+}
+
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
   }
 }
