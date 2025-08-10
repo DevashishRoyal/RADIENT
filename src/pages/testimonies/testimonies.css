@@ -108,6 +108,11 @@ position: absolute;
   .test-container {
     padding: 60px 20px 40px;
   }
+    .test-hero-content {
+    top: 44%;
+    left: 0%;
+  }
+  
   
   .test-main-title {
     font-size: 2.2rem;
@@ -301,7 +306,7 @@ position: absolute;
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .test-hero-title {
-    font-size: 2.5rem;
+    font-size: 4.5rem;
   }
   
   .test-hero-subtitle {
