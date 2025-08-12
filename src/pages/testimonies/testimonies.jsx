@@ -63,33 +63,53 @@ const Testimonials = () => {
     {
       id: 1,
       video: "/videos/video5.mp4",
-      title: "Sarah's Healing Journey",
-      description: "After struggling with chronic pain for years, Pranic Healing gave me my life back."
+      title: " From chronic back pain and knee pain to renewed movement ",
+      description: "Neetu's story is one of hope. See how energy healing dissolves prolonged physical discomfort."
     },
     {
       id: 2,
       video: "/videos/video4.mp4",
-      title: "Raj's Spiritual Awakening",
-      description: "The meditation techniques transformed my mental clarity and inner peace."
+      title: "Consumed and restless by the fatigue of constant knee pain",
+      description: "Pooja is witness to relief and healing. Energy healing a one stop solution to gaining freedom from physical discomfort."
     },
     {
       id: 3,
       video: "/videos/video3.mp4",
-      title: "Priya's Emotional Balance",
-      description: "I found emotional stability I never thought was possible."
+      title: "Experience the divine flow of energy",
+      description: "Flow of energy through the body with Saruch. The calm and peace of finding the right energy balance within the body."
     },
     {
       id: 4,
-      video: "/videos/video2.mp4",
-      title: "Arjun's Physical Recovery",
-      description: "My sports injury healed twice as fast with energy healing."
+      video: "/videos/Video8.mp4",
+      title: "Hear Preeti’s story as she experiences",
+      description: "Peace and calm within herself. Her story of experiencing an energy that goes beyond conventional restoration."
     },
     {
       id: 5,
       video: "/videos/video1.mp4",
-      title: "Meena's Family Transformation",
-      description: "Whole family experienced profound changes in just weeks."
-    }
+      title: " Meera, once overwhelmed by stress and tiredness,",
+      description: "Found balance through energy. Experience how subtle shifts in energy brought her back to strength and stability."
+    },
+    {
+      id: 6,
+      video: "/videos/Video9.mp4",
+      title: "Sakshi a young aspiring student shares her insights",
+      description: "how she experienced the positive energy through her body. How Pranic healing helped her restore physical differences within her body. "
+    },
+    {
+      id: 7,
+      video: "/videos/Video7.mp4",
+      title: "Be it professional stress or emotional burnout ",
+      description: "Dr Tushar shares his insights on how Pranic Healing is helpful for people in all walks of their professional lives."
+    },
+    {
+      id: 8,
+      video: "/videos/Video6.mp4",
+      title: "Wrishit, once overwhelmed by stress and burnout",
+      description: "found balance through energy. Experience how subtle shifts in energy brought him back to strength and stability"
+    },
+    
+
   ];
 
   // Animation variants

@@ -9,30 +9,30 @@ const Home = () => {
 const slides = [
     {
       id: 1,
-      // title: "Welcome to Radiaant",
-      // subtitle: "Your Journey to Healing Begins Here",
-      // description: "Discover inner peace and transform your life through our holistic healing approach",
+      title: "Welcome to Radiaant",
+      subtitle: "Your Journey to Healing Begins Here",
+      description: "Discover inner peace and transform your life through our holistic healing approach",
       image: "images/s3.jpg", width: "200", height: "200"
     },
     {
       id: 2,
-      // title: "Fueling success through welllness",
-      // subtitle: "A corporate initiative",
-      // description: "Experience the power of traditional healing methods combined with modern understanding",
+      title: "Fueling success through welllness",
+      subtitle: "A corporate initiative",
+      description: "Experience the power of traditional healing methods combined with modern understanding",
       image: "images/s2.jpg", width: "200", height: "200"
     },
     {
       id: 3,
-      // title: "Bhutan Pranic Retreat",
-      // subtitle: "Beyond the Physical – Healing Through Energy",
-      // description: "Let our experienced masters guide you on your path to emotional and spiritual wellness",
+      title: "Bhutan Pranic Retreat",
+      subtitle: "Beyond the Physical – Healing Through Energy",
+      description: "Let our experienced masters guide you on your path to emotional and spiritual wellness",
       image: "images/s1.jpg", width: "200", height: "200"
     },
       {
       id: 4,
-      // title: "Heal, transform, grow",
-      // subtitle: "📍Radiaant Pranic Healing Center, Hiranandani Estat",
-      // description: "Experience the power of pranic energy to restore balance, vitality, and inner peace.*",
+      title: "Heal, transform, grow",
+      subtitle: "📍Radiaant Pranic Healing Center, Hiranandani Estat",
+      description: "Experience the power of pranic energy to restore balance, vitality, and inner peace.*",
       image: "images/s4.jpg", width: "200", height: "200"
     },
       
