@@ -71,253 +71,51 @@
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
   color: rgba(255,255,255,0.9);
 }
-
-/* Main Content */
-.ashram-main-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.ashram-content-section {
+.ashram-section {
   display: flex;
-  margin: 80px auto;
-  gap: 60px;
-  align-items: flex-start;
-}
-
-.ashram-text-content {
-  flex: 2;
-  font-size: 1.1rem;
-  color: #444;
-}
-
-.ashram-section-header {
-  margin-bottom: 40px;
-}
-
-.ashram-section-title {
-  font-size: 2.2rem;
-  font-weight: 400;
-  color: #2c4a3e; /* Deep green */
-  margin-bottom: 10px;
-}
-
-.ashram-title-underline {
-  width: 80px;
-  height: 3px;
-  background: #8a6e4b; /* Gold */
-  margin-bottom: 20px;
-}
-
-.ashram-paragraph {
-  margin-bottom: 25px;
-  line-height: 1.9;
-  color: #555;
-}
-
-.ashram-closing {
-  font-style: italic;
-  font-size: 1.2rem;
-  color: #2c4a3e;
-}
-
-/* Video Section */
-.ashram-video-wrapper {
-  flex: 1;
-  position: sticky;
-  top: 100px;
-}
-
-.ashram-video-container {
-  background: white;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-}
-
-.ashram-video {
-  width: 100%;
-  max-width: 400px;
-  height: 600px;
-  border-radius: 4px;
-  background-color: #f5f5f5;
-  object-fit: cover;
-  display: block;
-}
-
-.ashram-video-caption {
-  text-align: center;
-  margin-top: 10px;
-  font-style: italic;
-  color: #666;
-}
-
-/* Feature Boxes */
-.ashram-feature-boxes {
-  display: flex;
-  gap: 30px;
-  margin: 40px 0;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 50px;
   flex-wrap: wrap;
 }
 
-.ashram-feature-box {
+.ashram-text {
   flex: 1;
-  min-width: 250px;
-  background: white;
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border-top: 4px solid #8a6e4b;
+  min-width: 300px;
 }
 
-.ashram-feature-box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-}
-
-.ashram-feature-icon {
+.ashram-text h2 {
+  color: #1565c0;
   font-size: 2rem;
   margin-bottom: 15px;
 }
 
-.ashram-feature-box h3 {
-  color: #2c4a3e;
-  margin-bottom: 15px;
-  font-size: 1.3rem;
-}
-
-.ashram-feature-box p {
-  color: #666;
-  font-size: 0.95rem;
+.ashram-text p {
+  color: #444;
   line-height: 1.6;
+  margin-bottom: 1rem;
 }
 
-/* Testimonial Section */
-.ashram-testimonial-section {
-  background: linear-gradient(135deg, #2c4a3e 0%, #3a6657 100%);
-  padding: 80px 20px;
-  margin: 80px -20px;
-  color: white;
+.ashram-video {
+  flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
-.ashram-testimonial-content {
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
+.ashram-video video {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%; /* circular on desktop */
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
 }
 
-.ashram-testimonial {
-  font-size: 1.4rem;
-  font-style: italic;
-  line-height: 1.8;
-  margin-bottom: 20px;
-  position: relative;
-}
-
-.ashram-testimonial:before, .ashram-testimonial:after {
-  content: '"';
-  font-size: 3rem;
-  color: rgba(255,255,255,0.2);
-  position: absolute;
-}
-
-.ashram-testimonial:before {
-  top: -20px;
-  left: -40px;
-}
-
-.ashram-testimonial:after {
-  bottom: -50px;
-  right: -40px;
-}
-
-.ashram-testimonial-author {
-  font-weight: 300;
-  font-size: 1.1rem;
-  color: rgba(255,255,255,0.8);
-}
-
-/* Full Width Section */
-.ashram-full-width-section {
-  margin: 80px auto;
-}
-
-/* Animations */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Responsive Design */
-@media (max-width: 1024px) {
-  .ashram-content-section {
-    flex-direction: column;
-    gap: 40px;
-    margin: 60px auto;
-  }
-  
-  .ashram-video-wrapper {
-    position: static;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .ashram-feature-boxes {
-    flex-direction: column;
-  }
-}
-
+/* On mobile/portrait view – make it rectangular */
 @media (max-width: 768px) {
-  .ashram-title {
-    font-size: 3rem;
-  }
-  
-  .ashram-subtitle {
-    font-size: 1.2rem;
-  }
-  
-  .ashram-section-title {
-    font-size: 1.8rem;
-  }
-  
-  .ashram-video {
-    height: 500px;
-  }
-}
-
-@media (max-width: 480px) {
-  .ashram-hero {
-    height: 70vh;
-    min-height: 400px;
-  }
-  
-  .ashram-title {
-    font-size: 2.2rem;
-  }
-  
-  .ashram-subtitle {
-    font-size: 1rem;
-  }
-  
-  .ashram-video {
-    height: 400px;
-  }
-  
-  .ashram-testimonial {
-    font-size: 1.1rem;
-  }
-  
-  .ashram-content-section, 
-  .ashram-full-width-section {
-    margin: 50px auto;
+  .ashram-video video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
   }
 }
