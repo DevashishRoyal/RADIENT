@@ -93,12 +93,13 @@
 }
 
 .section-title {
-  font-size: 2.2rem;
-  font-weight: 700;
-  color: #2c3e50;
-  margin-bottom: 3rem;
-  text-align: center;
-  position: relative;
+    font-size: 4.2rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 4rem;
+    text-align: center;
+    position: relative;
+    margin-top: 7rem;
 }
 
 .section-title::after {
@@ -273,14 +274,37 @@
   }
 }
 /* Projects Section */
+.header-with-bg {
+  background: url('/images/events_worked_on.jpg') center/cover no-repeat;
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+  position: relative;
+  width: 100%;       /* make it full width */
+  min-height: 600px; /* control height */
+}
+
+.header-with-bg::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.header-with-bg .section-title,
+.header-with-bg .section-description {
+  position: relative;
+  z-index: 1;
+}
+
 .projects-section {
-  padding: 6rem 2rem;
+  padding: 0rem 0rem;
   background: var(--white);
 }
 
 .section-header {
   text-align: center;
-  max-width: 800px;
+  max-width: 1519px;
   margin: 0 auto 4rem auto;
   opacity: 0;
   transform: translateY(30px);

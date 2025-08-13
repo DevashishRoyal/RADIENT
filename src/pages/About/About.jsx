@@ -26,47 +26,47 @@ const About = () => {
       title: "Wellness at workplace orientation by team Radiaan",
       description: "Orientation at Buero Veritas.",
       image: "/images/events/event_1.jpg",
-      date: "2023 - Ongoing",
-      impact: "500+ Lives Touched",
+      // date: "2023 - Ongoing",
+      // impact: "500+ Lives Touched",
     },
     {
       id: 2,
       title: "Growth Through Movementand Energy",
       description: "Superbrain Yoga at Goenka School.",
       image: "/images/events/event_2.jpg",
-      date: "2022 - 2023",
-      impact: "50 Schools Reached",
+      // date: "2022 - 2023",
+      // impact: "50 Schools Reached",
     },
     {
       id: 3,
       title: "Where Inner Peace Begins.",
       description: "Healing camp at Radiaant Center.",
       image: "/images/events/event_3.jpg",
-      date: "2021 - Ongoing",
-      impact: "100+ Companies",
+      // date: "2021 - Ongoing",
+      // impact: "100+ Companies",
     },
     {
       id: 4,
       title: "A Meditation for Every Heart",
       description: "Twin Heart meditation every Saturday at 6 .",
       image: "/images/events/event_4.jpg",
-      date: "2023 - Ongoing",
-      impact: "500+ Lives Touched",
+      // date: "2023 - Ongoing",
+      // impact: "500+ Lives Touched",
     },
     {
       id: 5,
       title: "Bringing Wellness to Every Walk of Life.",
       description: "Happy Street.",
       image: "/images/events/event_5.jpg",
-      date: "2022 - 2023",
-      impact: "50 Schools Reached",
+      // date: "2022 - 2023",
+      // impact: "50 Schools Reached",
     },
     {
       id: 6,
       title: "Pranic Healing orientation for Goenka school staff",
       image: "/images/events/event_6.jpg",
-      date: "2021 - Ongoing",
-      impact: "100+ Companies",
+      // date: "2021 - Ongoing",
+      // impact: "100+ Companies",
     },
   ]
 
@@ -76,24 +76,24 @@ const About = () => {
       title: "Annual Healing Retreat",
       description: "A transformative 3-day retreat focusing on deep healing and spiritual awakening.",
       image: "Event Image",
-      date: "March 2024",
-      location: "Mountain Sanctuary",
+      // date: "March 2024",
+      // location: "Mountain Sanctuary",
     },
     {
       id: 2,
       title: "Community Healing Circle",
       description: "Monthly gathering for group healing sessions and sharing experiences.",
       image: "Event Image",
-      date: "Every Month",
-      location: "Radiant Center",
+      // date: "Every Month",
+      // location: "Radiant Center",
     },
     {
       id: 3,
       title: "Panic Freedom Workshop",
       description: "Intensive workshop teaching practical techniques for overcoming panic attacks.",
       image: "Event Image",
-      date: "Quarterly",
-      location: "Various Locations",
+      // date: "Quarterly",
+      // location: "Various Locations",
     },
   ]
 
@@ -246,36 +246,38 @@ const About = () => {
   </div>
 </section>
 
-      {/* Projects Section */}
-      <section className="projects-section">
-        <div className="section-header fade-in">
-          <h2 className="section-title">Our Events & Projects</h2>
-          <p className="section-description">Transforming communities through healing initiatives</p>
-        </div>
+   <section className="projects-section">
+  <div className="section-header fade-in header-with-bg">
+    <h2 className="section-title">Our Events & Projects</h2>
+    {/* <p className="section-description">
+      Transforming communities through healing initiatives
+    </p> */}
+  </div>
 
-        <div className="projects-grid">
-          {projects.map((project, index) => (
-            <div 
-              key={project.id} 
-              className="project-card"
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
-              <div className="project-image">
-                <img src={project.image} alt={project.title} />
-                <div className="image-overlay"></div>
-              </div>
-              <div className="project-content">
-                <h3>{project.title}</h3>
-                <p>{project.description}</p>
-                <div className="project-meta">
-                  <span>{project.date}</span>
-                  <span>{project.impact}</span>
-                </div>
-              </div>
-            </div>
-          ))}
+  <div className="projects-grid">
+    {projects.map((project, index) => (
+      <div
+        key={project.id}
+        className="project-card"
+        style={{ animationDelay: `${index * 0.1}s` }}
+      >
+        <div className="project-image">
+          <img src={project.image} alt={project.title} />
+          <div className="image-overlay"></div>
         </div>
-      </section>
+        <div className="project-content">
+          <h3>{project.title}</h3>
+          <p>{project.description}</p>
+          <div className="project-meta">
+            <span>{project.date}</span>
+            <span>{project.impact}</span>
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
+
     </div>
   );
 };
