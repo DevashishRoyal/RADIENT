@@ -4,6 +4,7 @@
   color: #333;
   line-height: 1.6;
   overflow-x: hidden;
+  margin-top: 35px;
 }
 
 /* Hero Section */
@@ -32,21 +33,22 @@
 
 .test-hero-content {
 position: absolute;
-    top: 53%;
-    left: -28%;
+    top: 30%;
+    /* left: -28%; */
     transform: translate(-50%, -50%);
     text-align: center;
     color: #ffebea;
     width: 100%;
     padding: 0px 20px;
-    font-family: ui-serif;
+    /* font-family: ui-serif; */
 }
 
 .test-hero-title {
-  font-size: 7rem;
+  font-size: 8rem;
   font-weight: 700;
   margin-bottom: 1rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: serif;
 }
 
 .test-hero-subtitle {

@@ -1,344 +1,346 @@
-/* DonationsPage.css */
+/* ContactUs.css */
 
-.donations-page {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.contact-container {
   font-family: 'Poppins', sans-serif;
   color: #333;
-  overflow-x: hidden;
+  line-height: 1.6;
 }
 
-/* Full Width Hero Section */
-.donations-hero {
-  width: 100vw;
+/* Hero Image Section */
+.contact-hero {
   position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
   height: 70vh;
   min-height: 500px;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-              url('/path-to-hero-image.jpg') center/cover no-repeat;
+  overflow: hidden;
+}
+
+.contact-hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.7);
+}
+
+.contact-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.contact-title {
+  color: white;
+  font-size: 4rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.contact-subtitle {
+  color: #f8f8f8;
+  font-size: 1.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Contact Information Section */
+.contact-info-section {
+  background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+  padding: 60px 20px;
   color: white;
 }
 
-.hero-overlay {
-  max-width: 1200px;
-  padding: 0 20px;
-}
-
-.donations-hero h1 {
-  font-size: clamp(2.5rem, 5vw, 4rem);
-  font-weight: 700;
-  margin-bottom: 20px;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-.donations-hero p {
-  font-size: clamp(1.2rem, 3vw, 1.8rem);
-  max-width: 800px;
-  margin: 0 auto;
-  opacity: 0.9;
-}
-
-/* Quote Section */
-.quote-section {
-  background: #f8f9fa;
-  padding: 80px 20px;
-  text-align: center;
-}
-
-.quote-section blockquote {
-  font-size: clamp(1.8rem, 4vw, 2.5rem);
-  color: #16a085;
-  font-style: italic;
-  font-weight: 500;
-  margin-bottom: 15px;
-  line-height: 1.4;
-}
-
-.quote-author {
-  font-size: 1.3rem;
-  color: #7f8c8d;
-}
-
-/* Impact Section */
-.impact-section {
-  background: white;
-  padding: 100px 0;
-}
-
-.impact-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.impact-section h2 {
-  text-align: center;
-  font-size: 2.2rem;
-  color: #2c3e50;
-  margin-bottom: 60px;
-}
-
-.impact-grid {
+.contact-info-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
-}
-
-.impact-card {
-  text-align: center;
-  padding: 40px 25px;
-  border-radius: 10px;
-  background: #f8f9fa;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.impact-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-}
-
-.icon-box {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-
-.impact-card h3 {
-  color: #16a085;
-  margin-bottom: 15px;
-  font-size: 1.4rem;
-}
-
-.impact-card p {
-  color: #7f8c8d;
-  line-height: 1.6;
-}
-
-/* Donation Options */
-.donation-options {
-  background: #f8f9fa;
-  padding: 100px 0;
-}
-
-.donation-options h2 {
-  text-align: center;
-  font-size: 2.2rem;
-  color: #2c3e50;
-  margin-bottom: 60px;
-}
-
-.options-grid {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
 }
 
-.option-card {
-  background: white;
-  padding: 40px 30px;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+.contact-info-card {
   text-align: center;
+  padding: 30px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
   transition: transform 0.3s ease;
 }
 
-.option-card:hover {
+.contact-info-card:hover {
   transform: translateY(-5px);
 }
 
-.option-card h3 {
-  color: #2c3e50;
+.contact-info-icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-info-icon .icon {
+  font-size: 30px;
+  color: white;
+}
+
+.contact-info-card h3 {
   font-size: 1.5rem;
   margin-bottom: 15px;
-}
-
-.option-card p {
-  color: #7f8c8d;
-  margin-bottom: 25px;
-  line-height: 1.6;
-}
-
-.donate-btn {
-  background: #16a085;
-  color: white;
-  border: none;
-  padding: 12px 25px;
-  font-size: 1rem;
-  border-radius: 50px;
-  cursor: pointer;
   font-weight: 500;
-  transition: all 0.3s ease;
 }
 
-.donate-btn:hover {
-  background: #1abc9c;
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(26, 188, 156, 0.3);
-}
-
-/* Testimonial Section */
-.testimonial-section {
-  background: white;
-  padding: 100px 20px;
-}
-
-.testimonial-content {
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.testimonial-section h2 {
-  font-size: 2.2rem;
-  color: #2c3e50;
-  margin-bottom: 60px;
-}
-
-.testimonial-card {
-  background: #f8f9fa;
-  padding: 50px;
-  border-radius: 10px;
-  position: relative;
-}
-
-.testimonial-text {
-  font-size: 1.3rem;
-  font-style: italic;
-  color: #2c3e50;
-  line-height: 1.7;
-  margin-bottom: 20px;
-}
-
-.testimonial-author {
-  font-weight: 500;
-  color: #16a085;
-}
-
-/* CTA Section */
-.cta-section {
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  background: linear-gradient(135deg, #16a085, #1abc9c);
-  padding: 80px 20px;
-  color: white;
-  text-align: center;
-}
-
-.cta-content {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.cta-section h2 {
-  font-size: 2.2rem;
-  margin-bottom: 15px;
-}
-
-.cta-section p {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
+.contact-info-card p {
+  margin: 8px 0;
   opacity: 0.9;
 }
 
-.cta-buttons {
+/* Main Content Section */
+.contact-content-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.contact-form-section {
+  padding: 20px;
+}
+
+.contact-form-section h2 {
+  font-size: 2rem;
+  color: #1e3a8a;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.contact-form-section p {
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
   display: flex;
   gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
 }
 
-.primary-btn {
-  background: white;
-  color: #16a085;
-  border: none;
-  padding: 15px 30px;
-  font-size: 1.1rem;
-  border-radius: 50px;
-  cursor: pointer;
-  font-weight: 600;
-  transition: all 0.3s ease;
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
-.primary-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+.form-group label {
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+  color: #444;
+  font-weight: 500;
 }
 
-.secondary-btn {
-  background: transparent;
+.form-group input,
+.form-group textarea {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+  outline: none;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.submit-btn {
+  background: linear-gradient(to right, #10b981, #3b82f6);
   color: white;
-  border: 2px solid white;
   padding: 15px 30px;
+  border: none;
+  border-radius: 8px;
   font-size: 1.1rem;
-  border-radius: 50px;
+  font-weight: 500;
   cursor: pointer;
-  font-weight: 600;
-  transition: all 0.3s ease;
+  transition: all 0.3s;
+  margin-top: 10px;
+  align-self: flex-start;
 }
 
-.secondary-btn:hover {
-  background: rgba(255, 255, 255, 0.1);
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(16, 185, 129, 0.3);
+}
+
+/* Map Section */
+.contact-map-section {
+  padding: 20px;
+}
+
+.contact-map-section h2 {
+  font-size: 2rem;
+  color: #1e3a8a;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.map-container {
+  height: 400px;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+/* Social Media Section */
+.social-media-section {
+  text-align: center;
+  padding: 30px 0;
+}
+
+.social-media-section h3 {
+  font-size: 1.5rem;
+  color: #1e3a8a;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icon {
+  font-size: 28px;
+  color: #3b82f6;
+  transition: all 0.3s;
+}
+
+.social-icon:hover {
+  color: #1e3a8a;
   transform: translateY(-3px);
+}
+
+/* Healing Hours Section */
+.healing-hours-section {
+  background: #f0f9ff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.healing-hours-section h2 {
+  font-size: 2rem;
+  color: #1e3a8a;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+.hours-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.hours-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.hours-card:hover {
+  transform: translateY(-5px);
+}
+
+.hours-card h3 {
+  font-size: 1.3rem;
+  color: #3b82f6;
+  margin-bottom: 15px;
+}
+
+.hours-card p {
+  color: #555;
+  font-size: 1.1rem;
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-  .donations-hero {
-    height: 60vh;
-    min-height: 400px;
-  }
-  
-  .impact-grid, .options-grid {
+@media (max-width: 900px) {
+  .contact-content-wrapper {
     grid-template-columns: 1fr;
   }
   
-  .testimonial-card {
-    padding: 30px 20px;
+  .contact-form-section,
+  .contact-map-section {
+    padding: 0;
   }
   
-  .cta-buttons {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .primary-btn, .secondary-btn {
-    width: 100%;
-    max-width: 300px;
+  .map-container {
+    height: 350px;
   }
 }
 
-@media (max-width: 480px) {
-  .donations-hero {
+@media (max-width: 600px) {
+  .contact-hero {
     height: 50vh;
-    min-height: 300px;
+    min-height: 400px;
   }
   
-  .quote-section {
-    padding: 60px 20px;
+  .contact-title {
+    font-size: 2.5rem;
   }
   
-  .impact-section, .donation-options, .testimonial-section {
-    padding: 60px 0;
+  .contact-subtitle {
+    font-size: 1.2rem;
   }
   
-  .impact-section h2, .donation-options h2, .testimonial-section h2 {
-    font-size: 1.8rem;
-    margin-bottom: 40px;
+  .form-row {
+    flex-direction: column;
+    gap: 20px;
   }
   
-  .testimonial-text {
-    font-size: 1.1rem;
+  .contact-info-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .healing-hours-section {
+    padding: 40px 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .contact-title {
+    font-size: 2rem;
+  }
+  
+  .contact-subtitle {
+    font-size: 1rem;
   }
 }

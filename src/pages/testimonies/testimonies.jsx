@@ -176,7 +176,7 @@ const Testimonials = () => {
         transition={{ duration: 0.8 }}
       >
         <img 
-          src="/images/testimonies3.png" 
+          src="/images/testimonies1.png" 
           alt="Pranic Healing Testimonials" 
           className="test-hero-image" 
         />
@@ -187,7 +187,7 @@ const Testimonials = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.6 }}
         >
-          <h1 className="test-hero-title">Testimonies</h1>
+          <h1 className="test-hero-title">TESTIMONIES</h1>
           <p className="test-hero-subtitle">Real experiences from our healing community</p>
         </motion.div>
       </motion.div>

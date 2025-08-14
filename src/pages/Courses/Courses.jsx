@@ -39,259 +39,130 @@ const CoursesPage = () => {
         </div>
       </section>
 
-      {/* Intro Section */}
-<section className="course-intro">
+
+{/* Intro Section - Redesigned */}
+<section className="document-intro-section">
   <div className="container">
-    <p className="course-intro-text">
-      <span className="highlight">Pranic Healing courses</span> go beyond just learning techniques—they bring real transformation into every aspect of life. By understanding and working with energy, individuals experience profound shifts in their physical health, emotional resilience, and mental clarity.  
-      <br /><br />
-      These teachings provide a deeper awareness of how energy influences thoughts, actions, and overall well-being, empowering individuals to take control of their lives with confidence.
-      <br /><br />
-      Pranic Healing is not just about fixing problems—it is about creating a life of abundance, health, and harmony. Those who embark on this journey find themselves more attuned to their relationships, careers, and personal aspirations. With each level of learning, they cultivate greater awareness, unlock their potential, and move toward a more meaningful existence.
-    </p>
+    <div className="document-intro-content">
+      <h2 className="document-intro-heading">PRANIC HEALING COURSES</h2>
+      <div className="document-intro-divider"></div>
+      <p className="document-intro-text">
+        <span className="highlight">Pranic Healing courses</span> go beyond just learning techniques—they bring real transformation into every aspect of life. By understanding and working with energy, individuals experience profound shifts in their physical health, emotional resilience, and mental clarity.  
+        <br /><br />
+        These teachings provide a deeper awareness of how energy influences thoughts, actions, and overall well-being, empowering individuals to take control of their lives with confidence.
+        <br /><br />
+        Pranic Healing is not just about fixing problems—it is about creating a life of abundance, health, and harmony. Those who embark on this journey find themselves more attuned to their relationships, careers, and personal aspirations. With each level of learning, they cultivate greater awareness, unlock their potential, and move toward a more meaningful existence.
+      </p>
+    </div>
   </div>
 </section>
 
 
       {/* Healing Series */}
-      <section className="course-section course-healing">
-        <div className="container">
-          <div className="course-header">
-            <h2 className="course-section-title">Healing Series</h2>
-            <div className="course-section-divider"></div>
-            <p className="course-section-subtitle">
-              Restore physical, emotional, and spiritual balance through energy healing
-            </p>
-          </div>
+<section className="document-style-section">
+  <div className="container">
+    <div className="document-style-header">
+      <h2 className="document-style-title">HEALING SERIES</h2>
+      <div className="document-style-divider"></div>
+      <p className="document-style-subtitle">
+        A ground breaking series of workshops that teach you how to heal yourself & others physically, emotionally & psychologically, using the universal laws of energy.
+      </p>
+      <p className="document-style-subtitle">
+        Never revealed before secrets of advanced healing techniques plus an easy to understand experiential manner of teaching make these classes a must do.
+      </p>
+    </div>
 
-          <div className="course-content-grid-reversed">
-            {/* Image Column */}
-            <div className="course-image-column">
-              <div className="course-featured-image-container">
-                <img 
-                  src="/images/healing1.jpg" 
-                  alt="Healing Series" 
-                  className="course-featured-image"
-                  loading="lazy"
-                />
-              </div>
-              <div className="course-thumbnail-grid">
-                <div className="course-thumbnail-container">
-                  <img 
-                    src="/images/healing2.jpg" 
-                    alt="Healing 2" 
-                    className="course-thumbnail-image"
-                    loading="lazy"
-                  />
-                </div>
-                <div className="course-thumbnail-container">
-                  <img 
-                    src="/images/healing3.jpg" 
-                    alt="Healing 3" 
-                    className="course-thumbnail-image"
-                    loading="lazy"
-                  />
-                </div>
-              </div>
+    <div className="document-style-grid">
+      <div className="document-style-image-column">
+        <img src="/images/healing2.jpg" alt="Healing Workshop" className="document-style-featured-image"/>
+      </div>
+      
+      <div className="document-style-content-column">
+        <div className="document-style-course-list">
+          {['Self Pranic Healing', 'Basic Pranic Healing', 'Advanced Pranic Healing', 
+            'Pranic Psychotherapy', 'Pranic Crystal Healing', 'Pranic Facial and Body Sculpting', 
+            'Psychic Self Defence'].map((course) => (
+            <div key={course} className="document-style-course-item">
+              <div className="document-style-course-bullet">•</div>
+              <div className="document-style-course-name">{course}</div>
             </div>
-            
-            {/* Content Column */}
-            <div className="course-text-column">
-              <div className="course-description-box">
-                <div className="course-quote-box">
-                  <p className="course-quote-text">
-                    <em>"Pranic Healing is a bridge to spirituality"</em>
-                  </p>
-                  <p className="course-quote-author">– GMCKS</p>
-                </div>
-                <div className="course-description">
-                  <p>The Healing Series in Pranic Healing restores physical, emotional, and spiritual balance. Using ancient principles and modern tools, it empowers self-healing and transformation. The Healing Series is a transformative initiative by Pranic Healing that offers individuals a guided path toward physical, emotional, and mental well-being.</p>
-                  <p>At Radiant Pranic Healing Center, we believe that healing is more than recovery—it's transformation from within.</p>
-                </div>
-              </div>
-              
-              <div className="course-listing-box">
-                <div className="course-listing-header">
-                  <h3 className="course-listing-title">Available Courses</h3>
-                  <div className="course-listing-divider"></div>
-                </div>
-                <ul className="course-list">
-                  {['Self Pranic Healing', 'Basic Pranic Healing', 'Advanced Pranic Healing', 
-                    'Pranic Psychotherapy', 'Pranic Crystal Healing', 'Facial & Body Sculpting', 
-                    'Psychic Self Defence'].map((course) => (
-                    <li key={course} className="course-list-item">
-                      <a href="#" className="course-link">
-                        <span className="course-link-icon">→</span>
-                        <span className="course-link-text">{course}</span>
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
 
-      {/* Spiritual Series */}
-      <section className="course-section course-spiritual">
-        <div className="container">
-          <div className="course-header">
-            <h2 className="course-section-title">Spiritual Series</h2>
-            <div className="course-section-divider"></div>
-            <p className="course-section-subtitle">
-              Awaken your inner light and connect with higher consciousness
-            </p>
-          </div>
+{/* Spiritual Series */}
+<section className="document-style-section spiritual-bg">
+  <div className="container">
+    <div className="document-style-header">
+      <h2 className="document-style-title">SPIRITUAL SERIES</h2>
+      <div className="document-style-divider"></div>
+      <p className="document-style-subtitle">
+        Advanced teachings for spiritual development and higher consciousness awakening through ancient energy techniques.
+      </p>
+      <p className="document-style-subtitle">
+        Master the subtle energies that govern spiritual growth and soul evolution.
+      </p>
+    </div>
 
-          <div className="course-content-grid-reversed">
-            {/* Image Column */}
-            <div className="course-image-column">
-              <div className="course-featured-image-container">
-                <img 
-                  src="/images/spiritual1.jpg" 
-                  alt="Spiritual Series" 
-                  className="course-featured-image"
-                  loading="lazy"
-                />
-              </div>
-              <div className="course-thumbnail-grid">
-                <div className="course-thumbnail-container">
-                  <img 
-                    src="/images/spiritual2.jpg" 
-                    alt="Spiritual 2" 
-                    className="course-thumbnail-image"
-                    loading="lazy"
-                  />
-                </div>
-                <div className="course-thumbnail-container">
-                  <img 
-                    src="/images/spiritual3.jpg" 
-                    alt="Spiritual 3" 
-                    className="course-thumbnail-image"
-                    loading="lazy"
-                  />
-                </div>
-              </div>
+    <div className="document-style-grid reversed">
+      <div className="document-style-image-column">
+        <img src="/images/prosperity3.jpg" alt="Spiritual Workshop" className="document-style-featured-image"/>
+      </div>
+      
+      <div className="document-style-content-column">
+        <div className="document-style-course-list">
+          {['Achieving Oneness with the Higher Soul', 'Arhatic Yoga Preparatory', 
+            'Om Mani Padme Hum', 'Spiritual Essence of Man', 'Meditation on the Lord\'s Prayer',
+            'Inner Hinduism Techniques', 'Inner Buddhism Techniques', 'Inner Christianity Techniques',
+            'Arhatic Sexual Alchemy', 'Higher Clairvoyance'].map((course) => (
+            <div key={course} className="document-style-course-item">
+              <div className="document-style-course-bullet">•</div>
+              <div className="document-style-course-name">{course}</div>
             </div>
-            
-            {/* Content Column */}
-            <div className="course-text-column">
-              <div className="course-description-box">
-                <div className="course-quote-box">
-                  <p className="course-quote-text">
-                    <em>"Spirituality is a way of life. It is not just doing meditation."</em>
-                  </p>
-                  <p className="course-quote-author">– GMCKS</p>
-                </div>
-                <div className="course-description">
-                  <p>In Pranic Healing, spirituality means conscious awakening. It aligns you with inner light and higher truths—beyond rituals and ego. The Spiritual Series in Pranic Healing is a sacred journey inward—designed for those seeking to strengthen their connection with the soul and higher energies.</p>
-                  <p>Discover the soul's divine purpose and live with compassion, service, and love.</p>
-                </div>
-              </div>
-              
-              <div className="course-listing-box">
-                <div className="course-listing-header">
-                  <h3 className="course-listing-title">Available Courses</h3>
-                  <div className="course-listing-divider"></div>
-                </div>
-                <ul className="course-list">
-                  {['Achieving Oneness with the Higher Soul', 'Arhatic Yoga Preparatory', 
-                    'Om Mani Padme Hum', 'Spiritual Essence of Man', 'Meditation on the Lord\'s Prayer',
-                    'Inner Hinduism Techniques', 'Inner Buddhism Techniques', 'Inner Christianity Techniques',
-                    'Arhatic Sexual Alchemy', 'Higher Clairvoyance'].map((course) => (
-                    <li key={course} className="course-list-item">
-                      <a href="#" className="course-link">
-                        <span className="course-link-icon">→</span>
-                        <span className="course-link-text">{course}</span>
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
 
-      {/* Prosperity Series */}
-      <section className="course-section course-prosperity">
-        <div className="container">
-          <div className="course-header">
-            <h2 className="course-section-title">Prosperity Series</h2>
-            <div className="course-section-divider"></div>
-            <p className="course-section-subtitle">
-              Attract abundance and success through energy principles
-            </p>
-          </div>
+{/* Prosperity Series */}
+<section className="document-style-section prosperity-bg">
+  <div className="container">
+    <div className="document-style-header">
+      <h2 className="document-style-title">PROSPERITY SERIES</h2>
+      <div className="document-style-divider"></div>
+      <p className="document-style-subtitle">
+        Transform your relationship with abundance using energetic principles that attract wealth and success.
+      </p>
+      <p className="document-style-subtitle">
+        Remove subconscious blocks to prosperity and align with universal abundance flows.
+      </p>
+    </div>
 
-          <div className="course-content-grid-reversed">
-            {/* Image Column */}
-            <div className="course-image-column">
-              <div className="course-featured-image-container">
-                <img 
-                  src="/images/prosperity1.jpg" 
-                  alt="Prosperity Series" 
-                  className="course-featured-image"
-                  loading="lazy"
-                />
-              </div>
-              <div className="course-thumbnail-grid">
-                <div className="course-thumbnail-container">
-                  <img 
-                    src="/images/prosperity2.jpg" 
-                    alt="Prosperity 2" 
-                    className="course-thumbnail-image"
-                    loading="lazy"
-                  />
-                </div>
-                <div className="course-thumbnail-container">
-                  <img 
-                    src="/images/prosperity3.jpg" 
-                    alt="Prosperity 3" 
-                    className="course-thumbnail-image"
-                    loading="lazy"
-                  />
-                </div>
-              </div>
+    <div className="document-style-grid">
+      <div className="document-style-image-column">
+        <img src="/images/prosperity1.jpg" alt="Prosperity Workshop" className="document-style-featured-image"/>
+      </div>
+      
+      <div className="document-style-content-column">
+        <div className="document-style-course-list">
+          {['Spiritual Business Management', 'Kriyashakti', 
+            'Success & Energy Techniques', 'Removing Financial Blocks'].map((course) => (
+            <div key={course} className="document-style-course-item">
+              <div className="document-style-course-bullet">•</div>
+              <div className="document-style-course-name">{course}</div>
             </div>
-            
-            {/* Content Column */}
-            <div className="course-text-column">
-              <div className="course-description-box">
-                <div className="course-quote-box">
-                  <p className="course-quote-text">
-                    <em>"Prosperity is a result of service and the intelligent application of energy."</em>
-                  </p>
-                  <p className="course-quote-author">– GMCKS</p>
-                </div>
-                <div className="course-description">
-                  <p>The Prosperity Series is a unique offering from Pranic Healing that focuses on clearing energetic blockages related to wealth, success, and abundance. Through powerful techniques and teachings by Master Choa Kok Sui, participants learn how to harness spiritual principles to attract prosperity.</p>
-                  <p>Abundance flows when energy is clear, focused, and aligned. Pranic Prosperity teachings guide you to cleanse mental blocks and attract opportunities.</p>
-                </div>
-              </div>
-              
-              <div className="course-listing-box">
-                <div className="course-listing-header">
-                  <h3 className="course-listing-title">Available Courses</h3>
-                  <div className="course-listing-divider"></div>
-                </div>
-                <ul className="course-list">
-                  {['Spiritual Business Management', 'Kriyashakti', 
-                    'Success & Energy Techniques', 'Removing Financial Blocks'].map((course) => (
-                    <li key={course} className="course-list-item">
-                      <a href="#" className="course-link">
-                        <span className="course-link-icon">→</span>
-                        <span className="course-link-text">{course}</span>
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* CTA Section */}
       {/* <section className="course-cta">

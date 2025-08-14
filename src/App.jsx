@@ -25,6 +25,8 @@ function App() {
           <Route path="/ashram" element={<AshramPage />} />
           <Route path="/research" element={<ResearchPage />} />
           <Route path="/contribution" element={<ContributionPage />} />
+          <Route path="/Contact" element={<Contact />} />
+
 
 
         </Routes>

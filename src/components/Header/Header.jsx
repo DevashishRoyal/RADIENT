@@ -20,7 +20,7 @@ const Header = () => {
     { label: "Ashram", to: "/ashram" },
     { label: "Research", to: "/research" },
     { label: "Contribution", to: "/contribution" },
-    { label: "Contact", to: "/contact" },
+    { label: "Contact", to: "/Contact" },
 
   ]
 
