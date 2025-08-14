@@ -8,27 +8,27 @@ const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0)
 
  const slides = [
-    {
+       {
       id: 1,
       title: "Welcome to Radiaant Pranic Healing Centre",
       titleStyle: {
         color: "#ffffff",
         fontfamily: "Playfair Display', serif",
-        fontSize: "4.5rem",
+        fontSize: "65px",
         textAlign: "center",
         marginLeft: "2%",
-        marginRight:"2%",
-        marginTop: "0.1%",
+        marginRight: "2%",
+        marginTop: "-10px",
         textShadow: "3px 3px 6px rgba(171, 161, 161, 0.5)"
       },
       subtitle: "Rooted in Gratitude, Growing in Service",
       subtitleStyle: {
         color: "#ffffff",
         fontfamily: "Playfair Display', serif",
-        fontSize: "4.5rem",
+        fontSize: "39px",
         textAlign: "center",
-        marginLeft: "1%",
-        marginTop: "0%",
+        marginLeft: "20px",
+        marginTop: "-20px",
         fontWeight: "300",
         letterSpacing: "2px"
       },
@@ -40,162 +40,163 @@ const Home = () => {
         fontfamily: "Playfair Display', serif",
       }
     },
-  //   {
-  //     id: 2,
-  //     title: "Spreading Light, One Soul at a Time.",
-  //     titleStyle: {
-  //       color: "#ffffff",
-  //       fontFamily: "'Playfair Display', serif",
-  //       fontSize: "4.5rem",
-  //       textAlign: "Rightr",
-  //       marginLeft: "18%",
-  //       marginRight:"2%",
-  //       marginTop: "0%",
-  //       textShadow: "3px 3px 6px rgba(0,0,0,0.5)"
-  //     },
-  //     subtitle: "Commenement by the Prime Minister of Bhutan",
-  //     subtitleStyle: {
-  //       color: "#f8f8f8ff",
-  //       fontFamily: "'Montserrat', sans-serif",
-  //       fontSize: "2rem",
-  //       textAlign: "center",
-  //       marginLeft: "45%",
-  //       marginTop: "1%",
-  //       fontWeight: "300",
-  //       letterSpacing: "2px"
-  //     },
-  //     image: "images/s2.jpg",
-  //     // topLeftText: "New Arrival",
-  //     topLeftStyle: {
-  //       backgroundColor: "#ff6b6b",
-  //       color: "#ffffff",
-  //       fontFamily: "'Poppins', sans-serif"
-  //     }
-  //   },
-  //  {
-  //     id: 3,
-  //     title: "Bhutan Pranic Retreat",
-  //     titleStyle: {
-  //       color: "#fdcb6e",
-  //       fontFamily: "'Cinzel', serif",
-  //       fontSize: "4.8rem",
-  //       textAlign: "center",
-  //       marginTop: "18%",
-  //       letterSpacing: "3px"
-  //     },
-  //     subtitle: "Beyond the Physical – Healing Through Energy",
-  //     subtitleStyle: {
-  //       color: "#ffeaa7",
-  //       fontFamily: "'Lora', serif",
-  //       fontSize: "2.2rem",
-  //       textAlign: "center",
-  //       marginTop: "4%",
-  //       fontWeight: "300"
-  //     },
-  //     image: "images/s3.jpg",
-  //     topLeftText: "Retreat",
-  //     topLeftStyle: {
-  //       backgroundColor: "#ffe66d",
-  //       color: "#000000",
-  //       fontFamily: "'Quicksand', sans-serif"
-  //     }
-  //   },
-  //   {
-  //     id: 4,
-  //     title: "Spreading Light, One Soul at a Time.",
-  //     titleStyle: {
-  //       color: "#ffffff",
-  //       fontFamily: "'Playfair Display', serif",
-  //       fontSize: "4.5rem",
-  //       textAlign: "Rightr",
-  //       marginLeft: "18%",
-  //       marginRight:"2%",
-  //       marginTop: "0%",
-  //       textShadow: "3px 3px 6px rgba(0,0,0,0.5)"
-  //     },
-  //     subtitle: "Commenement by the Prime Minister of Bhutan",
-  //     subtitleStyle: {
-  //       color: "#f8f8f8ff",
-  //       fontFamily: "'Montserrat', sans-serif",
-  //       fontSize: "2rem",
-  //       textAlign: "center",
-  //       marginLeft: "45%",
-  //       marginTop: "1%",
-  //       fontWeight: "300",
-  //       letterSpacing: "2px"
-  //     },
-  //     image: "images/s4.jpg",
-  //     // topLeftText: "New Arrival",
-  //     topLeftStyle: {
-  //       backgroundColor: "#ff6b6b",
-  //       color: "#ffffff",
-  //       fontFamily: "'Poppins', sans-serif"
-  //     }
-  //   },
-  //   {
-  //     id: 5,
-  //     title: "Spreading Light, One Soul at a Time.",
-  //     titleStyle: {
-  //       color: "#ffffff",
-  //       fontFamily: "'Playfair Display', serif",
-  //       fontSize: "4.5rem",
-  //       textAlign: "Rightr",
-  //       marginLeft: "18%",
-  //       marginRight:"2%",
-  //       marginTop: "0%",
-  //       textShadow: "3px 3px 6px rgba(0,0,0,0.5)"
-  //     },
-  //     subtitle: "Commenement by the Prime Minister of Bhutan",
-  //     subtitleStyle: {
-  //       color: "#f8f8f8ff",
-  //       fontFamily: "'Montserrat', sans-serif",
-  //       fontSize: "2rem",
-  //       textAlign: "center",
-  //       marginLeft: "45%",
-  //       marginTop: "1%",
-  //       fontWeight: "300",
-  //       letterSpacing: "2px"
-  //     },
-  //     image: "images/s5.jpg",
-  //     // topLeftText: "New Arrival",
-  //     topLeftStyle: {
-  //       backgroundColor: "#ff6b6b",
-  //       color: "#ffffff",
-  //       fontFamily: "'Poppins', sans-serif"
-  //     }
-  //   },
-  // {
-  //     id: 6,
-  //     title: "Spreading Light, One Soul at a Time.",
-  //     titleStyle: {
-  //       color: "#ffffff",
-  //       fontFamily: "'Playfair Display', serif",
-  //       fontSize: "4.5rem",
-  //       textAlign: "Rightr",
-  //       marginLeft: "18%",
-  //       marginRight:"2%",
-  //       marginTop: "0%",
-  //       textShadow: "3px 3px 6px rgba(0,0,0,0.5)"
-  //     },
-  //     subtitle: "Commenement by the Prime Minister of Bhutan",
-  //     subtitleStyle: {
-  //       color: "#f8f8f8ff",
-  //       fontFamily: "'Montserrat', sans-serif",
-  //       fontSize: "2rem",
-  //       textAlign: "center",
-  //       marginLeft: "45%",
-  //       marginTop: "1%",
-  //       fontWeight: "300",
-  //       letterSpacing: "2px"
-  //     },
-  //     image: "images/s6.jpg",
-  //     // topLeftText: "New Arrival",
-  //     topLeftStyle: {
-  //       backgroundColor: "#ff6b6b",
-  //       color: "#ffffff",
-  //       fontFamily: "'Poppins', sans-serif"
-  //     }
-  //   },
+    {
+      id: 2,
+      title: "Empowering Those Who Safeguard Us",
+      titleStyle: {
+        color: "#ffffff",
+        fontFamily: "sans-serif",
+        fontSize: "65px",
+        textAlign: "Rightr",
+        marginLeft: "170px",
+        marginRight: "-10",
+        marginTop: "30%",
+        textShadow: "3px 3px 6px rgba(0,0,0,0.5)"
+      },
+      subtitle: "A Mumbai crime branch initiative ",
+      subtitleStyle: {
+        color: "#f8f8f8ff",
+        fontFamily: "'Montserrat', sans-serif",
+        fontSize: "40px",
+        textAlign: "center",
+        marginLeft: "5px",
+        marginTop: "-10px",
+        fontWeight: "100",
+        letterSpacing: "2px"
+      },
+      image: "images/s2.jpg",
+      // topLeftText: "New Arrival",
+      topLeftStyle: {
+        backgroundColor: "#ff6b6b",
+        color: "#ffffff",
+        fontFamily: "'Poppins', sans-serif"
+      }
+    },
+    {
+      id: 3,
+      title: "Bridging Spirituality and service",
+      titleStyle: {
+        color: "#ffffffff",
+        fontFamily: "sans-serif",
+        fontSize: "65px",
+        textAlign: "center",
+        marginTop: "10px",
+        marginLeft: "350px",
+        letterSpacing: "3px"
+      },
+      subtitle: "Beyond the Physical – Healing Through Energy",
+      subtitleStyle: {
+        color: "#ffffffff",
+        fontFamily: "'Montserrat', sans-serif",
+        fontSize: "35px",
+        textAlign: "center",
+        marginTop: "-15px",
+        fontWeight: "300",
+        marginLeft: "320px"
+      },
+      image: "images/s3.jpg",
+      topLeftText: "Retreat",
+      topLeftStyle: {
+        backgroundColor: "#ffe66d",
+        color: "#000000",
+        fontFamily: "'Quicksand', sans-serif"
+      }
+    },
+    {
+      id: 4,
+      title: " Finding calm in the heart of the workplace ",
+      titleStyle: {
+        color: "#ffffff",
+        fontFamily: "sans-serif",
+        fontSize: "60px",
+        marginLeft: "180px",
+        marginRight: "45px",
+        marginTop: "1%",
+        textShadow: "3px 3px 6px rgba(0,0,0,0.5)"
+      },
+      subtitle: "A corporate initiative",
+      subtitleStyle: {
+        color: "#f8f8f8ff",
+        fontFamily: "'Montserrat', sans-serif",
+        fontSize: "40px",
+        textAlign: "center",
+        marginLeft: "2%",
+        marginTop: "-20px",
+        fontWeight: "300",
+        letterSpacing: "2px"
+      },
+      image: "images/s4.jpg",
+      // topLeftText: "New Arrival",
+      topLeftStyle: {
+        backgroundColor: "#ff6b6b",
+        color: "#ffffff",
+        fontFamily: "'Poppins', sans-serif"
+      }
+    },
+    {
+      id: 5,
+      title: "Empowring minds with the wisdom of energy.",
+      titleStyle: {
+        color: "#ffffff",
+        fontFamily: "sans-serif",
+        fontSize: "56px",
+        textAlign: "Rightr",
+        marginLeft: "12%",
+        marginRight: "2%",
+        marginTop: "1%",
+        textShadow: "3px 3px 6px rgba(0,0,0,0.5)"
+      },
+      subtitle: "A radiaant Pranic healing workshop ",
+      subtitleStyle: {
+        color: "#f8f8f8ff",
+        fontFamily: "'Montserrat', sans-serif",
+        fontSize: "40px",
+        textAlign: "center",
+        marginLeft: "5%",
+        marginTop: "-15px",
+        fontWeight: "300",
+        letterSpacing: "2px"
+      },
+      image: "images/11.jpeg",
+      // topLeftText: "New Arrival",
+      topLeftStyle: {
+        backgroundColor: "#ff6b6b",
+        color: "#ffffff",
+        fontFamily: "'Poppins', sans-serif"
+      }
+    },
+    {
+      id: 6,
+      title: " Nurturing communities through the power of energy",
+      titleStyle: {
+        color: "#ffffff",
+        fontFamily: "sans-serif",
+        fontSize: "48px",
+        textAlign: "Rightr",
+        marginLeft: "10%",
+        marginRight: "2%",
+        marginTop: "1%",
+        textShadow: "3px 3px 6px rgba(0,0,0,0.5)"
+      },
+      subtitle: "Commenement by the Prime Minister of Bhutan",
+      subtitleStyle: {
+        color: "#f8f8f8ff",
+        fontFamily: "'Montserrat', sans-serif",
+        fontSize: "30px",
+        textAlign: "center",
+        marginLeft: "-2%",
+        marginTop: "-10px",
+        fontWeight: "300",
+        letterSpacing: "2px"
+      },
+      image: "images/23.jpeg",
+      // topLeftText: "New Arrival",
+      topLeftStyle: {
+        backgroundColor: "#ff6b6b",
+        color: "#ffffff",
+        fontFamily: "'Poppins', sans-serif"
+      }
+    },
   //   {
   //     id: 7,
   //     title: "Spreading Light, One Soul at a Time.",

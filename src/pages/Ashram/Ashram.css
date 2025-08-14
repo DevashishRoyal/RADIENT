@@ -105,10 +105,10 @@
 }
 
 .ashram-video video {
-  width: 300px;
-  height: 300px;
+  width: 600px;
+  height: 600px;
   object-fit: cover;
-  border-radius: 50%; /* circular on desktop */
+  border-radius: 0%; /* circular on desktop */
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
 }
 
