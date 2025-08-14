@@ -157,7 +157,7 @@ const Home = () => {
         fontWeight: "300",
         letterSpacing: "2px"
       },
-      image: "images/11.jpeg",
+      image: "images/s5.jpg",
       // topLeftText: "New Arrival",
       topLeftStyle: {
         backgroundColor: "#ff6b6b",
@@ -189,7 +189,7 @@ const Home = () => {
         fontWeight: "300",
         letterSpacing: "2px"
       },
-      image: "images/23.jpeg",
+      image: "images/s6.jpg",
       // topLeftText: "New Arrival",
       topLeftStyle: {
         backgroundColor: "#ff6b6b",
