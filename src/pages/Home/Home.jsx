@@ -1,41 +1,233 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import { Link } from "react-router-dom"; // Add this import
 import "./Home.css"
 
 const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0)
 
-const slides = [
+ const slides = [
     {
       id: 1,
-      title: "Welcome to Radiaant",
-      subtitle: "Your Journey to Healing Begins Here",
-      description: "Discover inner peace and transform your life through our holistic healing approach",
-      image: "images/s3.jpg", width: "200", height: "200"
+      title: "Welcome to Radiaant Pranic Healing Centre",
+      titleStyle: {
+        color: "#ffffff",
+        fontfamily: "Playfair Display', serif",
+        fontSize: "4.5rem",
+        textAlign: "center",
+        marginLeft: "2%",
+        marginRight:"2%",
+        marginTop: "0.1%",
+        textShadow: "3px 3px 6px rgba(171, 161, 161, 0.5)"
+      },
+      subtitle: "Rooted in Gratitude, Growing in Service",
+      subtitleStyle: {
+        color: "#ffffff",
+        fontfamily: "Playfair Display', serif",
+        fontSize: "4.5rem",
+        textAlign: "center",
+        marginLeft: "1%",
+        marginTop: "0%",
+        fontWeight: "300",
+        letterSpacing: "2px"
+      },
+      image: "images/s1.jpg",
+      // topLeftText: "New Arrival",
+      topLeftStyle: {
+        backgroundColor: "#ff6b6b",
+        color: "#ffffff",
+        fontfamily: "Playfair Display', serif",
+      }
     },
-    {
-      id: 2,
-      title: "Fueling success through welllness",
-      subtitle: "A corporate initiative",
-      description: "Experience the power of traditional healing methods combined with modern understanding",
-      image: "images/s2.jpg", width: "200", height: "200"
-    },
-    {
-      id: 3,
-      title: "Bhutan Pranic Retreat",
-      subtitle: "Beyond the Physical – Healing Through Energy",
-      description: "Let our experienced masters guide you on your path to emotional and spiritual wellness",
-      image: "images/s1.jpg", width: "200", height: "200"
-    },
-      {
-      id: 4,
-      title: "Heal, transform, grow",
-      subtitle: "📍Radiaant Pranic Healing Center, Hiranandani Estat",
-      description: "Experience the power of pranic energy to restore balance, vitality, and inner peace.*",
-      image: "images/s4.jpg", width: "200", height: "200"
-    },
-      
+  //   {
+  //     id: 2,
+  //     title: "Spreading Light, One Soul at a Time.",
+  //     titleStyle: {
+  //       color: "#ffffff",
+  //       fontFamily: "'Playfair Display', serif",
+  //       fontSize: "4.5rem",
+  //       textAlign: "Rightr",
+  //       marginLeft: "18%",
+  //       marginRight:"2%",
+  //       marginTop: "0%",
+  //       textShadow: "3px 3px 6px rgba(0,0,0,0.5)"
+  //     },
+  //     subtitle: "Commenement by the Prime Minister of Bhutan",
+  //     subtitleStyle: {
+  //       color: "#f8f8f8ff",
+  //       fontFamily: "'Montserrat', sans-serif",
+  //       fontSize: "2rem",
+  //       textAlign: "center",
+  //       marginLeft: "45%",
+  //       marginTop: "1%",
+  //       fontWeight: "300",
+  //       letterSpacing: "2px"
+  //     },
+  //     image: "images/s2.jpg",
+  //     // topLeftText: "New Arrival",
+  //     topLeftStyle: {
+  //       backgroundColor: "#ff6b6b",
+  //       color: "#ffffff",
+  //       fontFamily: "'Poppins', sans-serif"
+  //     }
+  //   },
+  //  {
+  //     id: 3,
+  //     title: "Bhutan Pranic Retreat",
+  //     titleStyle: {
+  //       color: "#fdcb6e",
+  //       fontFamily: "'Cinzel', serif",
+  //       fontSize: "4.8rem",
+  //       textAlign: "center",
+  //       marginTop: "18%",
+  //       letterSpacing: "3px"
+  //     },
+  //     subtitle: "Beyond the Physical – Healing Through Energy",
+  //     subtitleStyle: {
+  //       color: "#ffeaa7",
+  //       fontFamily: "'Lora', serif",
+  //       fontSize: "2.2rem",
+  //       textAlign: "center",
+  //       marginTop: "4%",
+  //       fontWeight: "300"
+  //     },
+  //     image: "images/s3.jpg",
+  //     topLeftText: "Retreat",
+  //     topLeftStyle: {
+  //       backgroundColor: "#ffe66d",
+  //       color: "#000000",
+  //       fontFamily: "'Quicksand', sans-serif"
+  //     }
+  //   },
+  //   {
+  //     id: 4,
+  //     title: "Spreading Light, One Soul at a Time.",
+  //     titleStyle: {
+  //       color: "#ffffff",
+  //       fontFamily: "'Playfair Display', serif",
+  //       fontSize: "4.5rem",
+  //       textAlign: "Rightr",
+  //       marginLeft: "18%",
+  //       marginRight:"2%",
+  //       marginTop: "0%",
+  //       textShadow: "3px 3px 6px rgba(0,0,0,0.5)"
+  //     },
+  //     subtitle: "Commenement by the Prime Minister of Bhutan",
+  //     subtitleStyle: {
+  //       color: "#f8f8f8ff",
+  //       fontFamily: "'Montserrat', sans-serif",
+  //       fontSize: "2rem",
+  //       textAlign: "center",
+  //       marginLeft: "45%",
+  //       marginTop: "1%",
+  //       fontWeight: "300",
+  //       letterSpacing: "2px"
+  //     },
+  //     image: "images/s4.jpg",
+  //     // topLeftText: "New Arrival",
+  //     topLeftStyle: {
+  //       backgroundColor: "#ff6b6b",
+  //       color: "#ffffff",
+  //       fontFamily: "'Poppins', sans-serif"
+  //     }
+  //   },
+  //   {
+  //     id: 5,
+  //     title: "Spreading Light, One Soul at a Time.",
+  //     titleStyle: {
+  //       color: "#ffffff",
+  //       fontFamily: "'Playfair Display', serif",
+  //       fontSize: "4.5rem",
+  //       textAlign: "Rightr",
+  //       marginLeft: "18%",
+  //       marginRight:"2%",
+  //       marginTop: "0%",
+  //       textShadow: "3px 3px 6px rgba(0,0,0,0.5)"
+  //     },
+  //     subtitle: "Commenement by the Prime Minister of Bhutan",
+  //     subtitleStyle: {
+  //       color: "#f8f8f8ff",
+  //       fontFamily: "'Montserrat', sans-serif",
+  //       fontSize: "2rem",
+  //       textAlign: "center",
+  //       marginLeft: "45%",
+  //       marginTop: "1%",
+  //       fontWeight: "300",
+  //       letterSpacing: "2px"
+  //     },
+  //     image: "images/s5.jpg",
+  //     // topLeftText: "New Arrival",
+  //     topLeftStyle: {
+  //       backgroundColor: "#ff6b6b",
+  //       color: "#ffffff",
+  //       fontFamily: "'Poppins', sans-serif"
+  //     }
+  //   },
+  // {
+  //     id: 6,
+  //     title: "Spreading Light, One Soul at a Time.",
+  //     titleStyle: {
+  //       color: "#ffffff",
+  //       fontFamily: "'Playfair Display', serif",
+  //       fontSize: "4.5rem",
+  //       textAlign: "Rightr",
+  //       marginLeft: "18%",
+  //       marginRight:"2%",
+  //       marginTop: "0%",
+  //       textShadow: "3px 3px 6px rgba(0,0,0,0.5)"
+  //     },
+  //     subtitle: "Commenement by the Prime Minister of Bhutan",
+  //     subtitleStyle: {
+  //       color: "#f8f8f8ff",
+  //       fontFamily: "'Montserrat', sans-serif",
+  //       fontSize: "2rem",
+  //       textAlign: "center",
+  //       marginLeft: "45%",
+  //       marginTop: "1%",
+  //       fontWeight: "300",
+  //       letterSpacing: "2px"
+  //     },
+  //     image: "images/s6.jpg",
+  //     // topLeftText: "New Arrival",
+  //     topLeftStyle: {
+  //       backgroundColor: "#ff6b6b",
+  //       color: "#ffffff",
+  //       fontFamily: "'Poppins', sans-serif"
+  //     }
+  //   },
+  //   {
+  //     id: 7,
+  //     title: "Spreading Light, One Soul at a Time.",
+  //     titleStyle: {
+  //       color: "#ffffff",
+  //       fontFamily: "'Playfair Display', serif",
+  //       fontSize: "4.5rem",
+  //       textAlign: "Rightr",
+  //       marginLeft: "18%",
+  //       marginRight:"2%",
+  //       marginTop: "0%",
+  //       textShadow: "3px 3px 6px rgba(0,0,0,0.5)"
+  //     },
+  //     subtitle: "Commenement by the Prime Minister of Bhutan",
+  //     subtitleStyle: {
+  //       color: "#f8f8f8ff",
+  //       fontFamily: "'Montserrat', sans-serif",
+  //       fontSize: "2rem",
+  //       textAlign: "center",
+  //       marginLeft: "45%",
+  //       marginTop: "1%",
+  //       fontWeight: "300",
+  //       letterSpacing: "2px"
+  //     },
+  //     image: "images/s7.jpg",
+  //     // topLeftText: "New Arrival",
+  //     topLeftStyle: {
+  //       backgroundColor: "#ff6b6b",
+  //       color: "#ffffff",
+  //       fontFamily: "'Poppins', sans-serif"
+  //     }
+  //   },
   ]
 
   const features = [
@@ -61,18 +253,43 @@ const slides = [
 
   const testimonials = [
     {
-      text: "Add a little bit of body text that shares a client's healing journey and transformation.",
-      author: "Client Name",
+      id: 1,
+      title: "A DOCTOR'S EXPERIENCE",
+      content: "Dr. Vrinda Raikar, an esteemed eye surgeon had an auto immune disorder and a painful knee...",
+      video: "/videos/doctor-testimonial.mp4",
+      thumbnail: "/images/doctor-thumb.jpg",
+      quote: "La kaci jie instructor to heal me",
+      author: "Dr. Vrinda Raikar"
     },
     {
-      text: "Add a little bit of body text that describes how Radiant helped overcome panic attacks.",
-      author: "Client Name",
+      id: 2,
+      title: "WHY ATTEND CLASS?",
+      content: "Thousands of people from all walks of life have attended Pranic Healing classes...",
+      video: "/videos/class-testimonial.mp4",
+      thumbnail: "/images/class-thumb.jpg",
+      quote: "Changed my life completely",
+      author: "John Smith"
     },
     {
-      text: "Add a little bit of body text that expresses gratitude for the healing process and support.",
-      author: "Client Name",
-    },
-  ]
+      id: 3,
+      title: "ENERGY HEALING TRANSFORMATION",
+      content: "After just 3 sessions, my chronic back pain disappeared completely...",
+      video: "/videos/energy-testimonial.mp4",
+      thumbnail: "/images/energy-thumb.jpg",
+      quote: "Miraculous results",
+      author: "Sarah Johnson"
+    }
+  ];
+
+  const [currentTestimonial, setCurrentTestimonial] = useState(0);
+
+  const nextTestimonial = () => {
+    setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
+  };
+
+  const prevTestimonial = () => {
+    setCurrentTestimonial((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+  };
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % slides.length)
@@ -91,31 +308,73 @@ const slides = [
     return () => clearInterval(timer)
   }, [])
 
-  return (
+return (
     <div className="home">
-      {/* Image Slider Section */}
       <section className="image-slider">
-  <div className="slider-container">
-    <div className="slides-wrapper" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
-      {slides.map((slide, index) => (
-        <div
-  key={slide.id}
-  className={`slide ${index === currentSlide ? "active" : ""}`}
-  style={{ backgroundImage: `url(/${slide.image})` }}
->
+        <div className="slider-container">
+          <div className="slides-wrapper" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
+            {slides.map((slide, index) => (
+              <div
+                key={slide.id}
+                className={`slide ${index === currentSlide ? "active" : ""}`}
+                style={{ backgroundImage: `url(/${slide.image})` }}
+              >
+                {/* Top Left Tag */}
+                {slide.topLeftText && (
+                  <div 
+                    className="top-left-tag"
+                    style={slide.topLeftStyle}
+                  >
+                    {slide.topLeftText}
+                  </div>
+                )}
 
-          <div className="slide-content">
-            <div className="slide-text">
-              <h1 className="slide-title gradient-text">{slide.title}</h1>
-              <h2 className="slide-subtitle">{slide.subtitle}</h2>
-              <p className="slide-description">{slide.description}</p>
-            </div>
+                <div className="slide-content">
+                  <h1 className="slide-title" style={slide.titleStyle}>
+                    {slide.title}
+                  </h1>
+                  <h2 className="slide-subtitle" style={slide.subtitleStyle}>
+                    {slide.subtitle}
+                  </h2>
+                </div>
+              </div>
+            ))}
           </div>
-        </div>
-      ))}
-    </div>
 
+          {/* Navigation buttons and dots */}
           <button className="slider-btn prev-btn" onClick={prevSlide}>
+ <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M15 18L9 12L15 6"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>          
+            </button>
+          <button className="slider-btn next-btn" onClick={nextSlide}>
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M9 18L15 12L9 6"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+            </button>
+          <div className="slider-dots">
+            {slides.map((_, index) => (
+              <button
+                key={index}
+                className={`dot ${index === currentSlide ? "active" : ""}`}
+                onClick={() => goToSlide(index)}
+              />
+            ))}
+          </div>
+          
+          {/* <button className="slider-btn prev-btn" onClick={prevSlide}>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
               <path
                 d="M15 18L9 12L15 6"
@@ -147,24 +406,23 @@ const slides = [
                 onClick={() => goToSlide(index)}
               />
             ))}
+          </div> */}
+
+          <div className="chat-widget">
+            <a
+              href="https://wa.me/919999999999"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="chat-btn"
+            >
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/733/733585.png"
+                alt="WhatsApp"
+                className="chat-icon"
+              />
+              <span className="chat-text">Chat with us</span>
+            </a>
           </div>
-
-         <div className="chat-widget">
-  <a
-    href="https://wa.me/919999999999" // Replace with your actual WhatsApp number
-    target="_blank"
-    rel="noopener noreferrer"
-    className="chat-btn"
-  >
-    <img
-      src="https://cdn-icons-png.flaticon.com/512/733/733585.png" // WhatsApp icon (or use your own local icon)
-      alt="WhatsApp"
-      className="chat-icon"
-    />
-    <span className="chat-text">Chat with us</span>
-  </a>
-</div>
-
 
           {/* <div className="scroll-indicator">
             <div className="scroll-arrow">
@@ -266,19 +524,19 @@ const slides = [
   <div className="point">
     <img src="/images/pranic1.jpg" alt="Master with aura" />
     <div className="point-text">
-      <p>« Master Choa developed an easy-to-learn scientific system which has shown to have positive results on the overall quality of life and well-being of an individual.</p>
+      <p>Master Choa developed an easy-to-learn scientific system which has shown to have positive results on the overall quality of life and well-being of an individual.</p>
     </div>
   </div>
   <div className="point">
     <img src="/images/pranic2.jpg" alt="Energy hand" />
     <div className="point-text">
-      <p>« Pranic Healing is based on the fundamental principle that the body is a self-repairing entity that is capable of healing itself. The principle behind pranic healing is transference of energy.</p>
+      <p>Pranic Healing is based on the fundamental principle that the body is a self-repairing entity that is capable of healing itself. The principle behind pranic healing is transference of energy.</p>
     </div>
   </div>
   <div className="point">
     <img src="/images/pranic3.jpg" alt="Healing light" />
     <div className="point-text">
-      <p>« With Pranic Healing, we are assisting the body’s energy system to normalize so that the body can heal itself. If there are blockages in the energy field, the healer removes these; if there is less energy we give some back.</p>
+      <p>With Pranic Healing, we are assisting the body’s energy system to normalize so that the body can heal itself. If there are blockages in the energy field, the healer removes these; if there is less energy we give some back.</p>
     </div>
   </div>
 </div>
@@ -294,7 +552,7 @@ const slides = [
       <section className="video-section section">
         <div className="container">
           <div className="video-content">
-            <h2>Understanding Pranic Healing WITH Sarika Biwalkar </h2>
+            <h2>Understanding Pranic Healing with Sarika Biwalkar </h2>
             <p>Watch our guided sessions and healing techniques</p>
 
             <div className="video-container" >
@@ -306,7 +564,7 @@ const slides = [
            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
            allowFullScreen
           ></iframe>
-                <p>Gentle healing videos</p>
+                {/* <p>Gentle healing videos</p> */}
               </div>
             </div>
           </div>
@@ -358,28 +616,67 @@ const slides = [
   </div>
 </section>
 
-
-      {/* Testimonials Section */}
-      {/* <section className="testimonials section">
+{/* Testimonials Slider Section */}
+      <section className="home-testimonials">
         <div className="container">
           <div className="section-header">
-            <h2>Courses We Offer</h2>
+            <h2>LIFE CHANGING EXPERIENCES</h2>
+            <p className="subtitle">WELCOME TO THE WORLD OF PRANIC HEALING</p>
+            <p className="description">
+              Join people from different walks of life, ages, professions, all experience 
+              the magic of Pranic Healing.
+            </p>
           </div>
 
-          <div className="testimonials-grid">
-            {testimonials.map((testimonial, index) => (
-              <div key={index} className="testimonial-card">
-                <div className="testimonial-avatar">
-                  <div className="avatar-placeholder"></div>
+          <div className="testimonials-slider">
+            <button className="slider-arrow prev" onClick={prevTestimonial}>
+              &lt;
+            </button>
+            
+            <div className="slider-track">
+              {testimonials.map((testimonial, index) => (
+                <div 
+                  key={testimonial.id}
+                  className={`testimonial-slide ${index === currentTestimonial ? 'active' : ''}`}
+                >
+                  <div className="testimonial-card">
+                    <div className="video-container">
+                      <video 
+                        controls 
+                        poster={testimonial.thumbnail}
+                        onClick={(e) => e.preventDefault()}
+                      >
+                        <source src={testimonial.video} type="video/mp4" />
+                      </video>
+                    </div>
+                    <div className="testimonial-content">
+                      <h3>{testimonial.title}</h3>
+                      <p>{testimonial.content}</p>
+                      <div className="quote">
+                        "{testimonial.quote}"
+                        <span>- {testimonial.author}</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <p>"{testimonial.text}"</p>
-                <h4>- {testimonial.author}</h4>
-              </div>
-            ))}
+              ))}
+            </div>
+
+            <button className="slider-arrow next" onClick={nextTestimonial}>
+              &gt;
+            </button>
+          </div>
+
+          <div className="view-more">
+            <Link to="/testimonials" className="view-more-btn">
+              View More Testimonials
+            </Link>
           </div>
         </div>
-      </section> */}
+      </section>
 
+
+    
       {/* <section class="courses-offer">
   <h2 class="section-title">Courses We Offer</h2>
   <div class="course-grid">
