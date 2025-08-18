@@ -100,7 +100,7 @@
     margin-bottom: 4rem;
     text-align: center;
     position: relative;
-    margin-top: 7rem;
+    /* margin-top: 7rem; */
 }
 
 .section-title::after {

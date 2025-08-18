@@ -13,7 +13,7 @@ const Home = () => {
       title: "Welcome to Radiaant Pranic Healing Centre",
       titleStyle: {
         color: "#ffffff",
-        fontfamily: "Playfair Display', serif",
+        // fontfamily: "Playfair Display', serif",
         fontSize: "65px",
         textAlign: "center",
         marginLeft: "2%",
@@ -23,13 +23,13 @@ const Home = () => {
       },
       subtitle: "Rooted in Gratitude, Growing in Service",
       subtitleStyle: {
-        color: "#ffffff",
-        fontfamily: "Playfair Display', serif",
-        fontSize: "39px",
+         color: "#f8f8f8ff",
+        fontFamily: "sans-serif",
+        fontSize: "60px",
         textAlign: "center",
-        marginLeft: "20px",
-        marginTop: "-20px",
-        fontWeight: "300",
+        marginLeft: "5px",
+        marginTop: "-10px",
+        fontWeight: "100",
         letterSpacing: "2px"
       },
       image: "images/s1.jpg",
@@ -40,163 +40,163 @@ const Home = () => {
         fontfamily: "Playfair Display', serif",
       }
     },
-    {
-      id: 2,
-      title: "Empowering Those Who Safeguard Us",
-      titleStyle: {
-        color: "#ffffff",
-        fontFamily: "sans-serif",
-        fontSize: "65px",
-        textAlign: "Rightr",
-        marginLeft: "170px",
-        marginRight: "-10",
-        marginTop: "30%",
-        textShadow: "3px 3px 6px rgba(0,0,0,0.5)"
-      },
-      subtitle: "A Mumbai crime branch initiative ",
-      subtitleStyle: {
-        color: "#f8f8f8ff",
-        fontFamily: "'Montserrat', sans-serif",
-        fontSize: "40px",
-        textAlign: "center",
-        marginLeft: "5px",
-        marginTop: "-10px",
-        fontWeight: "100",
-        letterSpacing: "2px"
-      },
-      image: "images/s2.jpg",
-      // topLeftText: "New Arrival",
-      topLeftStyle: {
-        backgroundColor: "#ff6b6b",
-        color: "#ffffff",
-        fontFamily: "'Poppins', sans-serif"
-      }
-    },
-    {
-      id: 3,
-      title: "Bridging Spirituality and service",
-      titleStyle: {
-        color: "#ffffffff",
-        fontFamily: "sans-serif",
-        fontSize: "65px",
-        textAlign: "center",
-        marginTop: "10px",
-        marginLeft: "350px",
-        letterSpacing: "3px"
-      },
-      subtitle: "Beyond the Physical – Healing Through Energy",
-      subtitleStyle: {
-        color: "#ffffffff",
-        fontFamily: "'Montserrat', sans-serif",
-        fontSize: "35px",
-        textAlign: "center",
-        marginTop: "-15px",
-        fontWeight: "300",
-        marginLeft: "320px"
-      },
-      image: "images/s3.jpg",
-      topLeftText: "Retreat",
-      topLeftStyle: {
-        backgroundColor: "#ffe66d",
-        color: "#000000",
-        fontFamily: "'Quicksand', sans-serif"
-      }
-    },
-    {
-      id: 4,
-      title: " Finding calm in the heart of the workplace ",
-      titleStyle: {
-        color: "#ffffff",
-        fontFamily: "sans-serif",
-        fontSize: "60px",
-        marginLeft: "180px",
-        marginRight: "45px",
-        marginTop: "1%",
-        textShadow: "3px 3px 6px rgba(0,0,0,0.5)"
-      },
-      subtitle: "A corporate initiative",
-      subtitleStyle: {
-        color: "#f8f8f8ff",
-        fontFamily: "'Montserrat', sans-serif",
-        fontSize: "40px",
-        textAlign: "center",
-        marginLeft: "2%",
-        marginTop: "-20px",
-        fontWeight: "300",
-        letterSpacing: "2px"
-      },
-      image: "images/s4.jpg",
-      // topLeftText: "New Arrival",
-      topLeftStyle: {
-        backgroundColor: "#ff6b6b",
-        color: "#ffffff",
-        fontFamily: "'Poppins', sans-serif"
-      }
-    },
-    {
-      id: 5,
-      title: "Empowring minds with the wisdom of energy.",
-      titleStyle: {
-        color: "#ffffff",
-        fontFamily: "sans-serif",
-        fontSize: "56px",
-        textAlign: "Rightr",
-        marginLeft: "12%",
-        marginRight: "2%",
-        marginTop: "1%",
-        textShadow: "3px 3px 6px rgba(0,0,0,0.5)"
-      },
-      subtitle: "A radiaant Pranic healing workshop ",
-      subtitleStyle: {
-        color: "#f8f8f8ff",
-        fontFamily: "'Montserrat', sans-serif",
-        fontSize: "40px",
-        textAlign: "center",
-        marginLeft: "5%",
-        marginTop: "-15px",
-        fontWeight: "300",
-        letterSpacing: "2px"
-      },
-      image: "images/s5.jpg",
-      // topLeftText: "New Arrival",
-      topLeftStyle: {
-        backgroundColor: "#ff6b6b",
-        color: "#ffffff",
-        fontFamily: "'Poppins', sans-serif"
-      }
-    },
-    {
-      id: 6,
-      title: " Nurturing communities through the power of energy",
-      titleStyle: {
-        color: "#ffffff",
-        fontFamily: "sans-serif",
-        fontSize: "48px",
-        textAlign: "Rightr",
-        marginLeft: "10%",
-        marginRight: "2%",
-        marginTop: "1%",
-        textShadow: "3px 3px 6px rgba(0,0,0,0.5)"
-      },
-      subtitle: "Commenement by the Prime Minister of Bhutan",
-      subtitleStyle: {
-        color: "#f8f8f8ff",
-        fontFamily: "'Montserrat', sans-serif",
-        fontSize: "30px",
-        textAlign: "center",
-        marginLeft: "-2%",
-        marginTop: "-10px",
-        fontWeight: "300",
-        letterSpacing: "2px"
-      },
-      image: "images/s6.jpg",
-      // topLeftText: "New Arrival",
-      topLeftStyle: {
-        backgroundColor: "#ff6b6b",
-        color: "#ffffff",
-        fontFamily: "'Poppins', sans-serif"
-      }
-    },
+    // {
+    //   id: 2,
+    //   title: "Empowering Those Who Safeguard Us",
+    //   titleStyle: {
+    //     color: "#ffffff",
+    //     fontFamily: "sans-serif",
+    //     fontSize: "65px",
+    //     textAlign: "Rightr",
+    //     marginLeft: "170px",
+    //     marginRight: "0px",
+    //     marginTop: "30%",
+    //     textShadow: "3px 3px 6px rgba(0,0,0,0.5)"
+    //   },
+    //   subtitle: "A Mumbai crime branch initiative ",
+    //   subtitleStyle: {
+    //     color: "#f8f8f8ff",
+    //     fontFamily: "sans-serif",
+    //     fontSize: "35px",
+    //     textAlign: "center",
+    //     marginLeft: "5px",
+    //     // marginTop: "-10px",
+    //     fontWeight: "100",
+    //     letterSpacing: "2px"
+    //   },
+    //   image: "images/s2.jpg",
+    //   // topLeftText: "New Arrival",
+    //   topLeftStyle: {
+    //     backgroundColor: "#ff6b6b",
+    //     color: "#ffffff",
+    //     fontFamily: "'Poppins', sans-serif"
+    //   }
+    // },
+    // {
+    //   id: 3,
+    //   title: "Bridging Spirituality and service",
+    //   titleStyle: {
+    //     color: "#ffffffff",
+    //     fontFamily: "sans-serif",
+    //     fontSize: "65px",
+    //     textAlign: "center",
+    //     marginTop: "10px",
+    //     marginLeft: "350px",
+    //     letterSpacing: "3px"
+    //   },
+    //   subtitle: "Beyond the Physical – Healing Through Energy",
+    //   subtitleStyle: {
+    //     color: "#ffffffff",
+    //     fontFamily: "sans-serif",
+    //     fontSize: "35px",
+    //     textAlign: "center",
+    //     marginTop: "-15px",
+    //     fontWeight: "300",
+    //     marginLeft: "320px"
+    //   },
+    //   image: "images/s3.jpg",
+    //   // topLeftText: "Retreat",
+    //   topLeftStyle: {
+    //     backgroundColor: "#ffe66d",
+    //     color: "#000000",
+    //     fontFamily: "'Quicksand', sans-serif"
+    //   }
+    // },
+    // {
+    //   id: 4,
+    //   title: " Finding calm in the heart of the workplace ",
+    //   titleStyle: {
+    //     color: "#ffffff",
+    //     fontFamily: "sans-serif",
+    //     fontSize: "60px",
+    //     marginLeft: "180px",
+    //     marginRight: "45px",
+    //     marginTop: "1%",
+    //     textShadow: "3px 3px 6px rgba(0,0,0,0.5)"
+    //   },
+    //   subtitle: "A corporate initiative",
+    //   subtitleStyle: {
+    //     color: "#f8f8f8ff",
+    //     fontFamily: "sans-serif",
+    //     fontSize: "40px",
+    //     textAlign: "center",
+    //     marginLeft: "2%",
+    //     marginTop: "-20px",
+    //     fontWeight: "300",
+    //     letterSpacing: "2px"
+    //   },
+    //   image: "images/s4.jpg",
+    //   // topLeftText: "New Arrival",
+    //   topLeftStyle: {
+    //     backgroundColor: "#ff6b6b",
+    //     color: "#ffffff",
+    //     fontFamily: "'Poppins', sans-serif"
+    //   }
+    // },
+    // {
+    //   id: 5,
+    //   title: "Empowring minds with the wisdom of energy.",
+    //   titleStyle: {
+    //     color: "#ffffff",
+    //     fontFamily: "sans-serif",
+    //     fontSize: "56px",
+    //     textAlign: "Rightr",
+    //     marginLeft: "12%",
+    //     marginRight: "2%",
+    //     marginTop: "1%",
+    //     textShadow: "3px 3px 6px rgba(0,0,0,0.5)"
+    //   },
+    //   subtitle: "A radiaant Pranic healing workshop ",
+    //   subtitleStyle: {
+    //     color: "#f8f8f8ff",
+    //     fontFamily: "sans-serif",
+    //     fontSize: "40px",
+    //     textAlign: "center",
+    //     marginLeft: "5%",
+    //     marginTop: "-15px",
+    //     fontWeight: "300",
+    //     letterSpacing: "2px"
+    //   },
+    //   image: "images/s5.jpg",
+    //   // topLeftText: "New Arrival",
+    //   topLeftStyle: {
+    //     backgroundColor: "#ff6b6b",
+    //     color: "#ffffff",
+    //     fontFamily: "'Poppins', sans-serif"
+    //   }
+    // },
+    // {
+    //   id: 6,
+    //   title: " Nurturing communities through the power of energy",
+    //   titleStyle: {
+    //     color: "#ffffff",
+    //     fontFamily: "sans-serif",
+    //     fontSize: "48px",
+    //     textAlign: "Rightr",
+    //     marginLeft: "10%",
+    //     marginRight: "2%",
+    //     marginTop: "1%",
+    //     textShadow: "3px 3px 6px rgba(0,0,0,0.5)"
+    //   },
+    //   subtitle: "Commenement by the Prime Minister of Bhutan",
+    //   subtitleStyle: {
+    //     color: "#f8f8f8ff",
+    //     fontFamily: "sans-serif",
+    //     fontSize: "30px",
+    //     textAlign: "center",
+    //     marginLeft: "-2%",
+    //     marginTop: "-10px",
+    //     fontWeight: "300",
+    //     letterSpacing: "2px"
+    //   },
+    //   image: "images/s6.jpg",
+    //   // topLeftText: "New Arrival",
+    //   topLeftStyle: {
+    //     backgroundColor: "#ff6b6b",
+    //     color: "#ffffff",
+    //     fontFamily: "'Poppins', sans-serif"
+    //   }
+    // }
   //   {
   //     id: 7,
   //     title: "Spreading Light, One Soul at a Time.",
@@ -231,26 +231,26 @@ const Home = () => {
   //   },
   ]
 
-  const features = [
-    {
-      title: "Personalized Healing",
-      description:
-        "At Radiaant, we believe that healing is not one-size-fits-all. Our personalized healing programs are tailored to meet your unique emotional, spiritual, and mental health needs.",
-      image: "images/images.jpg"
-    },
-    {
-      title: "Expert Guidance",
-      description:
-        "Our team of experienced healers, therapists, and spiritual mentors brings decades of wisdom and training to support your journey.",
-      image: "images/wellness.jpg"
-    },
-    {
-      title: "Proven Techniques",
-      description:
-        "At Radiaant, we combine time-tested healing methods with modern, science-backed techniques to ensure deep and lasting results.",
-      image: "images/spiritual.jpg"
-    }
-  ]
+  // const features = [
+  //   {
+  //     title: "Personalized Healing",
+  //     description:
+  //       "At Radiaant, we believe that healing is not one-size-fits-all. Our personalized healing programs are tailored to meet your unique emotional, spiritual, and mental health needs.",
+  //     image: "images/images.jpg"
+  //   },
+  //   {
+  //     title: "Expert Guidance",
+  //     description:
+  //       "Our team of experienced healers, therapists, and spiritual mentors brings decades of wisdom and training to support your journey.",
+  //     image: "images/wellness.jpg"
+  //   },
+  //   {
+  //     title: "Proven Techniques",
+  //     description:
+  //       "At Radiaant, we combine time-tested healing methods with modern, science-backed techniques to ensure deep and lasting results.",
+  //     image: "images/spiritual.jpg"
+  //   }
+  // ]
 
   const testimonials = [
     {
@@ -442,51 +442,77 @@ return (
         </div>
       </section>
 
-{/* master section */}
+
+
+{/* Master Section */}
 <section className="master-section">
   <div className="master-container">
-    
-    {/* ✅ Centered Title Across Section */}
-    <h1 className="main-title">
-      The founder of modern Pranic Healing<br />and Arhatic yoga
-    </h1>
-
-    <div className="master-image">
-      <div className="image-wrapper">
-        <img 
-          src="/images/bg.png" 
-          alt="Mandala Background" 
-          className="bg-circle" 
-        />
-        <img 
-          src="/images/master2.jpg" 
-          alt="Grand Master Choa Kok Sui" 
-          className="master-circle" 
-        />
-      </div>
+    {/* Centered Title */}
+    <div className="title-container">
+      <h1 className="main-title">
+        The Founder of Modern Pranic Healing<br />and Arhatic Yoga
+      </h1>
+      <div className="title-decoration"></div>
     </div>
 
-    <div className="master-content">
-      <h2 className="master-name">Grand Master Choa Kok Sui</h2>
-
-      <div className="quote-box">
-        <img src="/images/l1.png" alt="Quote Icon" className="quote-icon" />
-        <em>
-          “Regulate your mind. Do not worry<br />
-          excessively about the future. If you<br />
-          have done everything that has to be<br />
-          done, the future will take care of itself.”
-        </em>
+    <div className="master-content-wrapper">
+      {/* Image Section */}
+      <div className="master-image">
+        <div className="image-wrapper">
+          <img
+            src="/images/bg3.png"
+            alt="Mandala Background"
+            className="bg-circle"
+          />
+          <img
+            src="/images/master2.jpg"
+            alt="Grand Master Choa Kok Sui"
+            className="master-portrait"
+          />
+          <div className="glow-effect"></div>
+        </div>
       </div>
 
-      <p className="description">
-        Grand Master Choa Kok Sui (GMCKS) was a visionary spiritual teacher, scientist, and humanitarian who founded Modern Pranic Healing and Arhatic Yoga. Through years of dedicated research and spiritual practice, he developed a structured, scientific, and highly effective no-touch energy healing system that is now practiced in over 120 countries. <br /><br />
-        Beyond healing, Grand Master Choa’s mission was to empower individuals to live more meaningful lives through inner purification, service, and spiritual growth. His legacy lives on through the World Pranic Healing Foundation and the Institute for Inner Studies.
-      </p>
+      {/* Content Section */}
+      <div className="master-content">
+        <h2 className="master-name">
+          <span className="name-highlight">Grand Master Choa Kok Sui</span><br />
+          
+        </h2>
+
+        <div className="quote-box">
+        <img src="/images/l1.png" alt="Quote Icon" className="quote-icon1" />
+          <div className="quote-icon">
+            <svg viewBox="0 0 24 24" width="24" height="24">
+              <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z" fill="currentColor"/>
+            </svg>
+          </div>
+          <blockquote className="quote-content">
+            "Regulate your mind. Do not worry excessively about the future. 
+            If you have done everything that has to be done, 
+            the future will take care of itself."
+          </blockquote>
+        </div>
+
+        <div className="description-container">
+          <p className="description">
+            Grand Master Choa Kok Sui (GMCKS) was a visionary spiritual teacher, 
+            scientist, and humanitarian who founded Modern Pranic Healing and Arhatic Yoga. 
+            Through years of dedicated research and spiritual practice, he developed 
+            a structured, scientific, and highly effective no-touch energy healing system 
+            that is now practiced in over 120 countries.
+          </p>
+          <p className="description">
+            Beyond healing, Grand Master Choa's mission was to empower individuals 
+            to live more meaningful lives through inner purification, service, 
+            and spiritual growth. His legacy lives on through the World Pranic Healing 
+            Foundation and the Institute for Inner Studies.
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
-
 
 
 
@@ -575,7 +601,7 @@ return (
 
      <section className="courses-section" id="courses">
   <div className="container">
-    <h2 className="section-title">Courses We Offer</h2>
+    <h2 className="section-title1">Courses We Offer</h2>
     
     <div className="courses-grid">
       <a href="/courses" className="course-card">
