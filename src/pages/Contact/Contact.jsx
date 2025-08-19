@@ -43,7 +43,7 @@ const Contact = () => {
         />
         <div className="contact-hero-overlay">
           <h1 className="contact-title">Contact Us</h1>
-          <p className="contact-subtitle">Get in touch with Radiant Pranic Healing</p>
+          <p className="contact-subtitle">Get in touch with Radiaant Pranic Healing</p>
         </div>
       </div>
 
@@ -72,8 +72,8 @@ const Contact = () => {
               <FaEnvelope className="icon" />
             </div>
             <h3>Email Address</h3>
-            <p>info@radiantpranic.com</p>
-            <p>support@radiantpranic.com</p>
+            <p>info@radiaantpranic.com</p>
+            <p>support@radiaantpranic.com</p>
           </div>
         </div>
       </div>
@@ -156,7 +156,7 @@ const Contact = () => {
               style={{border:0}} 
               allowFullScreen="" 
               loading="lazy"
-              title="Radiant Pranic Healing Location"
+              title="Radiaant Pranic Healing Location"
             ></iframe>
           </div>
 

@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container">
         <div className="footer-content">
           <div className="footer-section">
-            <h3>Radiant</h3>
+            <h3>Radiaant</h3>
             <p>
               Your journey to healing and inner peace starts here. We provide compassionate support for panic and
               anxiety management.
@@ -60,7 +60,7 @@ const Footer = () => {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; 2024 Radiant Healing. All rights reserved.</p>
+          <p>&copy; 2024 Radiaant Healing. All rights reserved.</p>
           <div className="footer-disclaimer">
             <p>
               <strong>Disclaimer:</strong> Our services are designed to support your wellness journey. Please consult
