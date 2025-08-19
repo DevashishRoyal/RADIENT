@@ -176,7 +176,7 @@ const Testimonials = () => {
         transition={{ duration: 0.8 }}
       >
         <img 
-          src="/images/testimonies1.png" 
+          src="/images/testimonies3.png" 
           alt="Pranic Healing Testimonials" 
           className="test-hero-image" 
         />
