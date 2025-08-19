@@ -914,10 +914,10 @@
 }
 
 .section-title1 {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   color: #38b000;
   margin-bottom: 60px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   letter-spacing: 1px;
   font-weight: 600;
 }
@@ -1171,10 +1171,12 @@
 }
 
 .home-testimonials h2 {
-  font-size: 2.5rem;
-  color: #2c3e50;
-  margin-bottom: 15px;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;}
+    font-size: 3.5rem;
+    color: #38b000;
+    margin-bottom: 15px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
 
 .home-testimonials .subtitle {
   font-size: 1.5rem;

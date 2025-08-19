@@ -255,31 +255,49 @@ const Home = () => {
   const testimonials = [
     {
       id: 1,
-      title: "A DOCTOR'S EXPERIENCE",
-      content: "Dr. Vrinda Raikar, an esteemed eye surgeon had an auto immune disorder and a painful knee...",
-      video: "/videos/doctor-testimonial.mp4",
-      thumbnail: "/images/doctor-thumb.jpg",
-      quote: "La kaci jie instructor to heal me",
-      author: "Dr. Vrinda Raikar"
+      title: "From chronic back pain and knee pain to renewed movement",
+      content: "Neetu's story is one of hope. See how energy healing dissolves prolonged physical discomfort.",
+      video: "/videos/video5.mp4",
+      thumbnail: "/images/radiant_logo.jpg",
+      // quote: " From chronic back pain and knee pain to renewed movement",
+      // author: "Dr. Vrinda Raikar"
     },
-    {
-      id: 2,
-      title: "WHY ATTEND CLASS?",
-      content: "Thousands of people from all walks of life have attended Pranic Healing classes...",
-      video: "/videos/class-testimonial.mp4",
-      thumbnail: "/images/class-thumb.jpg",
-      quote: "Changed my life completely",
-      author: "John Smith"
-    },
-    {
-      id: 3,
-      title: "ENERGY HEALING TRANSFORMATION",
-      content: "After just 3 sessions, my chronic back pain disappeared completely...",
-      video: "/videos/energy-testimonial.mp4",
-      thumbnail: "/images/energy-thumb.jpg",
-      quote: "Miraculous results",
-      author: "Sarah Johnson"
-    }
+    // {
+    //   id: 2,
+    //   title: "WHY ATTEND CLASS?",
+    //   content: "Thousands of people from all walks of life have attended Pranic Healing classes...",
+    //   video: "/videos/video4.mp4",
+    //   thumbnail: "/images/class-thumb.jpg",
+    //   quote: "Changed my life completely",
+    //   author: "John Smith"
+    // },
+    // {
+    //   id: 3,
+    //   title: "ENERGY HEALING TRANSFORMATION",
+    //   content: "After just 3 sessions, my chronic back pain disappeared completely...",
+    //   video: "/videos/video3.mp4",
+    //   thumbnail: "/images/energy-thumb.jpg",
+    //   quote: "Miraculous results",
+    //   author: "Sarah Johnson"
+    // },
+    // {
+    //   id: 4,
+    //   title: "ENERGY HEALING TRANSFORMATION",
+    //   content: "After just 3 sessions, my chronic back pain disappeared completely...",
+    //   video: "/videos/video8.mp4",
+    //   thumbnail: "/images/energy-thumb.jpg",
+    //   quote: "Miraculous results",
+    //   author: "Sarah Johnson"
+    // },
+    // {
+    //   id: 5,
+    //   title: "ENERGY HEALING TRANSFORMATION",
+    //   content: "After just 3 sessions, my chronic back pain disappeared completely...",
+    //   video: "/videos/video1.mp4",
+    //   thumbnail: "/images/energy-thumb.jpg",
+    //   quote: "Miraculous results",
+    //   author: "Sarah Johnson"
+    // }
   ];
 
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
@@ -632,7 +650,7 @@ return (
 
 
   {/* Disclaimer Section */}
-  <div className="disclaimer-section">
+  {/* <div className="disclaimer-section">
     <div className="container">
       <div className="disclaimer-content">
         <p className="disclaimer-text">
@@ -640,19 +658,19 @@ return (
         </p>
       </div>
     </div>
-  </div>
+  </div> */}
 </section>
 
 {/* Testimonials Slider Section */}
       <section className="home-testimonials">
         <div className="container">
           <div className="section-header">
-            <h2>LIFE CHANGING EXPERIENCES</h2>
-            <p className="subtitle">WELCOME TO THE WORLD OF PRANIC HEALING</p>
-            <p className="description">
+            <h2>Testimonies</h2>
+            <p className="subtitle">LIFE CHANGING EXPERIENCES</p>
+            {/* <p className="description">
               Join people from different walks of life, ages, professions, all experience 
               the magic of Pranic Healing.
-            </p>
+            </p> */}
           </div>
 
           <div className="testimonials-slider">
@@ -695,7 +713,7 @@ return (
           </div>
 
           <div className="view-more">
-            <Link to="/testimonials" className="view-more-btn">
+            <Link to="/testimonies" className="view-more-btn">
               View More Testimonials
             </Link>
           </div>
